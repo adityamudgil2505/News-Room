@@ -37,7 +37,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ### Screenshots
-![alt Screenshot1](https://github.com/adityamudgil2505/Countdown-Desktop-Application/blob/master/assets/SS0.png)
-![alt Screenshot2](https://github.com/adityamudgil2505/Countdown-Desktop-Application/blob/master/assets/SS1.png)
-![alt Screenshot3](https://github.com/adityamudgil2505/Countdown-Desktop-Application/blob/master/assets/SS2.png)
-![alt Screenshot4](https://github.com/adityamudgil2505/Countdown-Desktop-Application/blob/master/assets/SS3.png)
+![alt Screenshot1](https://github.com/adityamudgil2505/News-Room/blob/master/assets/SS0.png)
+![alt Screenshot2](https://github.com/adityamudgil2505/News-Room/blob/master/assets/SS1.png)
+![alt Screenshot3](https://github.com/adityamudgil2505/News-Room/blob/master/assets/SS2.png)
+![alt Screenshot4](https://github.com/adityamudgil2505/News-Room/blob/master/assets/SS3.png)

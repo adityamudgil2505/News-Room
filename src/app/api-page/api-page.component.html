@@ -1,0 +1,10 @@
+<div class="container">
+  <img id="bgImg" src="./assets/API.png">
+  <div class="centered">
+    <p>You need an API key to run this application. You can get it free from <a href="https://newsapi.org/" target="_blank">newsapi.org</a> by registering there.</p>
+    <form>
+      <input type="text" id="inp" [(ngModel)]="apiKey" [ngModelOptions]="{standalone:true}">
+      <button id="submit" (click)="saveAPIKey()">SAVE</button>
+    </form>
+  </div>  
+</div>

@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Countdown-Desktop-Application'`, () => {
+  it(`should have as title 'News-Room'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Countdown-Desktop-Application');
+    expect(app.title).toEqual('News-Room');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Countdown-Desktop-Application!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to News-Room!');
   });
 });

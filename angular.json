@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Countdown-Desktop-Application": {
+    "News-Room": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist-web",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,9 +23,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [ "./node_modules/jquery/dist/jquery.min.js" ]
           },
           "configurations": {
             "production": {
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Countdown-Desktop-Application:build"
+            "browserTarget": "News-Room:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Countdown-Desktop-Application:build:production"
+              "browserTarget": "News-Room:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Countdown-Desktop-Application:build"
+            "browserTarget": "News-Room:build"
           }
         },
         "test": {
@@ -79,9 +79,9 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [ "./node_modules/jquery/dist/jquery.min.js" ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -102,7 +102,7 @@
         }
       }
     },
-    "Countdown-Desktop-Application-e2e": {
+    "News-Room-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -111,11 +111,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Countdown-Desktop-Application:serve"
+            "devServerTarget": "News-Room:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Countdown-Desktop-Application:serve:production"
+              "devServerTarget": "News-Room:serve:production"
             }
           }
         },
@@ -131,5 +131,10 @@
       }
     }
   },
-  "defaultProject": "Countdown-Desktop-Application"
+  "defaultProject": "News-Room",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
