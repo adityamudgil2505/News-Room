@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SplashScreenComponent } from './splash-screen/splash-screen.component';
+import { ApiPageComponent } from './api-page/api-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SplashScreenComponent,
+    ApiPageComponent
   ],
   imports: [
     BrowserModule,
