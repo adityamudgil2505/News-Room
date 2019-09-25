@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { ApiPageComponent } from './api-page/api-page.component';
+import { ApiKeyTestingService} from './api-key-testing.service';
+
+import { HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,9 +20,10 @@ import { ApiPageComponent } from './api-page/api-page.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiKeyTestingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
