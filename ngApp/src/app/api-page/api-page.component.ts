@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-api-page',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApiPageComponent implements OnInit {
 
-  constructor() { }
+  registerForm: FormGroup;
+  constructor( private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.registerForm = this.formBuilder.group({
+      apiKey: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]]
+    });
   }
-
+  save(): void{
+    console.log('Api key is ' + this.registerForm.value.apiKey);
+  }
 }
