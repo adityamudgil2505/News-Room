@@ -9,20 +9,26 @@ import {ApiKeyTestingService} from '../api-key-testing.service';
 export class ApiPageComponent implements OnInit {
 
   registerForm: FormGroup;
-  respond: any = [];
-  public errorMsg: any;
+  respond: any;
+  public errorMsg: String;
   constructor( private formBuilder: FormBuilder, private apiService: ApiKeyTestingService) { }
 
   ngOnInit() {
-    this.apiService.isValidAPI()
-                   .subscribe(data=> this.respond=data,
-                              error=> this.errorMsg=error);
     this.registerForm = this.formBuilder.group({
       apiKey: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]]
     });
   }
   save(): void{
     console.log('Api key is ' + this.registerForm.value.apiKey);
-    console.log(this.respond);
+    this.apiService.isValidAPI()
+                   .subscribe(data=>{
+                     this.respond=data;
+                     console.log(this.respond);
+                  },
+                    error=>{
+                      this.errorMsg = error.error.message;
+                      console.log(this.errorMsg);
+                      console.log(error);
+                    });    
   }
 }

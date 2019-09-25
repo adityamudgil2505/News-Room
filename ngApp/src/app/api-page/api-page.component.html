@@ -1,9 +1,10 @@
 <div class="container">
   <img id="bgImg" src="./assets/img/API.png">
   <div class="centered">
-    <p>You need an API key to run this application. You can get it free from <a href="https://newsapi.org/" target="_blank">newsapi.org</a> by registering there.</p>
+    <p class="additionalInfo">You need an API key to run this application. You can get it free from <a href="https://newsapi.org/" target="_blank">newsapi.org</a> by registering there.</p>
     <form [formGroup]="registerForm" (ngSubmit)="save()">
-      <input id="inp" type="text" formControlName="apiKey">
+      <input type="text" formControlName="apiKey">      
     </form>
+    <p class="validationMsg">{{errorMsg}}</p>
   </div>  
 </div>
