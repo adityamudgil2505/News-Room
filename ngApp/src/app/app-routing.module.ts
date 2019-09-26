@@ -4,9 +4,9 @@ import { SplashScreenComponent} from './splash-screen/splash-screen.component'
 import { ApiPageComponent} from './api-page/api-page.component'
 
 const routes: Routes = [
-  {path: 'splash', component:SplashScreenComponent},
+  {path: '', component:SplashScreenComponent},
   {path: 'apikey', component:ApiPageComponent},
-  {path: '', redirectTo: '/apikey', pathMatch:'full'}
+  {path: 'splash', redirectTo: '/', pathMatch:'full'}
 ];
 
 @NgModule({
