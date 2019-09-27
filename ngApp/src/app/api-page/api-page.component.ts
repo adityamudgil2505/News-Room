@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ApiKeyTestingService} from '../api-key-testing.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-api-page',
   templateUrl: './api-page.component.html',
@@ -11,7 +12,7 @@ export class ApiPageComponent implements OnInit {
   registerForm: FormGroup;
   respond: any;
   public errorMsg: String;
-  constructor( private formBuilder: FormBuilder, private apiService: ApiKeyTestingService) { }
+  constructor( private formBuilder: FormBuilder, private apiService: ApiKeyTestingService, private router: Router) { }
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group({
@@ -24,6 +25,7 @@ export class ApiPageComponent implements OnInit {
     this.apiService.isValidAPI()
                    .subscribe(data=>{
                      this.respond=data;
+                     this.router.navigate(['/main']);
                   },
                     error=>{
                       this.errorMsg = error.error.message;

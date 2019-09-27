@@ -9,12 +9,14 @@ import { ApiPageComponent } from './api-page/api-page.component';
 import { ApiKeyTestingService} from './api-key-testing.service';
 
 import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { MainWindowComponent } from './main-window/main-window.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashScreenComponent,
-    ApiPageComponent
+    ApiPageComponent,
+    MainWindowComponent
   ],
   imports: [
     BrowserModule,
