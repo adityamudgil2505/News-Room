@@ -3,7 +3,7 @@
   <div class="centered">
     <p class="additionalInfo">You need an API key to run this application. You can get it free from <a href="https://newsapi.org/" target="_blank">newsapi.org</a> by registering there.</p>
     <form [formGroup]="registerForm" (ngSubmit)="save()">
-      <input type="text" formControlName="apiKey">      
+      <input (click)="clearErrorMsg()" type="text" formControlName="apiKey">      
     </form>
     <p class="validationMsg">{{errorMsg}}</p>
   </div>  

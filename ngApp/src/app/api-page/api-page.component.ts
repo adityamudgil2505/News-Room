@@ -19,6 +19,11 @@ export class ApiPageComponent implements OnInit {
       apiKey: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]]
     });
   }
+  clearErrorMsg():void {
+    console.log("You clicked");
+    this.errorMsg="";
+    console.log(this.errorMsg);
+  }
   save(): void{
     console.log('Api key is ' + this.registerForm.value.apiKey);
     this.apiService.setAPI(this.registerForm.value.apiKey);
