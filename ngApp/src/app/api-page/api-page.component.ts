@@ -20,15 +20,13 @@ export class ApiPageComponent implements OnInit {
   }
   save(): void{
     console.log('Api key is ' + this.registerForm.value.apiKey);
+    this.apiService.setAPI(this.registerForm.value.apiKey);
     this.apiService.isValidAPI()
                    .subscribe(data=>{
                      this.respond=data;
-                     console.log(this.respond);
                   },
                     error=>{
                       this.errorMsg = error.error.message;
-                      console.log(this.errorMsg);
-                      console.log(error);
                     });    
   }
 }
