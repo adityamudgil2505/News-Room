@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 export class ApiPageComponent implements OnInit {
 
   registerForm: FormGroup;
-  respond: any;
   public errorMsg: String;
   constructor( private formBuilder: FormBuilder, private apiService: ApiKeyTestingService, private router: Router) { }
 
@@ -19,17 +18,21 @@ export class ApiPageComponent implements OnInit {
       apiKey: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]]
     });
   }
+
+  // This will remove the error of invalid api key if we clicked input field 
   clearErrorMsg():void {
-    console.log("You clicked");
     this.errorMsg="";
-    console.log(this.errorMsg);
   }
+
+  // This function will handle our api key 
+  // If invalid then will show error message
+  // If valid then will save api key to configuration file and proceed to next page
   save(): void{
     console.log('Api key is ' + this.registerForm.value.apiKey);
     this.apiService.setAPI(this.registerForm.value.apiKey);
     this.apiService.isValidAPI()
                    .subscribe(data=>{
-                     this.respond=data;
+                     this.apiService.saveAPI();
                      this.router.navigate(['/main']);
                   },
                     error=>{

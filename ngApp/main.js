@@ -1,7 +1,12 @@
 const url = require('url');
 const path = require('path');
+const fs = require('fs');
 const electron = require('electron');
-const {app, BrowserWindow, Menu, Tray}=electron;
+const {app, BrowserWindow, Menu, Tray, ipcMain}=electron;
+
+var fileName = './userConfig.json';
+var file = fs.readFileSync(fileName);
+
 // const iconPath = path.join(__dirname, 'logo.png');
 let win;
 function createWindow(){
@@ -35,4 +40,16 @@ app.on('activate', ()=>{
   if(win===null){
     createWindow();
   }
+})
+// ipcMain.on('getFiles', (event, arg) => {
+//   const files = fs.readdirSync(`${__dirname}/${userConfig.json}`);
+//   win.webContents.send('getFilesResponse', files)
+// })
+
+// This function will open the file and save the api key
+ipcMain.on('setAPIKey', (event, arg) => {
+  file = JSON.parse(file);
+  file.apiKey = arg;
+  fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
+  });
 })
