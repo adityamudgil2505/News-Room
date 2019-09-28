@@ -6,3 +6,6 @@
   <div class="additional-info">Your Collection</div>
   <div class="userItem" [ngClass]="{'active': selectedItem == item}" (click)="listClick($event, item)" *ngFor="let item of subNavUserItem"><p>{{item.title}}</p></div>
 </nav>
+<div>
+  <router-outlet></router-outlet>
+</div>
