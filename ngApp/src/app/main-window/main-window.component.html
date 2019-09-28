@@ -3,5 +3,6 @@
 <nav class="vertical-menu">
   <img src="./assets/img/Logo.png">
   <div class="item" [ngClass]="{'active': selectedItem == item}" (click)="listClick($event, item)" *ngFor="let item of subNavItem"><i class="material-icons">{{item.icon}}</i><div class ="list-title" >{{item.title}}</div></div>
-  <div class="user-item"></div>
+  <div class="additional-info">Your Collection</div>
+  <div class="userItem" [ngClass]="{'active': selectedItem == item}" (click)="listClick($event, item)" *ngFor="let item of subNavUserItem"><p>{{item.title}}</p></div>
 </nav>

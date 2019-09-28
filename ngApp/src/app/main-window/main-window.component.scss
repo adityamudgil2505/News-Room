@@ -3,6 +3,8 @@ $white: #ffffff;
 $bg-side-bar: #121212;
 $bg-main: #181818;
 $blue-color: #00c9f3;
+$font1: Lato, sans-serif;
+$font2: Tinos, serif;
 
 .top-bar{
   height: 35px;
@@ -38,6 +40,25 @@ img{
     .list-title{
       padding-left: 20px;
       display: inline-block;
+      vertical-align: super;
+    }
+    &:hover{
+      color: $white;
+      cursor: pointer;
+    }
+  }
+  .additional-info{
+    font-family: $font1;
+    font-weight: lighter;
+    padding-left: 10px;
+    color: $light-grey;
+  }
+  .userItem{
+    color: $light-grey;
+    line-height: 40px;
+    p{
+      padding-left: 30px;
+      display: inline;
       vertical-align: super;
     }
     &:hover{

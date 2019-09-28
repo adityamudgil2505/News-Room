@@ -14,10 +14,16 @@ export class MainWindowComponent implements OnInit {
     {icon: 'language', title: 'Language'},
     {icon: 'rss_feed', title: 'News Channel'},
   ]
+  public subNavUserItem = [
+    {title: 'Recently Viewed'},
+    {title: 'Bookmark'},
+    {title: 'Account'}
+  ]
+
   public selectedItem:any="";
   
   ngOnInit() {
-    this.selectedItem={icon: "home", title: "Home"};
+
   }
   listClick(event, newValue) {
       console.log(newValue);
