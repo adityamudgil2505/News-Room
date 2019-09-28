@@ -1,19 +1,19 @@
 .container{
   animation: fadeInFromNone 2s ease-in-out; 
-  // opacity: 0;
-  position: relative;
-  text-align: center;
+  position: relative;  
   color: white;
+  width: 100%;
+  margin-left: 0px;
   .centered{
     position: relative;
     left: 50%;
     transform: translate(-50%, 0px);
     top: -360px;
-    width: 70%;
+    text-align: center;
     .additionalInfo{
       position: relative;
       text-align: center;
-      width: 48%;
+      width: 39%;
       margin: auto;      
       a{
         color: gray;
@@ -21,19 +21,21 @@
     }
     form{
       position: relative;
-      top: 50px;
+      top: 45px;
       width: 55%;
       margin: auto; 
       input{
-        width: 100%;
-        height: 30px;
+        width: 66%;
+        height: 20px;
         background-color: transparent;
         color: white;
         padding: 4px 10px;
         outline: none;
         border: none;
+        font-size: 12px;
         &:focus{
           outline: 0.5px solid white;
+          box-shadow: none;
         }
       }
     }
