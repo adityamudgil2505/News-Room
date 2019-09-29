@@ -46,7 +46,6 @@ export class ApiKeyTestingService {
 
   // This will save language in user Configuration
   saveLang(lang:String){
-    console.log("Language is ", lang);
     this.ipc.send("setLang", lang);
   }
 }
