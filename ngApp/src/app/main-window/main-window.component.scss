@@ -79,10 +79,20 @@ $font2: Tinos, serif;
 }
 .title-bar{
   background-color: $bg-main;
-  width: 1100px;
+  width: 900px;
   height: 38px;
+  margin-left: 200px;
   color: $light-grey;
   position: fixed;
+  .move-btns{
+    float: left;
+    margin-top: 9px;
+    margin-left: 50px;
+    i{
+      margin: 0px 5px;
+      font-size: 20px;
+    }
+  }
   .notification{
     display: inline-block;
     float: right;
