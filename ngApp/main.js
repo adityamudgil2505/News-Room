@@ -23,6 +23,7 @@ function createWindow(){
   win.once('ready-to-show', ()=>{
     win.show();
   })
+  file = JSON.parse(file);
 }
 app.on('ready', createWindow);
 // app.on('ready', ()=>{
@@ -47,9 +48,14 @@ app.on('activate', ()=>{
 // })
 
 // This function will open the file and save the api key
-ipcMain.on('setAPIKey', (event, arg) => {
-  file = JSON.parse(file);
+ipcMain.on('setAPIKey', (event, arg) => {  
   file.apiKey = arg;
+  fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
+  });
+})
+
+ipcMain.on('setLang', (event, arg) => {
+  file.lang = arg;
   fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
   });
 })

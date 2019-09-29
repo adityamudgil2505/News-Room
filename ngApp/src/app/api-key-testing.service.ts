@@ -39,8 +39,14 @@ export class ApiKeyTestingService {
                     .pipe( catchError(e=> throwError(e)));
   }
   
-  // This will save api key in user consigutation file by calling function in main process
+  // This will save api key in user Configuration file by calling function in main process
   saveAPI(){
     this.ipc.send("setAPIKey", this._apiKey);
+  }
+
+  // This will save language in user Configuration
+  saveLang(lang:String){
+    console.log("Language is ", lang);
+    this.ipc.send("setLang", lang);
   }
 }

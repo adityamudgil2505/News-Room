@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute ,Router, ParamMap } from '@angular/router';
 
+
 @Component({
   selector: 'app-main-window',
   templateUrl: './main-window.component.html',

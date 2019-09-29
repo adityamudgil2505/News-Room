@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import {ApiKeyTestingService} from '../api-key-testing.service';
 @Component({
   selector: 'app-m-languages',
   templateUrl: './m-languages.component.html',
   styleUrls: ['./m-languages.component.scss']
 })
 export class MLanguagesComponent implements OnInit {
+  
+  constructor(private apiService: ApiKeyTestingService, private router: Router) { }
+  
   public windTitle="Languages";  
   public lang=[
     {symbol: 'مرحبا', language: 'arabic', code: 'ar'},
@@ -25,11 +29,8 @@ export class MLanguagesComponent implements OnInit {
   listClick(event, newValue) {
       console.log(newValue);
       this.selectedItem = newValue;  // don't forget to update the model here
-      // this.router.navigate([this.selectedItem.link], {relativeTo: this.route});
-      // ... do other stuff here ...
-  }
-  constructor() { }
-
+      this.apiService.saveLang(newValue.code);
+  }  
   ngOnInit() {
   }
 

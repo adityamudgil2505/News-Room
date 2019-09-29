@@ -29,15 +29,15 @@ export class ApiPageComponent implements OnInit {
   // If valid then will save api key to configuration file and proceed to next page
   save(): void{
     console.log('Api key is ' + this.registerForm.value.apiKey);
-    this.router.navigate(['/main']);
-    // this.apiService.setAPI(this.registerForm.value.apiKey);
-    // this.apiService.isValidAPI()
-    //                .subscribe(data=>{
-    //                  this.apiService.saveAPI();
-    //                  this.router.navigate(['/main']);
-    //               },
-    //                 error=>{
-    //                   this.errorMsg = error.error.message;
-    //                 });    
+    // this.router.navigate(['/main']);
+    this.apiService.setAPI(this.registerForm.value.apiKey);
+    this.apiService.isValidAPI()
+                   .subscribe(data=>{
+                     this.apiService.saveAPI();
+                     this.router.navigate(['/main']);
+                  },
+                    error=>{
+                      this.errorMsg = error.error.message;
+                    });    
   }
 }
