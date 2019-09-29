@@ -6,21 +6,11 @@ $blue-color: #00c9f3;
 $font1: Lato, sans-serif;
 $font2: Tinos, serif;
 
-.top-bar{
+.title-bar{
   height: 35px;
   width: 100%;
-  font-size: 20px;
-  color: white;
+  position: fixed;
   background-color: transparent;
-}
-
-img{
-  border-style: none;
-  width: 175px;
-  margin: 0px auto;
-  display: block;
-  padding: 10px 0px;
-  margin-top: 50px;
 }
 
 .container{
@@ -33,7 +23,17 @@ img{
 .vertical-menu {
   width: 200px;
   height: 650px;
-  background-color: $bg-side-bar;  
+  margin-top: 35px;
+  position: fixed;
+  background-color: $bg-side-bar;
+  img{
+    border-style: none;
+    width: 175px;
+    margin: 35px auto 0px;
+    display: block;
+    padding: 10px 0px;
+    margin-top: 12px;
+  } 
   .item {
     color: $light-grey;
     display: block;
@@ -82,5 +82,29 @@ img{
     width: 4px;
     height: 26px;
     background-color: $blue-color;    
+  }
+}
+.title-bar{
+  background-color: transparent;
+  width: 100%;
+  height: 38px;
+  color: $light-grey;
+  .notification{
+    display: inline-block;
+    float: right;
+    margin-top: 7px;
+  }
+  .account{
+    display: inline-block;
+    margin: 0px 35px;
+    float: right;
+    i{
+      margin-top: 7px;
+    }
+    span{
+      vertical-align: super;
+      margin-left: 5px;
+      margin-right: 10px;
+    }
   }
 }

@@ -1,1 +1,13 @@
-<p>m-languages works!</p>
+<div class="top-level">
+  <div class="window-title">
+    <h1>{{windTitle}}</h1>
+  </div>
+  <div class="container">
+    <div class="container-item" [ngClass]="{'active': selectedItem == item}" (click)="listClick($event, item)" *ngFor="let item of lang">
+      <div class="image">
+          <div class="symbol">{{item.symbol}}</div>
+          <div class="title">{{item.language|titlecase}}</div>
+      </div>      
+    </div>
+  </div>
+</div>

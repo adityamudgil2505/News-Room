@@ -1,6 +1,7 @@
 img{
   animation: fadeInFromNone 5s ease-in-out; 
   opacity: 0;
+  position: fixed
 }
 @keyframes fadeInFromNone {
   0%{
