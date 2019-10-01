@@ -35,12 +35,42 @@ $font2: Tinos, serif;
         background-size: cover;
         background-position: center;
         margin: 10px 30px;
+        .bookmark{
+          position: relative;
+          img{
+            position: absolute;
+            height: 40px;
+            right: 25px;
+            top: -5px;
+            filter: grayscale(1);
+            &:hover{
+              filter: none;
+              cursor: pointer;
+            }
+          }
+        }
+        .share{
+          display: grid;
+          float: left;
+          margin-top: 120px;
+          img{
+            width: 30px;
+            margin: 2px 5px;
+            filter: grayscale(1);
+            opacity: 0.5;
+            &:hover{
+              opacity: 1;
+              filter: none;
+              cursor: pointer;
+            }
+          }
+        }
       }
       .sub-description{
         text-align: left;
         .source{
           font-weight: lighter;
-          margin: 10px 0px;
+          margin: 10px 0px 20px;
           span{
             display: block;
           }
