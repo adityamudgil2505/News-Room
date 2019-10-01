@@ -1,13 +1,18 @@
 <div class="top-level">
   <div class="window-title">
-    <h1>{{windTitle}}</h1>
+    <h1>{{title}}</h1>
   </div>
   <div class="container">
-    <div class="container-item" [ngClass]="{'active': selectedItem == item}" (click)="listClick($event, item)" *ngFor="let item of channel">
-      <div class="image">
-          <!-- <div class="symbol">{{item.symbol}}</div> -->
-          <div class="title">{{item.name}}</div>
+    <div class="heading-container">
+      <div class="newsImg" *ngIf="image" [style.background-image]="image"></div>
+      <div class="sub-description">
+        <div class="source">
+            <span>Source: {{source}}</span>
+            <span>Date: {{date}}</span>
+        </div>
+        <div class="description">{{description}}</div>
       </div>      
-    </div>
+    </div>  
+    <div class="content">{{content}}</div>
   </div>
 </div>

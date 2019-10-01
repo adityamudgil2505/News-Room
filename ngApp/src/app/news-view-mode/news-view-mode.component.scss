@@ -9,12 +9,13 @@ $font2: Tinos, serif;
 .top-level{
   width: 900px;
   .window-title{
-    margin: 20px 0px 20px 30px;
     color: $white;
+    h1{
+      padding: 20px 20px 0px 40px;
+      font-size: 30px;
+    }
   }
   .container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
     width: 100%;
     height: 520px;
     padding-bottom: 20px;
@@ -22,29 +23,36 @@ $font2: Tinos, serif;
     text-align: center;
     justify-content: space-evenly;
     overflow-y: scroll;
-    .container-item{
-      color: $white;
-      width: 190px;
-      position: relative;
-      cursor: pointer;
-      .image{
-        // background-image: url("../../assets/img/Card.jpg");
-        // background-size: cover;
-        background-color: grey;
-        width: 100%;
-        height: 190px;
-        margin-top: 5px;
-        filter: grayscale(100%);
+    .heading-container{
+      color: $light-grey;
+      width: 900px;
+      height: 300px;
+      display: grid;
+      grid-template-columns: 660px 220px auto;
+      .newsImg{
+        height: 260px;
+        width: 600px;      
+        background-size: cover;
+        margin: 10px 30px;
       }
-      .symbol{
-        padding: 55px 0px 0px;
-        font-size: 50px;
-        color: white;
+      .sub-description{
+        text-align: left;
+        .source{
+          font-weight: lighter;
+          margin: 10px 0px;
+          span{
+            display: block;
+          }
+        }
+        .description{
+          text-align: justify;
+        }
       }
-      .title{
-        color: white;
-      }
-    }
+    }  
+    .content{
+      color: white;
+      text-align: justify;
+    }  
   }  
 }
 .active{
