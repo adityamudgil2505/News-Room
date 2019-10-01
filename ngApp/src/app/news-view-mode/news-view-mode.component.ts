@@ -11,26 +11,26 @@ import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browse
 export class NewsViewModeComponent implements OnInit {
 
   constructor(private apiService: ApiKeyTestingService, private router: Router, private _sanitizer: DomSanitizer) { }
-  public INews=[];
+  public News:any;
   public title:String;
   public urlToImage:String;
   public image:any;
   public source:String;
   public date:String;
   public description:String;
-  public content:String;
+  public content:any;
   ngOnInit() {
     this.apiService.isValidAPI()
-                   .subscribe(data=>{                     
-                     this.INews=data.articles[5];
-                     this.title=this.INews.title;
-                     this.urlToImage=this.INews.urlToImage;
+                   .subscribe((data:any)=>{                     
+                     this.News=data.articles[12];
+                     this.title=this.News.title;
+                     this.urlToImage=this.News.urlToImage;
                      this.image=this._sanitizer.bypassSecurityTrustStyle(`url(${this.urlToImage})`);
-                     this.source=this.INews.source.name;
-                     this.date=this.INews.publishedAt;
-                     this.description=this.INews.description;
-                     this.content=this.INews.content;
-                     console.log(this.INews);
+                     this.source=this.News.source.name;
+                     this.date=this.News.publishedAt;
+                     this.description=this.News.description;
+                     this.content=this.News.content;
+                     console.log(this.News);
                      console.log(this.image);
                      console.log(data.articles[1].title);
                     //  console.log(this.INews.articles[1].title);
