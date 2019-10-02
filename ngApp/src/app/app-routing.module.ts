@@ -8,6 +8,7 @@ import { MHomeComponent} from './m-home/m-home.component'
 import { MExploreComponent} from './m-explore/m-explore.component'
 import { MNewsChannelComponent} from './m-news-channel/m-news-channel.component'
 import { NewsViewModeComponent} from './news-view-mode/news-view-mode.component';
+import {RecentlyViewedComponent} from './recently-viewed/recently-viewed.component';
 const routes: Routes = [
   {path: '', component:SplashScreenComponent},
   {path: 'apikey', component:ApiPageComponent},
@@ -17,9 +18,10 @@ const routes: Routes = [
                      {path: 'explore', component:MExploreComponent},
                      {path: 'newsChannel', component:MNewsChannelComponent},
                      {path: 'view', component:NewsViewModeComponent},
+                     {path: 'recently', component:RecentlyViewedComponent},
           ]
   },
-  {path: 'splash', redirectTo: '/', pathMatch:'full'},  
+  {path: 'splash', redirectTo: '/', pathMatch:'full'},    
 ];
 
 @NgModule({

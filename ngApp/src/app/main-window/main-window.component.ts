@@ -17,7 +17,7 @@ export class MainWindowComponent implements OnInit {
     {icon: 'rss_feed', title: 'News Channel', link: 'newsChannel'},
   ]
   public subNavUserItem = [
-    {title: 'Recently Viewed'},
+    {title: 'Recently Viewed', link: 'recently'},
     {title: 'Bookmark'},
     {title: 'Account'}
   ]

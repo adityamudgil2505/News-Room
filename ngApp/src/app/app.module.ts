@@ -15,6 +15,7 @@ import { MHomeComponent } from './m-home/m-home.component';
 import { MExploreComponent } from './m-explore/m-explore.component';
 import { MNewsChannelComponent } from './m-news-channel/m-news-channel.component';
 import { NewsViewModeComponent } from './news-view-mode/news-view-mode.component';
+import { RecentlyViewedComponent } from './recently-viewed/recently-viewed.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NewsViewModeComponent } from './news-view-mode/news-view-mode.component
     MHomeComponent,
     MExploreComponent,
     MNewsChannelComponent,
-    NewsViewModeComponent
+    NewsViewModeComponent,
+    RecentlyViewedComponent
   ],
   imports: [
     BrowserModule,
