@@ -1,1 +1,10 @@
-<p>m-home works!</p>
+<div class="top-level">
+  <div class="container">
+    <div class="sub-box" *ngFor="let item of news" [style.background-image]="item.urlToImage">
+      <div class="filter"></div>
+      <div class="title">
+        <p>{{item.title}}</p>
+      </div>
+    </div>
+  </div>
+</div>

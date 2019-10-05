@@ -53,6 +53,11 @@ $font2: Tinos, serif;
         border: 1px solid $light-grey;
         border-radius: 5px;
         font-size: 14px;
+        &:hover{
+          border-color: $white;
+          color: $white;
+          cursor: pointer;
+        }
       }
     }
   }

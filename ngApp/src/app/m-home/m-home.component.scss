@@ -1,4 +1,48 @@
-p{
-  color: white;
-  font-size: 50px;
+$light-grey: #b3b3b3;
+$white: #ffffff;
+$outline-grey: #adabab;
+$bg-side-bar: #121212;
+$bg-main: #181818;
+$blue-color: #00c9f3;
+$outline-box: #242424;
+$font1: Lato, sans-serif;
+$font2: Tinos, serif;
+
+.top-level{
+  width: 900px;
+  .container{
+    width: 900px;
+    margin-top: 50px;
+    padding: 50px 10px 0px;
+    height: 600px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    .h-carousel{
+      background-color: #b3b3b3;
+    }
+    .sub-box{
+      height: 220px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;  
+      position: relative;     
+      .filter{
+        height: 100%;
+        width: 100%; 
+        background-image: linear-gradient( rgba(0, 0, 0, 0),#000);
+      }
+      .title{
+        position: absolute;
+        color: rgba(255, 255, 255, 0.6);
+        bottom: 0px;
+        padding: 10px;
+        p{
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
 }
