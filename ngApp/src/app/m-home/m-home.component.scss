@@ -35,13 +35,18 @@ $font2: Tinos, serif;
         background-image: linear-gradient( rgba(0, 0, 0, 0),#000);
       }
       .title{
-        position: absolute;
         color: rgba(255, 255, 255, 0.6);
-        bottom: 0px;
-        padding: 10px;
-        p{
-          text-overflow: ellipsis;
-        }
+        bottom: 7px;
+        padding: 0px 10px;
+        
+        height: 32px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-height: 16px;
+        max-height: 32px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
       }
     }
   }
