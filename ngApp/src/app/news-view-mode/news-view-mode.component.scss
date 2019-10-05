@@ -77,6 +77,14 @@ $font2: Tinos, serif;
         }
         .description{
           text-align: justify;
+          // height: 32px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          line-height: 1.5;
+          max-height: 240px;
+          -webkit-line-clamp: 9;
+          -webkit-box-orient: vertical;
         }
       }
     }  

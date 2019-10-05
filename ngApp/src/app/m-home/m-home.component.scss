@@ -35,10 +35,11 @@ $font2: Tinos, serif;
         background-image: linear-gradient( rgba(0, 0, 0, 0),#000);
       }
       .title{
+        position: absolute;
         color: rgba(255, 255, 255, 0.6);
         bottom: 7px;
         padding: 0px 10px;
-        
+
         height: 32px;
         overflow: hidden;
         text-overflow: ellipsis;
