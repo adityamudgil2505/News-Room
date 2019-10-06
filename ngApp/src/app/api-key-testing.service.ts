@@ -47,4 +47,15 @@ export class ApiKeyTestingService {
   saveLang(lang:String){
     this.ipc.send("setLang", lang);
   }
+
+  saveCountry(country:String){
+    this.ipc.send("setCountry", country);
+  }
+
+  getDetails(){
+    let obj:any;
+    obj = this.ipc.sendSync("fetchDetails");
+    return obj;
+  }
+
 }

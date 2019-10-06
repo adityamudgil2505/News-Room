@@ -59,3 +59,15 @@ ipcMain.on('setLang', (event, arg) => {
   fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
   });
 })
+
+ipcMain.on('setCountry', (event, arg) => {
+  file.country = arg;
+  fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
+  });
+})
+
+ipcMain.on('fetchDetails', (event, arg) => {
+  var obj=[];
+  obj = file;
+  event.returnValue = obj;
+})
