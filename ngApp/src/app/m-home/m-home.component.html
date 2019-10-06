@@ -1,8 +1,10 @@
 <div class="top-level">
   <div class="container">
     <div class="sub-box" *ngFor="let item of news" [style.background-image]="item.urlToImage">
-      <div class="filter"></div>
-      <div class="title">{{item.title}}</div>
+        <div class="filter"></div>
+        <a href="#">
+          <div class="title">{{item.title}}</div>
+        </a>
     </div>
   </div>
 </div>

@@ -1,5 +1,6 @@
 $light-grey: #b3b3b3;
 $white: #ffffff;
+$transparent-white: rgba(255, 255, 255, 0.6);
 $outline-grey: #adabab;
 $bg-side-bar: #121212;
 $bg-main: #181818;
@@ -36,7 +37,7 @@ $font2: Tinos, serif;
       }
       .title{
         position: absolute;
-        color: rgba(255, 255, 255, 0.6);
+        color: $transparent-white;
         bottom: 7px;
         padding: 0px 10px;
 
@@ -48,6 +49,9 @@ $font2: Tinos, serif;
         max-height: 32px;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
+        &:hover{
+          color: $white;
+        }
       }
     }
   }
