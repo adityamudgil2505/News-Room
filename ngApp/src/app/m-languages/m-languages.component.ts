@@ -29,7 +29,7 @@ export class MLanguagesComponent implements OnInit {
   listClick(event, newValue) {
       console.log(newValue);
       this.selectedItem = newValue;  // don't forget to update the model here
-      // this.apiService.saveLang(newValue.code);
+      this.apiService.saveLang(newValue.code);
       this.router.navigate(["view"], {relativeTo: this.route.parent});
   }  
   ngOnInit() {

@@ -12,9 +12,9 @@ import {INews} from './news'
 export class ApiKeyTestingService {
 
   private ipc: IpcRenderer;
-  private _url: String="https://newsapi.org/v2/everything?q=bitcoin&from=2019-09-25&sortBy=publishedAt&apiKey=c89accef77b945d0b6f430dab6bfc6ee";
+  private _url: String="https://newsapi.org/v2/everything?q=bitcoin&from=2019-09-25&sortBy=publishedAt&apiKey=";
   private _apiKey: String="";
-
+  // c89accef77b945d0b6f430dab6bfc6ee
   constructor(private http:HttpClient){
     if ((<any>window).require) {
       try {
@@ -30,7 +30,6 @@ export class ApiKeyTestingService {
   // Set api key to loacl varible
   setAPI(apiKey:String){
     this._apiKey=apiKey;
-    // c89accef77b945d0b6f430dab6bfc6ee
   }
 
   // This will return the response wheather we use a valid api key or not
