@@ -3,6 +3,7 @@ import { ApiKeyTestingService} from '../api-key-testing.service';
 import { Router } from '@angular/router';
 import { INews} from '../news';
 import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
+import * as moment from 'moment';
 @Component({
   selector: 'app-news-view-mode',
   templateUrl: './news-view-mode.component.html',
@@ -16,6 +17,7 @@ export class NewsViewModeComponent implements OnInit {
   public urlToImage:String;
   public image:any;
   public source:String;
+  public dt:moment.Moment;
   public date:String;
   public description:String;
   public content:any;
@@ -27,7 +29,8 @@ export class NewsViewModeComponent implements OnInit {
                      this.urlToImage=this.News.urlToImage;
                      this.image=this._sanitizer.bypassSecurityTrustStyle(`url(${this.urlToImage})`);
                      this.source=this.News.source.name;
-                     this.date=this.News.publishedAt;
+                     this.dt= moment(this.News.publishedAt);
+                     this.date= this.dt.format('LLL');
                      this.description=this.News.description;
                      this.content=this.News.content;
                      console.log(this.News);
