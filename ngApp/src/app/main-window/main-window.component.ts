@@ -15,6 +15,7 @@ export class MainWindowComponent implements OnInit {
     {icon: 'explore', title: 'Browse', link: 'explore'},
     {icon: 'language', title: 'Language', link: 'languages'},
     {icon: 'rss_feed', title: 'News Channel', link: 'newsChannel'},
+    {icon: 'flag', title: 'Country', link: 'country'},
   ]
   public subNavUserItem = [
     {title: 'Recently Viewed', link: 'recently'},

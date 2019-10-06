@@ -10,7 +10,7 @@ export class MExploreComponent implements OnInit {
 
   constructor(private apiService: ApiKeyTestingService, private _sanitizer: DomSanitizer) { }
 
-  public windTitle="Category";  
+  public windTitle="Explore";  
   public category=[
     {imgLink:this._sanitizer.bypassSecurityTrustStyle(`url(./assets/img/category/business.jpeg)`), title: 'Business', code: 'business'},
     {imgLink:this._sanitizer.bypassSecurityTrustStyle(`url(./assets/img/category/entertainment.jpeg)`), title: 'Entertainment', code: 'entertainment'},
