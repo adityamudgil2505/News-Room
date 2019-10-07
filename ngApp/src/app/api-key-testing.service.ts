@@ -57,5 +57,12 @@ export class ApiKeyTestingService {
     obj = this.ipc.sendSync("fetchDetails");
     return obj;
   }
+  
+  addNewsToBookmark(news:any){
+    this.ipc.send("addToBookmark", news);
+  }
+  removeNewsFromBookmark(news:any){
+    this.ipc.send("removeFromBookmark", news);
+  }
 
 }

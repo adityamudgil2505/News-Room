@@ -21,6 +21,25 @@ export class NewsViewModeComponent implements OnInit {
   public date:String;
   public description:String;
   public content:any;
+  public bookmarked:Boolean=false;
+  
+  toggleBookmark($event){
+    if(this.bookmarked==true){
+      this.bookmarked=false;
+      this.apiService.removeNewsFromBookmark(this.News.publishedAt);
+    }
+    else{
+      this.bookmarked=true;
+      this.apiService.addNewsToBookmark(this.News);
+    }
+  }
+
+  // convertStringToDate(data:String){
+  //   let temp:moment.Moment;
+  //   temp = moment(this.News.publishedAt);
+  //   this.News.date=temp.format('LLL');
+  // }
+
   ngOnInit() {
     this.apiService.isValidAPI()
                    .subscribe((data:any)=>{                     

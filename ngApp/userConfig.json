@@ -3,5 +3,20 @@
   "data": [],
   "apiKey": "c89accef77b945d0b6f430dab6bfc6ee",
   "lang": "ar",
-  "country": "in"
+  "country": "in",
+  "bookmark": [
+    {
+      "author": null,
+      "content": "MBC, successfully hard-forked at Bitcoin's 525,000th block level as of May 2018, is a peer-to-peer payment protocol with a very low transaction fee of 0.0001% compared to Bitcoin and a significant increase in transaction rate per second. After said hard-fork,… [+3393 chars]",
+      "description": "SEOUL, South Korea, Oct. 7, 2019 /PRNewswire/ -- MicroBitCoin (MBC), first Bitcoin hard-forking cryptocurrency in Korea, is launching new network with massive upgrade in October 2019. MBC, successfully hard-forked at Bitcoin's 525,000th block level as of May …",
+      "publishedAt": "2019-10-07T06:28:00Z",
+      "source": {
+        "id": null,
+        "name": "Prnewswire.com"
+      },
+      "title": "MICROBITCOIN, New Network Launch with Massive Upgrade in October 2019",
+      "url": "https://www.prnewswire.com/news-releases/microbitcoin-new-network-launch-with-massive-upgrade-in-october-2019-300932770.html",
+      "urlToImage": "https://mma.prnewswire.com/media/1006620/MicroBitcoin.jpg?p=facebook"
+    }
+  ]
 }

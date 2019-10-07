@@ -71,3 +71,19 @@ ipcMain.on('fetchDetails', (event, arg) => {
   obj = file;
   event.returnValue = obj;
 })
+
+ipcMain.on("addToBookmark", (event, arg)=>{
+  console.log(arg);
+  console.log(typeof(file.bookmark));
+  file.bookmark.unshift(arg);
+  fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
+  });
+})
+
+ipcMain.on("removeFromBookmark", (event, arg)=>{
+  file.bookmark = file.bookmark.filter(function(item){
+    return item.publishedAt !== arg;
+  });
+  fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
+  });
+})
