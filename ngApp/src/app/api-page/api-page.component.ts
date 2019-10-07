@@ -34,7 +34,7 @@ export class ApiPageComponent implements OnInit {
     this.apiService.isValidAPI()
                    .subscribe(data=>{
                      this.apiService.saveAPI();
-                     this.router.navigate(['/main']);
+                     this.router.navigate(['/main/home']);
                   },
                     error=>{
                       this.errorMsg = error.error.message;

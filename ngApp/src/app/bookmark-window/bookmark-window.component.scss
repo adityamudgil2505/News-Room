@@ -48,13 +48,15 @@ $font2: Tinos, serif;
         line-height: 30px;
         padding-left: 10px;
       }
-      i{
-        color: $light-grey;
+      .cross{
         position: absolute;
         right: 0px;
-        &:hover{
-          color: $white;
-          cursor: pointer;
+        i{
+          color: $light-grey;          
+          &:hover{
+            color: $white;
+            cursor: pointer;
+          }
         }
       }
       .source{

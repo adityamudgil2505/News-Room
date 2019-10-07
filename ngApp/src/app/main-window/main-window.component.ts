@@ -23,15 +23,17 @@ export class MainWindowComponent implements OnInit {
     {title: 'Account'}
   ]
 
-  public selectedItem:any="";
+  public selectedItem:String="Home";
+  public selectedItemDetail:any;
   
   ngOnInit() {
 
   }
   listClick(event, newValue) {
       console.log(newValue);
-      this.selectedItem = newValue;  // don't forget to update the model here
-      this.router.navigate([this.selectedItem.link], {relativeTo: this.route});
+      this.selectedItem = newValue.title;
+      this.selectedItemDetail = newValue;
+      this.router.navigate([this.selectedItemDetail.link], {relativeTo: this.route});
       // ... do other stuff here ...
   }
 }
