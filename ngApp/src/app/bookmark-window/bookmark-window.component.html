@@ -1,0 +1,17 @@
+<div class="top-level">
+    <div class="window-title">
+      <h1>{{windTitle}}</h1>
+    </div>
+    <div class="container">
+      <div class="container-item" *ngFor="let item of bookmarkedArticle">
+        <div class="news-img" [style.background-image]="item.urlToImage"></div>
+        <div class="title">{{item.title}}</div>
+        <div class="cross" (click)="removeBookmark($event, item)"><i class="material-icons">clear</i></div>
+        <div class="source">
+            <span>Source: {{item.source.name}}</span>
+            <span>Date: {{item.date}}</span>
+        </div>
+        <div class="view-more">View More</div>
+      </div>
+    </div>
+  </div>

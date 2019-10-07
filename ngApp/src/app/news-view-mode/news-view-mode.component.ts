@@ -65,6 +65,7 @@ export class NewsViewModeComponent implements OnInit {
                      this.source=this.News.source.name;
                      this.dt= moment(this.News.publishedAt);
                      this.date= this.dt.format('LLL');
+                     this.News.date = this.date;
                      this.description=this.News.description;
                      this.content=this.News.content;
                     //  console.log(this.News);

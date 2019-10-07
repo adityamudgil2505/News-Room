@@ -17,6 +17,7 @@ import { MNewsChannelComponent } from './m-news-channel/m-news-channel.component
 import { NewsViewModeComponent } from './news-view-mode/news-view-mode.component';
 import { RecentlyViewedComponent } from './recently-viewed/recently-viewed.component';
 import { MCountryComponent } from './m-country/m-country.component';
+import { BookmarkWindowComponent } from './bookmark-window/bookmark-window.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MCountryComponent } from './m-country/m-country.component';
     MNewsChannelComponent,
     NewsViewModeComponent,
     RecentlyViewedComponent,
-    MCountryComponent
+    MCountryComponent,
+    BookmarkWindowComponent
   ],
   imports: [
     BrowserModule,

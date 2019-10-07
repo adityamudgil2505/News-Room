@@ -19,7 +19,7 @@ export class MainWindowComponent implements OnInit {
   ]
   public subNavUserItem = [
     {title: 'Recently Viewed', link: 'recently'},
-    {title: 'Bookmark'},
+    {title: 'Bookmark', link: 'bookmark'},
     {title: 'Account'}
   ]
 
