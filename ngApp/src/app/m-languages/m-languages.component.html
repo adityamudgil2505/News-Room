@@ -3,8 +3,9 @@
     <h1>{{windTitle}}</h1>
   </div>
   <div class="container">
-    <div class="container-item" [ngClass]="{'active': selectedItem == item}" (click)="listClick($event, item)" *ngFor="let item of lang">
-      <div class="image">
+    <div class="container-item" *ngFor="let item of lang">
+      <div class="fav-icon" [ngClass]="{'active': favLang == item.code}" ><i class="material-icons" (click)="langFavClick($event, item)">favorite</i></div>
+      <div class="display-card" (click)="listClick($event, item)">
           <div class="symbol">{{item.symbol}}</div>
           <div class="title">{{item.language|titlecase}}</div>
       </div>      

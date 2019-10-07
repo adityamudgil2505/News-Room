@@ -25,11 +25,17 @@ export class MLanguagesComponent implements OnInit {
     {symbol: '你好', language: 'chinese', code: 'zh'}
     // {language: '', code: ''},
   ];
+  public favLang:String="en";
   public selectedItem:any="";
-  listClick(event, newValue) {
-      console.log(newValue);
-      this.selectedItem = newValue;  // don't forget to update the model here
-      this.apiService.saveLang(newValue.code);
+
+  langFavClick($event, newValue){
+    console.log("you click fav");
+    this.favLang=newValue.code;
+    this.apiService.saveLang(this.favLang);
+  }
+
+  listClick(event, newValue) { // don't forget to update the model here
+      console.log("Navigate");
       this.router.navigate(["view"], {relativeTo: this.route.parent});
   }  
   ngOnInit() {
