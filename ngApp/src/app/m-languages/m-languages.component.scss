@@ -9,6 +9,8 @@ $font2: Tinos, serif;
 
 .top-level{
   width: 900px;
+  height: 600px;
+  overflow: hidden;
   .window-title{
     margin: 20px 0px 20px 30px;
     color: $white;
