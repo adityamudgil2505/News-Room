@@ -12,17 +12,17 @@ export class MLanguagesComponent implements OnInit {
   
   public windTitle="Languages";  
   public lang=[
-    {symbol: 'مرحبا', language: 'arabic', code: 'ar'},
-    {symbol: 'Hallo', language: 'german', code: 'de'},
-    {symbol: 'Hello', language: 'english', code: 'en'},
-    {symbol: 'Hola', language: 'spanish', code: 'es'},
-    {symbol: 'שלום', language: 'hebrew', code: 'he'},
-    {symbol: 'Ciao', language: 'italian', code: 'it'},
-    {symbol: 'Hallo', language: 'dutch', code: 'nl'},
-    {symbol: 'Hallo', language: 'norwegian', code: 'no'},
-    {symbol: 'Olá', language: 'portuguese', code: 'pt'},
-    {symbol: 'Привет', language: 'russian', code: 'ru'},
-    {symbol: '你好', language: 'chinese', code: 'zh'}
+    {symbol: 'عربى', language: 'arabic', code: 'ar'},
+    {symbol: 'deutsche', language: 'german', code: 'de'},
+    {symbol: 'english', language: 'english', code: 'en'},
+    {symbol: 'español', language: 'spanish', code: 'es'},
+    {symbol: 'עברי', language: 'hebrew', code: 'he'},
+    {symbol: 'italiano', language: 'italian', code: 'it'},
+    {symbol: 'nederlands', language: 'dutch', code: 'nl'},
+    {symbol: 'norsk', language: 'norwegian', code: 'no'},
+    {symbol: 'português', language: 'portuguese', code: 'pt'},
+    {symbol: 'русский', language: 'russian', code: 'ru'},
+    {symbol: '中文', language: 'chinese', code: 'zh'}
     // {language: '', code: ''},
   ];
   public favLang:String="en";
