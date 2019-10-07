@@ -40,6 +40,21 @@ export class NewsViewModeComponent implements OnInit {
   //   this.News.date=temp.format('LLL');
   // }
 
+  checkBookmark(){
+    let userDetail:any = this.apiService.getDetails();
+    console.log("You are checking bookmark");
+    console.log(this.News);
+    for(let i=0; i<userDetail.bookmark.length; i++){
+      console.log(userDetail.bookmark[i].publishedAt);
+      console.log(this.News.publishedAt);
+      if(userDetail.bookmark[i].publishedAt==this.News.publishedAt){
+        console.log("Article is bookmarked");
+        this.bookmarked=true;
+        break;
+      }
+    }
+  }
+
   ngOnInit() {
     this.apiService.isValidAPI()
                    .subscribe((data:any)=>{                     
@@ -52,9 +67,10 @@ export class NewsViewModeComponent implements OnInit {
                      this.date= this.dt.format('LLL');
                      this.description=this.News.description;
                      this.content=this.News.content;
-                     console.log(this.News);
-                     console.log(this.image);
-                     console.log(data.articles[1].title);
+                    //  console.log(this.News);
+                    //  console.log(this.image);
+                    //  console.log(data.articles[1].title);
+                     this.checkBookmark();
                     //  console.log(this.INews.articles[1].title);
                      //  console.log(this.INews.article[0].title);
                     //  console.log(data);
@@ -62,6 +78,6 @@ export class NewsViewModeComponent implements OnInit {
                    error=>{
                      console.log(error.error.message);
                    }
-                  )
-  };
+                  )    
+  };  
 }
