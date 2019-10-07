@@ -22,10 +22,10 @@ function createWindow(){
   win.on('closed', ()=> win=null);
   win.once('ready-to-show', ()=>{
     win.show();
-  })
-  file = JSON.parse(file);
+  })  
 }
 app.on('ready', createWindow);
+  file = JSON.parse(file);
 // app.on('ready', ()=>{
 //   new Tray(iconPath);
 // });
