@@ -87,3 +87,11 @@ ipcMain.on("removeFromBookmark", (event, arg)=>{
   fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
   });
 })
+
+ipcMain.on("addToRecent", (event, arg)=>{
+  console.log(arg);
+  if(file.recent.length>=15){ file.recent.pop();}
+  file.recent.unshift(arg);
+  fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
+  });
+})

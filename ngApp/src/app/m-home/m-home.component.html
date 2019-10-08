@@ -1,9 +1,9 @@
 <div class="top-level">
   <div class="container">
-    <div class="sub-box" *ngFor="let item of news" [style.background-image]="item.urlToImage">
+    <div class="sub-box" *ngFor="let item of news" [style.background-image]="item.image">
         <div class="filter"></div>
         <a href="#">
-          <div class="title">{{item.title}}</div>
+          <div class="title" (click)="viewNews($event, item)">{{item.title}}</div>
         </a>
     </div>
   </div>

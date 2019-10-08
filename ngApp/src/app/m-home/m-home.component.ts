@@ -1,24 +1,32 @@
 import { Component, OnInit } from '@angular/core';
-import {ApiKeyTestingService} from '../api-key-testing.service';
+import { ApiKeyTestingService} from '../api-key-testing.service';
 import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
-import { INews} from '../news';
+import { Router, ActivatedRoute} from '@angular/router';
+import * as moment from 'moment';
 @Component({
   selector: 'app-m-home',
   templateUrl: './m-home.component.html',
   styleUrls: ['./m-home.component.scss']
 })
 export class MHomeComponent implements OnInit {
-  constructor(private apiService: ApiKeyTestingService, private _sanitizer: DomSanitizer) { }
+  constructor(private apiService: ApiKeyTestingService, private _sanitizer: DomSanitizer, private router: Router, private route: ActivatedRoute){ }
   public news:any=[];
+  viewNews($event, newValue){
+    console.log("You clicked");
+    console.log(newValue);
+    // newValue.image=this._sanitizer.bypassSecurityTrustStyle(`url(${newValue.urlToImage})`);
+    let dt:moment.Moment= moment(newValue.publishedAt);
+    newValue.date= dt.format('LLL');
+
+    this.apiService.addNewsToRecent(newValue);
+    this.router.navigate(["view"], {relativeTo: this.route.parent});
+  }
   ngOnInit() {
     this.apiService.isValidAPI()
                    .subscribe((data:any)=>{                     
                      this.news=data.articles;
-                     console.log("line 18");
-                     console.log(this.news);
-                    //  this.news.forEach(this.changingURLToSafe);
                      for(let i=0; i<this.news.length; i++){
-                       this.news[i].urlToImage = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);
+                       this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);
                      }
                    },
                    error=>{
@@ -26,8 +34,4 @@ export class MHomeComponent implements OnInit {
                    }
                   )
     };
-  changingURLToSafe(value, index, array){
-    value.urlToImage = this._sanitizer.bypassSecurityTrustStyle(`url(${value.urlToImage})`)
-    console.log("You entered ");
-  }
 }

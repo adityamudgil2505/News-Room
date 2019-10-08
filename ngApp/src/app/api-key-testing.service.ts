@@ -65,4 +65,8 @@ export class ApiKeyTestingService {
     this.ipc.send("removeFromBookmark", news);
   }
 
+  addNewsToRecent(news:any){
+    this.ipc.send("addToRecent", news);
+  }
+
 }

@@ -4,6 +4,25 @@
   "apiKey": "c89accef77b945d0b6f430dab6bfc6ee",
   "lang": "ar",
   "country": "in",
+  "recent": [
+    {
+      "author": "Tony Spilotro",
+      "content": "Bitcoin is a revolutionary new technology that has taken the world by storm, and could not only disrupt modern financial systems, but it could also go on to replace all fiat currencies and become the sole digital currency used across the globe.\r\nWith so much … [+2730 chars]",
+      "date": "October 9, 2019 1:30 AM",
+      "description": "Bitcoin is a revolutionary new technology that has taken the world by storm, and could not only disrupt modern financial systems, but it could also go on to replace all fiat currencies and become the sole digital currency used across the globe. With so much p…",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://www.newsbtc.com/wp-content/uploads/2019/10/bitcoin-experts-future-shutterstock_1216149421-1200x780.jpg)"
+      },
+      "publishedAt": "2019-10-08T20:00:45Z",
+      "source": {
+        "id": null,
+        "name": "Newsbtc.com"
+      },
+      "title": "Experts Weigh In On The Future of Bitcoin and Blockchain",
+      "url": "https://www.newsbtc.com/2019/10/08/experts-weigh-in-on-the-future-of-bitcoin-and-blockchain/",
+      "urlToImage": "https://www.newsbtc.com/wp-content/uploads/2019/10/bitcoin-experts-future-shutterstock_1216149421-1200x780.jpg"
+    }
+  ],
   "bookmark": [
     {
       "author": "DINO",
@@ -18,20 +37,6 @@
       "title": "Project Management Institute anuncia os 50 principais projetos mais influentes dos últimos 50 anos",
       "url": "https://www.terra.com.br/noticias/dino/project-management-institute-anuncia-os-50-principais-projetos-mais-influentes-dos-ultimos-50-anos,4a076ab3b2e4f8c82b3a1d2be7041ec75va153ci.html",
       "urlToImage": "http://p2.trrsf.com/image/fget/cf/800/450/middle/s1.trrsf.com/atm/3/core/_img/terra-logo-white-bg-v3.jpg"
-    },
-    {
-      "author": "Adam Gottlieb",
-      "content": "There is a lot of confusion on bitcoins because its a type of online currency; called cryptocurrency.  \r\nThey were created in 2009 by an unknown person using the alias Satoshi Nakamoto.\r\nThe basic idea is that it is an online currency that can be used to book… [+4113 chars]",
-      "date": "October 7, 2019 9:14 PM",
-      "description": "There are many misconceptions about the way bitcoins are taxed, but before we go into those details, let’s be clear about what exactly a bitcoin is. There is a lot of confusion on bitcoins because it’s a type of online currency; called “cryptocurrency”. They …",
-      "publishedAt": "2019-10-07T15:44:57Z",
-      "source": {
-        "id": null,
-        "name": "Frugalentrepreneur.com"
-      },
-      "title": "How is Bitcoin Taxed?",
-      "url": "https://frugalentrepreneur.com/2019/10/how-is-bitcoin-taxed/",
-      "urlToImage": null
     },
     {
       "author": "davitbabayan",

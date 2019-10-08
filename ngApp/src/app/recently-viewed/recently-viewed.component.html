@@ -3,10 +3,13 @@
     <h1>{{windTitle}}</h1>
   </div>
   <div class="container">
-    <div class="container-item" >
-      <div class="news-img"></div>
-      <div class="title">This new blood test can detect multiple types 
-          of cancer</div>
+    <div class="container-item" *ngFor="let item of recentArticle">
+      <div class="news-img" [style.background-image]="item.urlToImage"></div>
+      <div class="title">{{item.title}}</div>
+      <div class="source">
+          <span>Source: {{item.source}}</span>
+          <span>Date: {{item.date}}</span>
+      </div>
       <div class="view-more">View More</div>
     </div>
   </div>
