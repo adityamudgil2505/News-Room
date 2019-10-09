@@ -11,10 +11,12 @@ import * as moment from 'moment';
 export class MHomeComponent implements OnInit {
   constructor(private apiService: ApiKeyTestingService, private _sanitizer: DomSanitizer, private router: Router, private route: ActivatedRoute){ }
   public news:any=[];
+
   viewNews($event, newValue){
     newValue.image=this._sanitizer.bypassSecurityTrustStyle(`url(${newValue.urlToImage})`);
     let dt:moment.Moment= moment(newValue.publishedAt);
     newValue.date= dt.format('LLL');
+
     this.apiService.addNewsToRecent(newValue);
     this.router.navigate(["view"], {relativeTo: this.route.parent});
   }

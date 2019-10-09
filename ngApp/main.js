@@ -90,8 +90,23 @@ ipcMain.on("removeFromBookmark", (event, arg)=>{
 
 ipcMain.on("addToRecent", (event, arg)=>{
   console.log(arg);
-  if(file.recent.length>=15){ file.recent.pop();}
-  file.recent.unshift(arg);
-  fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
-  });
+  let isDuplicate=0;
+  let i=0;
+  for(i=0; i<file.recent.length; i++){
+    if(arg.publishedAt == file.recent[i].publishedAt){
+      isDuplicate=1; break;
+    }
+  }
+  if(isDuplicate==0){
+    if(file.recent.length>=15){ file.recent.pop();}
+    file.recent.unshift(arg);
+    fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
+    });
+  }  
+  else{
+    file.recent.splice(i, 1);
+    file.recent.unshift(arg);
+    fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
+    });
+  }
 })
