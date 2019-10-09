@@ -80,7 +80,8 @@ export class NewsViewModeComponent implements OnInit {
     //                }
     //               )    
     this.newsRecent=this.apiService.getDetails().recent[0];
-    this.newsRecent.urlToImage=this._sanitizer.bypassSecurityTrustStyle(`url(${this.newsRecent.urlToImage})`);
+    this.newsRecent.image=this._sanitizer.bypassSecurityTrustStyle(`url(${this.newsRecent.urlToImage})`);
     this.newsRecent.source=this.newsRecent.source.name;
+    this.checkBookmark();
   };  
 }
