@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute ,Router, ParamMap } from '@angular/router';
-
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-main-window',
@@ -9,7 +9,22 @@ import { ActivatedRoute ,Router, ParamMap } from '@angular/router';
 })
 export class MainWindowComponent implements OnInit {
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute, private _location: Location) { }
+
+  goBack($event){
+    let currAddress = this._location.path();
+    let arr = currAddress.split("/");
+    if((arr.length - 1)>2){
+      this._location.back();
+    }
+    else if(arr[arr.length-1]=="view"){
+      this._location.back();
+    }
+  }
+  goForward($event){
+    this._location.forward();
+  }
+
   public subNavItem = [
     {icon: 'home', title: 'Home', link: 'home'},
     {icon: 'explore', title: 'Browse', link: 'explore'},

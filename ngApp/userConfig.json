@@ -14,10 +14,7 @@
         "changingThisBreaksApplicationSecurity": "url(https://static.seekingalpha.com/uploads/2019/10/8/saupload_pexels-photo-325154.jpeg)"
       },
       "publishedAt": "2019-10-09T19:12:08Z",
-      "source": {
-        "id": null,
-        "name": "Seekingalpha.com"
-      },
+      "source": "Seekingalpha.com",
       "title": "EMLC: Bet On E.M Currency Appreciation With This 6.5% Yielding Fund",
       "url": "https://seekingalpha.com/article/4295782-emlc-bet-em-currency-appreciation-6_5-percent-yielding-fund",
       "urlToImage": "https://static.seekingalpha.com/uploads/2019/10/8/saupload_pexels-photo-325154.jpeg"
@@ -31,13 +28,27 @@
         "changingThisBreaksApplicationSecurity": "url(http://p2.trrsf.com/image/fget/cf/800/450/middle/s1.trrsf.com/atm/3/core/_img/terra-logo-white-bg-v3.jpg)"
       },
       "publishedAt": "2019-10-07T17:40:28Z",
-      "source": {
-        "id": null,
-        "name": "Terra.com.br"
-      },
+      "source": "Terra.com.br",
       "title": "Project Management Institute anuncia os 50 principais projetos mais influentes dos últimos 50 anos",
       "url": "https://www.terra.com.br/noticias/dino/project-management-institute-anuncia-os-50-principais-projetos-mais-influentes-dos-ultimos-50-anos,4a076ab3b2e4f8c82b3a1d2be7041ec75va153ci.html",
       "urlToImage": "http://p2.trrsf.com/image/fget/cf/800/450/middle/s1.trrsf.com/atm/3/core/_img/terra-logo-white-bg-v3.jpg"
+    },
+    {
+      "author": "Christine Vasileva",
+      "content": "The Internal Revenue Service released its newest FAQ and guidelines on taxing US nationals for crypto transactions. The updated guidelines may come as a surprise to those that once rejoiced because of hard forks and the free coins that came with them.\r\nIs a H… [+2777 chars]",
+      "date": "October 10, 2019 12:32 AM",
+      "description": "The Internal Revenue Service released its newest FAQ and guidelines on taxing US nationals for crypto transactions. The updated guidelines may come as a surprise to those that once rejoiced because of hard forks and the “free” coins that came with them. Is a …",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://bitcoinist.com/wp-content/uploads/2018/06/shutterstock_1055588426.jpg)"
+      },
+      "publishedAt": "2019-10-09T19:02:19Z",
+      "source": {
+        "id": null,
+        "name": "Bitcoinist.com"
+      },
+      "title": "IRS Releases Guide on Crypto Taxation, with Confusion on Hard Forks",
+      "url": "https://bitcoinist.com/irs-releases-guide-on-crypto-taxation-with-confusion-on-hard-forks/",
+      "urlToImage": "https://bitcoinist.com/wp-content/uploads/2018/06/shutterstock_1055588426.jpg"
     },
     {
       "author": "Chris Burns",
@@ -71,23 +82,6 @@
       "title": "MICROBITCOIN, New Network Launch with Massive Upgrade in October 2019",
       "url": "https://www.prnewswire.com/news-releases/microbitcoin-new-network-launch-with-massive-upgrade-in-october-2019-300932770.html",
       "urlToImage": "https://mma.prnewswire.com/media/1006620/MicroBitcoin.jpg?p=facebook"
-    },
-    {
-      "author": "Christine Vasileva",
-      "content": "The Internal Revenue Service released its newest FAQ and guidelines on taxing US nationals for crypto transactions. The updated guidelines may come as a surprise to those that once rejoiced because of hard forks and the free coins that came with them.\r\nIs a H… [+2777 chars]",
-      "date": "October 10, 2019 12:32 AM",
-      "description": "The Internal Revenue Service released its newest FAQ and guidelines on taxing US nationals for crypto transactions. The updated guidelines may come as a surprise to those that once rejoiced because of hard forks and the “free” coins that came with them. Is a …",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://bitcoinist.com/wp-content/uploads/2018/06/shutterstock_1055588426.jpg)"
-      },
-      "publishedAt": "2019-10-09T19:02:19Z",
-      "source": {
-        "id": null,
-        "name": "Bitcoinist.com"
-      },
-      "title": "IRS Releases Guide on Crypto Taxation, with Confusion on Hard Forks",
-      "url": "https://bitcoinist.com/irs-releases-guide-on-crypto-taxation-with-confusion-on-hard-forks/",
-      "urlToImage": "https://bitcoinist.com/wp-content/uploads/2018/06/shutterstock_1055588426.jpg"
     },
     {
       "author": null,

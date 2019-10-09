@@ -92,6 +92,9 @@ $font2: Tinos, serif;
     i{
       margin: 0px 5px;
       font-size: 20px;
+      &:hover{
+        color: white;
+      }
     }
   }
   .notification{
