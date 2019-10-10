@@ -37,7 +37,7 @@ export class MLanguagesComponent implements OnInit {
 
   listClick(event, newValue) { // don't forget to update the model here
       console.log("Navigate");
-      this.router.navigate(["view"], {relativeTo: this.route.parent});
+      this.router.navigate(["home",{ lang:newValue.code, country:'', category:''}], {relativeTo: this.route.parent});
   }  
 
   initializeFav(){

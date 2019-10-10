@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ApiKeyTestingService} from '../api-key-testing.service';
+import { ApiKeyTestingService} from '../api-key-testing.service';
 import { DomSanitizer, SafeResourceUrl, SafeUrl, SafeHtml, SafeScript, SafeStyle} from '@angular/platform-browser';
+import { Router, ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-m-explore',
   templateUrl: './m-explore.component.html',
@@ -8,7 +9,7 @@ import { DomSanitizer, SafeResourceUrl, SafeUrl, SafeHtml, SafeScript, SafeStyle
 })
 export class MExploreComponent implements OnInit {
 
-  constructor(private apiService: ApiKeyTestingService, private _sanitizer: DomSanitizer) { }
+  constructor(private apiService: ApiKeyTestingService, private _sanitizer: DomSanitizer, private router:Router, private route:ActivatedRoute) { }
 
   public windTitle="Explore";  
   public userDetails:any;
@@ -30,7 +31,7 @@ export class MExploreComponent implements OnInit {
   
   listClick(event, newValue) {
     console.log(newValue);
-    // this.router.navigate(["view"], {relativeTo: this.route.parent});
+    this.router.navigate(["home",{ lang:this.userDetails.lang, country:this.userDetails.country, category:newValue.code}], {relativeTo: this.route.parent});
   } 
 
   initializeFavCategory(){
