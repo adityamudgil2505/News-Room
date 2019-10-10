@@ -4,8 +4,42 @@
   "apiKey": "c89accef77b945d0b6f430dab6bfc6ee",
   "lang": "en",
   "country": "in",
-  "category": "technology",
+  "category": "sports",
   "recent": [
+    {
+      "author": null,
+      "content": "Posted \r\nOctober 11, 2019 03:53:17\r\nTwo foreign-born Florida businessmen tied to President Donald Trump's personal lawyer Rudy Giuliani have been arrested on campaign finance violations resulting from a US$325,000 (AU$480,000) donation to a political action c… [+3974 chars]",
+      "date": "October 10, 2019 10:23 PM",
+      "description": "Two foreign-born Florida businessmen associated with US President Donald Trump's personal lawyer Rudy Giuliani are arrested",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://www.abc.net.au/news/image/11592490-16x9-700x394.jpg)"
+      },
+      "publishedAt": "2019-10-10T16:53:17Z",
+      "source": {
+        "id": "abc-news-au",
+        "name": "ABC News (AU)"
+      },
+      "title": "Two Giuliani associates tied to Trump Ukraine scandal arrested on campaign finance charges - ABC News",
+      "url": "https://www.abc.net.au/news/2019-10-11/rudy-giuliani-business-associates-arrested-ukraine-scandal/11592468",
+      "urlToImage": "https://www.abc.net.au/news/image/11592490-16x9-700x394.jpg"
+    },
+    {
+      "author": "Timothy B. Lee",
+      "content": "Enlarge/ Hong Kong protestors in August 2019.\r\n56 with 40 posters participating\r\nApple has yanked an app called HKmap.live from its app store just days after approving it. The app used crowdsourcing to track the location of protestors and police officers in r… [+3791 chars]",
+      "date": "October 11, 2019 12:19 AM",
+      "description": "\"The app has been used to target and ambush police\" in Hong Kong, Apple claims.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://cdn.arstechnica.net/wp-content/uploads/2019/10/GettyImages-1169789711-760x380.jpg)"
+      },
+      "publishedAt": "2019-10-10T18:49:00Z",
+      "source": {
+        "id": "ars-technica",
+        "name": "Ars Technica"
+      },
+      "title": "In flip-flop, Apple bans app used by Hong Kong protestors - Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2019/10/apple-approves-then-bans-hong-kong-app-after-chinese-criticism/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2019/10/GettyImages-1169789711-760x380.jpg"
+    },
     {
       "author": null,
       "content": "Here is an example of what Ray Tracing can do with a simple game such as Minecraft. Imagine all the endless possibilities with Call of Duty!\r\nREAD MORE: FIFA 21 PS5: What Sonys next gen console will mean for EAs football game\r\nImproved Audio\r\n<ul><li>Increase… [+1872 chars]",
@@ -15,13 +49,27 @@
         "changingThisBreaksApplicationSecurity": "url(https://realsport101.com/wp-content/uploads/2019/10/mw1-4.jpg)"
       },
       "publishedAt": "2019-10-10T10:00:00Z",
-      "source": {
-        "id": null,
-        "name": "Realsport101.com"
-      },
+      "source": "Realsport101.com",
       "title": "Call of Duty: What does the PS5 mean for the future of Modern Warfare & the CoD franchise? - RealSport",
       "url": "https://realsport101.com/news/other-esports/call-of-duty/call-of-duty-modern-warfare-ps5-mean-for-the-future-of-cod-haptic-mobile-guns-beta/",
       "urlToImage": "https://realsport101.com/wp-content/uploads/2019/10/mw1-4.jpg"
+    },
+    {
+      "author": "Christian de Looper",
+      "content": "The MacBook Pro is Apples flagship laptop, offering an intersection of classic Apple design and performance. Depending on the screen size and your preferred configuration, a MacBook Pro can get expensivebut you can now buy the entry-level MacBook Pro for $1,2… [+4417 chars]",
+      "date": "October 10, 2019 11:50 PM",
+      "description": "The entry-level MacBook Pro is currently on sale for $1,200.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://thumbor.forbes.com/thumbor/600x315/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d9e59e54223bf0006b81ab2%2F960x0.jpg)"
+      },
+      "publishedAt": "2019-10-10T18:20:07Z",
+      "source": {
+        "id": null,
+        "name": "Forbes.com"
+      },
+      "title": "The MacBook Pro Is Now $99 Off - Forbes",
+      "url": "https://www.forbes.com/sites/forbes-finds/2019/10/10/the-macbook-pro-is-now-99-off/",
+      "urlToImage": "https://thumbor.forbes.com/thumbor/600x315/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d9e59e54223bf0006b81ab2%2F960x0.jpg"
     },
     {
       "author": "Emily Bary",
@@ -203,57 +251,26 @@
       "title": "EMLC: Bet On E.M Currency Appreciation With This 6.5% Yielding Fund",
       "url": "https://seekingalpha.com/article/4295782-emlc-bet-em-currency-appreciation-6_5-percent-yielding-fund",
       "urlToImage": "https://static.seekingalpha.com/uploads/2019/10/8/saupload_pexels-photo-325154.jpeg"
-    },
-    {
-      "author": "DINO",
-      "content": "O Project Management Institute (PMI) anunciou hoje os 50 principais projetos notáveis e influentes dos últimos 50 anos em sua lista de Projetos mais influentes. Este é um ranking inédito do PMI que celebra os projetos mais impactantes dos últimos 50 anos e de… [+9451 chars]",
-      "date": "October 7, 2019 11:10 PM",
-      "description": "De arranha-céus à tecnologia de ponta e descoberta científica, o PMI reconhece os esforços extraordinários que redefiniram o nosso mundo",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(http://p2.trrsf.com/image/fget/cf/800/450/middle/s1.trrsf.com/atm/3/core/_img/terra-logo-white-bg-v3.jpg)"
-      },
-      "publishedAt": "2019-10-07T17:40:28Z",
-      "source": "Terra.com.br",
-      "title": "Project Management Institute anuncia os 50 principais projetos mais influentes dos últimos 50 anos",
-      "url": "https://www.terra.com.br/noticias/dino/project-management-institute-anuncia-os-50-principais-projetos-mais-influentes-dos-ultimos-50-anos,4a076ab3b2e4f8c82b3a1d2be7041ec75va153ci.html",
-      "urlToImage": "http://p2.trrsf.com/image/fget/cf/800/450/middle/s1.trrsf.com/atm/3/core/_img/terra-logo-white-bg-v3.jpg"
-    },
-    {
-      "author": "Christine Vasileva",
-      "content": "The Internal Revenue Service released its newest FAQ and guidelines on taxing US nationals for crypto transactions. The updated guidelines may come as a surprise to those that once rejoiced because of hard forks and the free coins that came with them.\r\nIs a H… [+2777 chars]",
-      "date": "October 10, 2019 12:32 AM",
-      "description": "The Internal Revenue Service released its newest FAQ and guidelines on taxing US nationals for crypto transactions. The updated guidelines may come as a surprise to those that once rejoiced because of hard forks and the “free” coins that came with them. Is a …",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://bitcoinist.com/wp-content/uploads/2018/06/shutterstock_1055588426.jpg)"
-      },
-      "publishedAt": "2019-10-09T19:02:19Z",
-      "source": {
-        "id": null,
-        "name": "Bitcoinist.com"
-      },
-      "title": "IRS Releases Guide on Crypto Taxation, with Confusion on Hard Forks",
-      "url": "https://bitcoinist.com/irs-releases-guide-on-crypto-taxation-with-confusion-on-hard-forks/",
-      "urlToImage": "https://bitcoinist.com/wp-content/uploads/2018/06/shutterstock_1055588426.jpg"
-    },
-    {
-      "author": "Chris Burns",
-      "content": "In May of this year, IRS Commissioner Charles Rettig made a comment about releasing future guidance on the taxation of cryptocurrency in the USA. Today that guidance was revealed. This is the first guidance released by the IRS on this subject since their rela… [+1777 chars]",
-      "date": "October 10, 2019 12:32 AM",
-      "description": "In May of this year, IRS Commissioner Charles Rettig made a comment about releasing future guidance on the taxation of cryptocurrency in the USA. Today that guidance was revealed. This is the first guidance released by the IRS on this subject since their rela…",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://scdn.slashgear.com/wp-content/uploads/2019/10/slashgear_bitcoin.jpg)"
-      },
-      "publishedAt": "2019-10-09T19:02:13Z",
-      "source": {
-        "id": null,
-        "name": "Slashgear.com"
-      },
-      "title": "IRS just published tax guidance on Cryptocurrency forks",
-      "url": "https://www.slashgear.com/irs-just-published-tax-guidance-on-cryptocurrency-forks-09594876/",
-      "urlToImage": "https://scdn.slashgear.com/wp-content/uploads/2019/10/slashgear_bitcoin.jpg"
     }
   ],
   "bookmark": [
+    {
+      "author": null,
+      "content": "Posted \r\nOctober 11, 2019 03:53:17\r\nTwo foreign-born Florida businessmen tied to President Donald Trump's personal lawyer Rudy Giuliani have been arrested on campaign finance violations resulting from a US$325,000 (AU$480,000) donation to a political action c… [+3974 chars]",
+      "date": "October 10, 2019 10:23 PM",
+      "description": "Two foreign-born Florida businessmen associated with US President Donald Trump's personal lawyer Rudy Giuliani are arrested",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://www.abc.net.au/news/image/11592490-16x9-700x394.jpg)"
+      },
+      "publishedAt": "2019-10-10T16:53:17Z",
+      "source": {
+        "id": "abc-news-au",
+        "name": "ABC News (AU)"
+      },
+      "title": "Two Giuliani associates tied to Trump Ukraine scandal arrested on campaign finance charges - ABC News",
+      "url": "https://www.abc.net.au/news/2019-10-11/rudy-giuliani-business-associates-arrested-ukraine-scandal/11592468",
+      "urlToImage": "https://www.abc.net.au/news/image/11592490-16x9-700x394.jpg"
+    },
     {
       "author": null,
       "content": "Here is an example of what Ray Tracing can do with a simple game such as Minecraft. Imagine all the endless possibilities with Call of Duty!\r\nREAD MORE: FIFA 21 PS5: What Sonys next gen console will mean for EAs football game\r\nImproved Audio\r\n<ul><li>Increase… [+1872 chars]",
@@ -267,6 +284,40 @@
       "title": "Call of Duty: What does the PS5 mean for the future of Modern Warfare & the CoD franchise? - RealSport",
       "url": "https://realsport101.com/news/other-esports/call-of-duty/call-of-duty-modern-warfare-ps5-mean-for-the-future-of-cod-haptic-mobile-guns-beta/",
       "urlToImage": "https://realsport101.com/wp-content/uploads/2019/10/mw1-4.jpg"
+    },
+    {
+      "author": "Timothy B. Lee",
+      "content": "Enlarge/ Hong Kong protestors in August 2019.\r\n56 with 40 posters participating\r\nApple has yanked an app called HKmap.live from its app store just days after approving it. The app used crowdsourcing to track the location of protestors and police officers in r… [+3791 chars]",
+      "date": "October 11, 2019 12:19 AM",
+      "description": "\"The app has been used to target and ambush police\" in Hong Kong, Apple claims.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://cdn.arstechnica.net/wp-content/uploads/2019/10/GettyImages-1169789711-760x380.jpg)"
+      },
+      "publishedAt": "2019-10-10T18:49:00Z",
+      "source": {
+        "id": "ars-technica",
+        "name": "Ars Technica"
+      },
+      "title": "In flip-flop, Apple bans app used by Hong Kong protestors - Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2019/10/apple-approves-then-bans-hong-kong-app-after-chinese-criticism/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2019/10/GettyImages-1169789711-760x380.jpg"
+    },
+    {
+      "author": "Christian de Looper",
+      "content": "The MacBook Pro is Apples flagship laptop, offering an intersection of classic Apple design and performance. Depending on the screen size and your preferred configuration, a MacBook Pro can get expensivebut you can now buy the entry-level MacBook Pro for $1,2… [+4417 chars]",
+      "date": "October 10, 2019 11:50 PM",
+      "description": "The entry-level MacBook Pro is currently on sale for $1,200.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://thumbor.forbes.com/thumbor/600x315/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d9e59e54223bf0006b81ab2%2F960x0.jpg)"
+      },
+      "publishedAt": "2019-10-10T18:20:07Z",
+      "source": {
+        "id": null,
+        "name": "Forbes.com"
+      },
+      "title": "The MacBook Pro Is Now $99 Off - Forbes",
+      "url": "https://www.forbes.com/sites/forbes-finds/2019/10/10/the-macbook-pro-is-now-99-off/",
+      "urlToImage": "https://thumbor.forbes.com/thumbor/600x315/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d9e59e54223bf0006b81ab2%2F960x0.jpg"
     },
     {
       "author": "Emily Bary",

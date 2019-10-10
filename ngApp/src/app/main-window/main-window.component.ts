@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute ,Router, ParamMap } from '@angular/router';
+import { ActivatedRoute ,Router, NavigationEnd } from '@angular/router';
 import {Location} from '@angular/common';
 
 @Component({
@@ -9,15 +9,23 @@ import {Location} from '@angular/common';
 })
 export class MainWindowComponent implements OnInit {
 
-  constructor(private router: Router, private route: ActivatedRoute, private _location: Location) { }
+  public previousUrl:String;
+  public currentUrl:String;
+
+  constructor(private router: Router, private route: ActivatedRoute, private _location: Location) { 
+    router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {        
+        this.previousUrl = this.currentUrl;
+        this.currentUrl = event.url;
+      };
+    });
+  }
 
   goBack($event){
-    let currAddress = this._location.path();
-    let arr = currAddress.split("/");
-    if((arr.length - 1)>2){
-      this._location.back();
-    }
-    else if(arr[arr.length-1]=="view"){
+    let endAdd = this.currentUrl.split('/');
+    endAdd=endAdd[2].split(';');
+    console.log(endAdd);
+    if(this.previousUrl!=undefined && (endAdd[0]=='home' || endAdd[0]=='view')){
       this._location.back();
     }
   }
