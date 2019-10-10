@@ -17,6 +17,7 @@ const routes: Routes = [
   {path: 'main', component:MainWindowComponent,
           children: [{path: 'languages', component:MLanguagesComponent},
                      {path: 'home', component:MHomeComponent},
+                     {path: 'home/', component:MHomeComponent},
                      {path: 'explore', component:MExploreComponent},
                      {path: 'newsChannel', component:MNewsChannelComponent},
                      {path: 'view', component:NewsViewModeComponent},

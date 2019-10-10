@@ -25,6 +25,7 @@ export class MLanguagesComponent implements OnInit {
     {symbol: '中文', language: 'chinese', code: 'zh'}
     // {language: '', code: ''},
   ];
+  public userDetails:any;
   public favLang:String="en";
   public selectedItem:any="";
 
@@ -38,7 +39,14 @@ export class MLanguagesComponent implements OnInit {
       console.log("Navigate");
       this.router.navigate(["view"], {relativeTo: this.route.parent});
   }  
+
+  initializeFav(){
+    this.userDetails=this.apiService.getDetails();
+    this.favLang=this.userDetails.lang;
+  }
+
   ngOnInit() {
+    this.initializeFav();
   }
 
 }

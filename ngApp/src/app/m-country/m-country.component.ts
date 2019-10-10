@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiKeyTestingService} from '../api-key-testing.service';
+import { Router, ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-m-country',
   templateUrl: './m-country.component.html',
@@ -7,7 +8,7 @@ import { ApiKeyTestingService} from '../api-key-testing.service';
 })
 export class MCountryComponent implements OnInit {
 
-  constructor(private apiService:ApiKeyTestingService) { }
+  constructor(private apiService:ApiKeyTestingService, private router:Router, private route:ActivatedRoute) { }
   
   public windTitle:String="Country";
   public country=[
@@ -77,9 +78,9 @@ export class MCountryComponent implements OnInit {
   }  
 
   countryClick(event, newValue) {
-    // this.router.navigate(["view"], {relativeTo: this.route.parent});
+    this.router.navigate(["home",{ lang:this.details.lang, country:newValue.code, category:''}], {relativeTo: this.route.parent});
   }  
-
+  
   ngOnInit() {
     this.details = this.apiService.getDetails();
     this.favCountry = this.details.country;

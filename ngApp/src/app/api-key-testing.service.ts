@@ -38,6 +38,19 @@ export class ApiKeyTestingService {
                     .pipe( catchError(e=> throwError(e)));
   }
   
+  getNews(lang:String, country:String, category:String):Observable<INews[]>{
+    if(lang===null){
+      let userDetails =this.getDetails();
+      lang=userDetails.lang;
+      country=userDetails.country;
+      category=userDetails.category;
+    }
+    let add = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&language=${lang}&apiKey=${this._apiKey}`;
+    console.log(add);
+    return this.http.get<INews[]>(add)
+                    .pipe( catchError(e=>throwError(e)));
+  }
+
   // This will save api key in user Configuration file by calling function in main process
   saveAPI(){
     this.ipc.send("setAPIKey", this._apiKey);
