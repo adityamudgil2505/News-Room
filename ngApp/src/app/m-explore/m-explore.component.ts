@@ -11,6 +11,7 @@ export class MExploreComponent implements OnInit {
   constructor(private apiService: ApiKeyTestingService, private _sanitizer: DomSanitizer) { }
 
   public windTitle="Explore";  
+  public userDetails:any;
   public category=[
     {imgLink:this._sanitizer.bypassSecurityTrustStyle(`url(./assets/img/category/business.jpeg)`), title: 'Business', code: 'business'},
     {imgLink:this._sanitizer.bypassSecurityTrustStyle(`url(./assets/img/category/entertainment.jpeg)`), title: 'Entertainment', code: 'entertainment'},
@@ -20,14 +21,25 @@ export class MExploreComponent implements OnInit {
     {imgLink:this._sanitizer.bypassSecurityTrustStyle(`url(./assets/img/category/sports.jpeg)`), title: 'Sports', code: 'sports'},
     {imgLink:this._sanitizer.bypassSecurityTrustStyle(`url(./assets/img/category/technology.jpeg)`), title: 'Technology', code: 'technology'}
   ];
+  public favCategory:String="general";
+
+  categoryFavClick($event, newValue){
+    this.favCategory=newValue.code;
+    this.apiService.saveCategory(this.favCategory);
+  }
   
   listClick(event, newValue) {
     console.log(newValue);
-    // this.selectedItem = newValue;  // don't forget to update the model here
-    // this.apiService.saveLang(newValue.code);
     // this.router.navigate(["view"], {relativeTo: this.route.parent});
   } 
+
+  initializeFavCategory(){
+    this.userDetails=this.apiService.getDetails();
+    this.favCategory=this.userDetails.category;
+  }
+
   ngOnInit() {
+    this.initializeFavCategory();
     for(let i=0; i<this.category.length; i++){
       // this.category[i].imgLink = this.transform(`url(${this.category[i].imgLink})`, typeof(`url(${this.category[i].imgLink})`)) ;
     }

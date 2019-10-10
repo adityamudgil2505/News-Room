@@ -3,8 +3,9 @@
     <h1>{{windTitle}}</h1>
   </div>
   <div class="container">
-    <div class="container-item" (click)="listClick($event, item)" *ngFor="let item of category">
-      <div class="image" [style.background-image]="item.imgLink">
+    <div class="container-item" *ngFor="let item of category">
+      <div class="fav-icon" [ngClass]="{'active': favCategory == item.code}" ><i class="material-icons" (click)="categoryFavClick($event, item)">favorite</i></div>
+      <div class="image" [style.background-image]="item.imgLink" (click)="listClick($event, item)">
           <!-- <div class="symbol">{{item.symbol}}</div> -->
           <div class="title">{{item.title|titlecase}}</div>
       </div>      

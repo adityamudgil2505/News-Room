@@ -60,6 +60,12 @@ ipcMain.on('setLang', (event, arg) => {
   });
 })
 
+ipcMain.on('setCategory', (event, arg) => {
+  file.category = arg;
+  fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
+  });
+})
+
 ipcMain.on('setCountry', (event, arg) => {
   file.country = arg;
   fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {

@@ -52,6 +52,10 @@ export class ApiKeyTestingService {
     this.ipc.send("setCountry", country);
   }
 
+  saveCategory(cat:String){
+    this.ipc.send("setCategory", cat);
+  }
+
   getDetails(){
     let obj:any;
     obj = this.ipc.sendSync("fetchDetails");
