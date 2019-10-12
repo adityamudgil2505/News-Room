@@ -38,13 +38,15 @@ export class ApiKeyTestingService {
                     .pipe( catchError(e=> throwError(e)));
   }
   
-  getNews(lang:String, country:String, category:String, source:String=''):Observable<INews[]>{
+  getNews(lang:String, country:String, category:String, source:String):Observable<INews[]>{
     if(lang===null){
       let userDetails =this.getDetails();
       lang=userDetails.lang;
       country=userDetails.country;
-      category=userDetails.category;
+      category=userDetails.category;   
+      source='';   
     }
+    console.log(source);
     let add = `https://newsapi.org/v2/top-headlines?sources=${source}&country=${country}&category=${category}&language=${lang}&apiKey=${this._apiKey}`;
     console.log(add);
     return this.http.get<INews[]>(add)

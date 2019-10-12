@@ -7,6 +7,74 @@
   "category": "sports",
   "recent": [
     {
+      "author": "News18 Sports",
+      "content": "Dutee Chand shattered the 100-meter national record with a time of 11.22 seconds during the semi-finals at the National Open Athletics Championships in Ranchi on Friday.\r\nThe previous national record was 11.26 seconds, held jointly by Dutee and Rachita Mistry… [+2579 chars]",
+      "date": "October 11, 2019 8:44 PM",
+      "description": "Dutee Chand broke the 100m national record with a time of 11.22 seconds during the semi-finals to better her own mark by  0.04 seconds.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://images.news18.com/ibnlive/uploads/2018/08/dutee-chand.jpg)"
+      },
+      "publishedAt": "2019-10-11T15:14:00Z",
+      "source": {
+        "id": null,
+        "name": "News18.com"
+      },
+      "title": "Dutee Chand Breaks Her Own 100m Record En Route to Gold at National Open Athletics Championships - News18",
+      "url": "https://www.news18.com/news/sports/dutee-chand-breaks-own-100m-record-at-national-open-athletics-championships-2342413.html",
+      "urlToImage": "https://images.news18.com/ibnlive/uploads/2018/08/dutee-chand.jpg"
+    },
+    {
+      "author": "Indo Asian News Service",
+      "content": "India vice-captain Ajinkya Rahane on Friday said his and Virat Kohli’s communication while batting together helps a lot as India rode the skipper’s career-best and record breaking 254 not out to post a mammoth 601/5d in the first innings of the second Test he… [+1707 chars]",
+      "date": "October 11, 2019 7:29 PM",
+      "description": "IND vs SA: Kohli and Jadeja, promoted to No. 6 with Hanuma Vihari not playing, shared a 225-run stand for the fifth wicket while Rahane and Kohli had an association of 178 runs just before Rahane got out.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/10/11/Pictures/india-south-africa-cricket_b8fe768a-ec2e-11e9-a1fd-918c38724d55.jpg)"
+      },
+      "publishedAt": "2019-10-11T13:59:35Z",
+      "source": {
+        "id": null,
+        "name": "Hindustantimes.com"
+      },
+      "title": "India vs South Africa: ‘Don’t think it’s a 600+ wicket,’ Ajinkya Rahane lauds Virat Kohli and Ravindra... - Hindustan Times",
+      "url": "https://www.hindustantimes.com/cricket/india-vs-south-africa-don-t-think-it-s-a-600-wicket-ajinkya-rahane-lauds-virat-kohli-and-ravindra-jadeja/story-duJ090xO6uw9PdodHYTRBM.html",
+      "urlToImage": "https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/10/11/Pictures/india-south-africa-cricket_b8fe768a-ec2e-11e9-a1fd-918c38724d55.jpg"
+    },
+    {
+      "author": null,
+      "content": null,
+      "date": "October 11, 2019 7:40 PM",
+      "description": "Cricket News: Michael Vaughan was trolled by Indian cricket fans on Friday after the former England skipper criticised the Test match pitches in India, terming the",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://static.toiimg.com/thumb/msid-71543840,width-1070,height-580,imgsize-1303262,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg)"
+      },
+      "publishedAt": "2019-10-11T14:10:13Z",
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "title": "India vs South Africa: Michael Vaughan trolled for calling Test pitches in India as boring - Times of India",
+      "url": "https://timesofindia.indiatimes.com/sports/cricket/south-africa-in-india/india-vs-south-africa-michael-vaughan-trolled-for-calling-test-pitches-in-india-as-boring/articleshow/71543786.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-71543840,width-1070,height-580,imgsize-1303262,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+    },
+    {
+      "author": null,
+      "content": null,
+      "date": "October 11, 2019 11:40 AM",
+      "description": "Cricket News: When Virat Kohli is on song, he is unstoppable. The Indian captain on Friday added another feather to his already illustrious cap, notching up his 26t",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://static.toiimg.com/thumb/msid-71535515,width-1070,height-580,imgsize-1107285,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg)"
+      },
+      "publishedAt": "2019-10-11T06:10:06Z",
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "title": "India vs South Africa: Virat Kohli hits 26th Test century, overtakes Inzamam-ul-Haq - Times of India",
+      "url": "https://timesofindia.indiatimes.com/sports/cricket/south-africa-in-india/india-vs-south-africa-virat-kohli-hits-26th-test-century-overtakes-inzamam-ul-haq/articleshow/71535491.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-71535515,width-1070,height-580,imgsize-1107285,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+    },
+    {
       "author": null,
       "content": "Posted \r\nOctober 11, 2019 03:53:17\r\nTwo foreign-born Florida businessmen tied to President Donald Trump's personal lawyer Rudy Giuliani have been arrested on campaign finance violations resulting from a US$325,000 (AU$480,000) donation to a political action c… [+3974 chars]",
       "date": "October 10, 2019 10:23 PM",
@@ -189,87 +257,25 @@
       "title": "Modern Linux Laptops with Coreboot Firmware From System76",
       "url": "https://www.cyberciti.biz/open-source/modern-linux-laptops-with-coreboot-firmware-from-system76/",
       "urlToImage": "https://www.cyberciti.biz/media/new/cms/2019/10/Modern-Linux-Laptops-with-Coreboot-Open-Source-Firmware-From-System76.png"
-    },
-    {
-      "author": "Clem Chambers, Contributor, Clem Chambers, Contributor https://www.forbes.com/sites/investor/people/clem/",
-      "content": "<ul><li>Share to facebook</li><li>Share to twitter</li><li>Share to linkedin</li></ul>\r\nDisrupt is the \"what is hot in Silicon Valley\" conference. It was meant to be the biggest, best ever but to me it seemed pretty quiet for the exhibition of the beating hea… [+6162 chars]",
-      "date": "October 10, 2019 5:53 PM",
-      "description": "Bitcoin has crashed but it doesn’t seem like \"the end\" to me, just a nasty pullback and a delay to the great day bitcoin runs past $20,000.",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://thumbor.forbes.com/thumbor/600x315/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1177852796%2F960x0.jpg%3Ffit%3Dscale)"
-      },
-      "publishedAt": "2019-10-10T12:23:00Z",
-      "source": "Forbes.com",
-      "title": "Is Bitcoin Dead?",
-      "url": "https://www.forbes.com/sites/investor/2019/10/10/is-bitcoin-dead/",
-      "urlToImage": "https://thumbor.forbes.com/thumbor/600x315/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1177852796%2F960x0.jpg%3Ffit%3Dscale"
-    },
-    {
-      "author": "Irina Slav",
-      "content": "Many social media users had a field day recently when Greta Thunberg tweeted a picture in which the 16-year-old activist was snacking on food in plastic packaging. Activists against the oil industry, the argument went, should not take advantage of the product… [+3827 chars]",
-      "date": "October 10, 2019 10:30 PM",
-      "description": "Many social media users had a field day recently when Greta Thunberg tweeted a picture in which the 16-year-old activist was snacking on food in plastic packaging. Activists against the oil industry, the argument went, should not take advantage of the product…",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://d32r1sh890xpii.cloudfront.net/article/718x300/600aeaabb12ef4f951f5af79ffe9b906.jpg)"
-      },
-      "publishedAt": "2019-10-10T17:00:00Z",
-      "source": {
-        "id": null,
-        "name": "Oilprice.com"
-      },
-      "title": "How Much Crude Oil Does Plastic Production Really Consume?",
-      "url": "https://oilprice.com/Energy/Energy-General/How-Much-Crude-Oil-Does-Plastic-Production-Really-Consume.html",
-      "urlToImage": "https://d32r1sh890xpii.cloudfront.net/article/718x300/600aeaabb12ef4f951f5af79ffe9b906.jpg"
-    },
-    {
-      "author": "davitbabayan",
-      "content": "Bitcoin SV, an offshoot blockchain project that self-proclaimed bitcoin inventor Craig Wright supports, is losing touch with its core audience on Twitter. \r\nCryptocurrency researchers at the TIE found that Bitcoin SV lately suffered one of its worst ‘Twitter-… [+2624 chars]",
-      "date": "October 7, 2019 9:00 PM",
-      "description": "Bitcoin SV, an offshoot blockchain project that self-proclaimed bitcoin inventor Craig Wright supports, is losing touch with its core audience on Twitter. Cryptocurrency researchers at the TIE found that Bitcoin SV lately suffered one of its worst ‘Twitter-me…",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://bitcoinist.com/wp-content/uploads/2019/10/shutterstock_216645019.jpg)"
-      },
-      "publishedAt": "2019-10-07T15:30:29Z",
-      "source": {
-        "id": null,
-        "name": "Bitcoinist.com"
-      },
-      "title": "Twitter Mentions of Bitcoin SV Down 87% Since May Highs",
-      "url": "https://bitcoinist.com/twitter-mentions-of-bitcoin-sv-down-87-percent-since-may-highs/",
-      "urlToImage": "https://bitcoinist.com/wp-content/uploads/2019/10/shutterstock_216645019.jpg"
-    },
-    {
-      "author": "Harrison Schwartz",
-      "content": "(Source - Pexels)\r\nOver the past few weeks, I've been taking a deep dive into emerging market currencies. In \"A Closer Look at Emerging Market Currency Instability\" I detailed the driving factors behind the ongoing weakness in currency markets. Chiefly, exces… [+8984 chars]",
-      "date": "October 10, 2019 12:42 AM",
-      "description": "While gold and bitcoin offer a hedge against the U.S dollar, they don't deliver a yield. EMLC offers both the hedge and a 6.5% yield. With the U.S dollar signal",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://static.seekingalpha.com/uploads/2019/10/8/saupload_pexels-photo-325154.jpeg)"
-      },
-      "publishedAt": "2019-10-09T19:12:08Z",
-      "source": "Seekingalpha.com",
-      "title": "EMLC: Bet On E.M Currency Appreciation With This 6.5% Yielding Fund",
-      "url": "https://seekingalpha.com/article/4295782-emlc-bet-em-currency-appreciation-6_5-percent-yielding-fund",
-      "urlToImage": "https://static.seekingalpha.com/uploads/2019/10/8/saupload_pexels-photo-325154.jpeg"
     }
   ],
   "bookmark": [
     {
       "author": null,
-      "content": "Posted \r\nOctober 11, 2019 03:53:17\r\nTwo foreign-born Florida businessmen tied to President Donald Trump's personal lawyer Rudy Giuliani have been arrested on campaign finance violations resulting from a US$325,000 (AU$480,000) donation to a political action c… [+3974 chars]",
-      "date": "October 10, 2019 10:23 PM",
-      "description": "Two foreign-born Florida businessmen associated with US President Donald Trump's personal lawyer Rudy Giuliani are arrested",
+      "content": null,
+      "date": "October 11, 2019 11:40 AM",
+      "description": "Cricket News: When Virat Kohli is on song, he is unstoppable. The Indian captain on Friday added another feather to his already illustrious cap, notching up his 26t",
       "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://www.abc.net.au/news/image/11592490-16x9-700x394.jpg)"
+        "changingThisBreaksApplicationSecurity": "url(https://static.toiimg.com/thumb/msid-71535515,width-1070,height-580,imgsize-1107285,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg)"
       },
-      "publishedAt": "2019-10-10T16:53:17Z",
+      "publishedAt": "2019-10-11T06:10:06Z",
       "source": {
-        "id": "abc-news-au",
-        "name": "ABC News (AU)"
+        "id": "the-times-of-india",
+        "name": "The Times of India"
       },
-      "title": "Two Giuliani associates tied to Trump Ukraine scandal arrested on campaign finance charges - ABC News",
-      "url": "https://www.abc.net.au/news/2019-10-11/rudy-giuliani-business-associates-arrested-ukraine-scandal/11592468",
-      "urlToImage": "https://www.abc.net.au/news/image/11592490-16x9-700x394.jpg"
+      "title": "India vs South Africa: Virat Kohli hits 26th Test century, overtakes Inzamam-ul-Haq - Times of India",
+      "url": "https://timesofindia.indiatimes.com/sports/cricket/south-africa-in-india/india-vs-south-africa-virat-kohli-hits-26th-test-century-overtakes-inzamam-ul-haq/articleshow/71535491.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-71535515,width-1070,height-580,imgsize-1107285,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
     },
     {
       "author": null,

@@ -148,7 +148,8 @@ export class MNewsChannelComponent implements OnInit {
   ];
   listClick(event, newValue) {
     this.selectedItem = newValue;  // don't forget to update the model here
-    this.router.navigate(["home",{ lang:'', country:newValue.code, category:newValue.category, source:newValue.id}], {relativeTo: this.route.parent});
+    console.log(newValue.id);
+    this.router.navigate(["home",{ lang:"", country:"", category:"", source:newValue.id}], {relativeTo: this.route.parent});
   }  
   ngOnInit() {
   }

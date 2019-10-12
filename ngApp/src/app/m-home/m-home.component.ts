@@ -27,7 +27,8 @@ export class MHomeComponent implements OnInit {
       let country=params.get('country');
       let category=params.get('category');
       let lang=params.get('lang');
-      this.apiService.getNews(lang, country, category)
+      let source=params.get('source');
+      this.apiService.getNews(lang, country, category, source)
                     .subscribe((data:any)=>{                     
                       this.news=data.articles;
                       for(let i=0; i<this.news.length; i++){
