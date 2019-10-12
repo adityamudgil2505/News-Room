@@ -2,7 +2,7 @@ const url = require('url');
 const path = require('path');
 const fs = require('fs');
 const electron = require('electron');
-const {app, BrowserWindow, Menu, Tray, ipcMain}=electron;
+const {app, BrowserWindow, Menu, Tray, ipcMain, shell}=electron;
 
 var fileName = './userConfig.json';
 var file = fs.readFileSync(fileName);
@@ -114,5 +114,8 @@ ipcMain.on("addToRecent", (event, arg)=>{
     file.recent.unshift(arg);
     fs.writeFile(fileName, JSON.stringify(file, null, 2), function (err) {
     });
-  }
+  }  
 })
+  ipcMain.on("openBrowser", (event, arg)=>{
+    shell.openExternal(arg);
+  })

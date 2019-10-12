@@ -88,4 +88,8 @@ export class ApiKeyTestingService {
     this.ipc.send("addToRecent", news);
   }
 
+  openBrowser(link:String){
+    this.ipc.send("openBrowser", link);
+  }
+
 }

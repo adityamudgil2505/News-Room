@@ -56,6 +56,11 @@ export class NewsViewModeComponent implements OnInit {
     }
   }
 
+  facebookShare(link:String){
+    link = `${link}${this.newsRecent.url}`;
+    this.apiService.openBrowser(link);
+  }
+
   ngOnInit() {
     // this.apiService.isValidAPI()
     //                .subscribe((data:any)=>{                     
