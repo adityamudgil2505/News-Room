@@ -92,4 +92,8 @@ export class ApiKeyTestingService {
     this.ipc.send("openBrowser", link);
   }
 
+  copyContentToClipboard(content:String){
+    this.ipc.send("copyContentToClipboard",content);
+  }
+
 }

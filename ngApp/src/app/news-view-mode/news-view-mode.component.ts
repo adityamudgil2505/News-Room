@@ -73,6 +73,10 @@ export class NewsViewModeComponent implements OnInit {
     this.apiService.openBrowser(link);
   }
 
+  copyToClipboard(){
+   this.apiService.copyContentToClipboard(this.newsRecent.url);
+  }
+
   ngOnInit() {
     // this.apiService.isValidAPI()
     //                .subscribe((data:any)=>{                     

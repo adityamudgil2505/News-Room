@@ -2,7 +2,7 @@ const url = require('url');
 const path = require('path');
 const fs = require('fs');
 const electron = require('electron');
-const {app, BrowserWindow, Menu, Tray, ipcMain, shell}=electron;
+const {app, BrowserWindow, Menu, Tray, ipcMain, shell, clipboard}=electron;
 
 var fileName = './userConfig.json';
 var file = fs.readFileSync(fileName);
@@ -17,7 +17,7 @@ function createWindow(){
     pathname:path.join(__dirname, '/dist/ngApp/index.html'),
     protocol: 'file',
     slashes: true
-  }));
+  }));  
   win.webContents.openDevTools();
   win.on('closed', ()=> win=null);
   win.once('ready-to-show', ()=>{
@@ -118,4 +118,8 @@ ipcMain.on("addToRecent", (event, arg)=>{
 })
   ipcMain.on("openBrowser", (event, arg)=>{
     shell.openExternal(arg);
+  })
+  
+  ipcMain.on("copyContentToClipboard", (event, arg)=>{
+    clipboard.writeText(arg);
   })
