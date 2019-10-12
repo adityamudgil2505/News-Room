@@ -9,6 +9,7 @@ $font2: Tinos, serif;
 .top-level{
   width: 900px;
   height: 600px;
+  overflow: hidden;
   .window-title{
     color: $white;
     h1{
@@ -27,11 +28,11 @@ $font2: Tinos, serif;
     .heading-container{
       color: $light-grey;
       width: 900px;
-      height: 300px;
+      height: 350px;
       display: grid;
       grid-template-columns: 660px 220px auto;
       .newsImg{
-        height: 260px;
+        height: 310px;
         width: 600px;      
         background-size: cover;
         background-position: center;
@@ -53,7 +54,7 @@ $font2: Tinos, serif;
         .share{
           display: grid;
           float: left;
-          margin-top: 120px;
+          margin-top: 130px;
           img{
             width: 30px;
             margin: 2px 5px;
@@ -83,8 +84,8 @@ $font2: Tinos, serif;
           text-overflow: ellipsis;
           display: -webkit-box;
           line-height: 1.5;
-          max-height: 240px;
-          -webkit-line-clamp: 9;
+          max-height: 290px;
+          -webkit-line-clamp: 12;
           -webkit-box-orient: vertical;
         }
       }
@@ -92,6 +93,8 @@ $font2: Tinos, serif;
     .content{
       color: white;
       text-align: justify;
+      margin: auto;
+      width: 90%;
     }  
   }  
 }
