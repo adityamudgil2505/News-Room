@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiKeyTestingService} from '../api-key-testing.service';
-import { DomSanitizer} from '@angular/platform-browser'
+import { DomSanitizer, SafeStyle} from '@angular/platform-browser'
 @Component({
   selector: 'app-news-view-mode',
   templateUrl: './news-view-mode.component.html',
@@ -21,6 +21,8 @@ export class NewsViewModeComponent implements OnInit {
   public bookmarked:Boolean=false;
   
   public newsRecent:any;
+  public whatsAppLink:any;
+  public whatsAppLink2:any;
 
   toggleBookmark($event){
     if(this.bookmarked==true){
@@ -80,7 +82,13 @@ export class NewsViewModeComponent implements OnInit {
     //                }
     //               )    
     this.newsRecent=this.apiService.getDetails().recent[0];
-    this.newsRecent.image=this._sanitizer.bypassSecurityTrustStyle(`url(${this.newsRecent.urlToImage})`);
+    this.newsRecent.image=this._sanitizer.bypassSecurityTrustStyle(`url(${this.newsRecent.urlToImage})`);    
+    
+    this.whatsAppLink=encodeURIComponent(this.newsRecent.url);
+    this.whatsAppLink=`whatsapp://send?text=${this.whatsAppLink}`;
+    this.whatsAppLink=`${this.whatsAppLink}‏%0a‎*Download NewsRoom for Mac-Windows-Linux*`;
+    this.whatsAppLink=this._sanitizer.bypassSecurityTrustUrl(`${this.whatsAppLink}`);
+
     this.checkBookmark();
   };  
 }

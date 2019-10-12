@@ -7,11 +7,13 @@
       <div class="newsImg" *ngIf="newsRecent.urlToImage" [style.background-image]="newsRecent.image">
         <div class="bookmark"><img [ngClass]="{'active': bookmarked == true}" (click)="toggleBookmark($event)" src="./assets/img/icons/bookmark.png"></div>
         <div class="share">
-          <img src="./assets/img/icons/Facebook.png">
-          <img src="./assets/img/icons/Instagram.png">
-          <img src="./assets/img/icons/WhatsApp.png">
-          <img src="./assets/img/icons/Twitter.png">
-          <img src="./assets/img/icons/share.png">
+          <!-- <img src="./assets/img/icons/Facebook.png" (click)="facebookShare(https://www.facebook.com/sharer/sharer.php?u={{newsRecent.url}})"> -->
+          <!-- <img src="./assets/img/icons/Instagram.png"> -->
+          <a [href]="whatsAppLink" data-action="share/whatsapp/share"><img src="./assets/img/icons/WhatsApp.png"></a>
+          <a href><img src="./assets/img/icons/Twitter.png"></a>
+          <a><img src="./assets/img/icons/share.png"></a>          
+          <!-- <a href="https://www.facebook.com/sharer/sharer.php?u={{newsRecent.url}}" target="_blank">Share</a> -->
+          <!-- http://twitter.com/share?text=text goes here&url=http://url -->
         </div>
       </div>
       <div class="sub-description">
