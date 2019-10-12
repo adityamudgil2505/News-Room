@@ -61,6 +61,18 @@ export class NewsViewModeComponent implements OnInit {
     this.apiService.openBrowser(link);
   }
 
+  whatsAppShare(){
+    this.whatsAppLink2=encodeURIComponent(this.newsRecent.url);
+    this.whatsAppLink2=`whatsapp://send?text=${this.whatsAppLink2}`;
+    this.whatsAppLink2=`${this.whatsAppLink2}‏%0a‎*Download NewsRoom for Mac-Windows-Linux*`;
+    this.apiService.openBrowser(this.whatsAppLink2);
+  }
+
+  twitterShare(){
+    let link = `http://twitter.com/share?text=Download NewsRoom for Mac-Windows-Linux&url=${this.newsRecent.url}`
+    this.apiService.openBrowser(link);
+  }
+
   ngOnInit() {
     // this.apiService.isValidAPI()
     //                .subscribe((data:any)=>{                     
