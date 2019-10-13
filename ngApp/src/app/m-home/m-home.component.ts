@@ -3,6 +3,7 @@ import { ApiKeyTestingService} from '../api-key-testing.service';
 import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
 import { Router, ActivatedRoute, ParamMap} from '@angular/router';
 import * as moment from 'moment';
+import { dirname } from 'path';
 @Component({
   selector: 'app-m-home',
   templateUrl: './m-home.component.html',
@@ -33,10 +34,15 @@ export class MHomeComponent implements OnInit {
                     .subscribe((data:any)=>{                     
                       this.news=data.articles;
                       for(let i=0; i<this.news.length; i++){
-                        this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);
+                        if(this.news[i].urlToImage==null){
+                          this.news[i].urlToImage=__dirname+"/assets/img/no-image.png";
+                        }
+                        this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);                        
+                        console.log(this.news[i].image);
                       }
                     },
                     error=>{
+                      console.log("error occur :)");
                       console.log(error.error.message);
                     }
                   )

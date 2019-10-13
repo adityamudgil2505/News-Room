@@ -7,6 +7,40 @@
   "category": "science",
   "recent": [
     {
+      "author": "RT",
+      "content": "First spotted by astronomers only earlier this week, the asteroid dubbed 2019 TA7 is set to fly by Earth at a speed of over 22,500 miles per hour at 6:53pm ET on Monday, data from NASA’s Jet Propulsion Laboratory (JPL) reveals. \r\nAlso on rt.comMusk warns Eart… [+1090 chars]",
+      "date": "October 13, 2019 6:09 PM",
+      "description": "Earth is soon set for another close shave with a hurtling space rock as an 111-foot asteroid is poised to skim past our planet on its closest approach for 115 years.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://cdni.rt.com/files/2019.10/article/5da319372030270d2a24e1bc.jpg)"
+      },
+      "publishedAt": "2019-10-13T12:39:00Z",
+      "source": {
+        "id": "rt",
+        "name": "RT"
+      },
+      "title": "111-foot asteroid screeching towards Earth at over 22,000 miles per hour - RT",
+      "url": "https://www.rt.com/news/470840-asteroid-close-approach-earth/",
+      "urlToImage": "https://cdni.rt.com/files/2019.10/article/5da319372030270d2a24e1bc.jpg"
+    },
+    {
+      "author": null,
+      "content": null,
+      "date": "October 13, 2019 2:37 PM",
+      "description": null,
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(/Users/adityamudgil/Documents/GitHub/News-Room/ngApp/dist/ngApp/assets/img/no-image.png)"
+      },
+      "publishedAt": "2019-10-13T09:07:37Z",
+      "source": {
+        "id": null,
+        "name": "Financialexpress.com"
+      },
+      "title": "PNB, UBI, OBC merger: Outside expert may be roped in to decide logo of new entity - The Financial Express",
+      "url": "https://www.financialexpress.com/industry/banking-finance/pnb-ubi-obc-merger-outside-expert-may-be-roped-in-to-decide-logo-of-new-entity/1734167/",
+      "urlToImage": "/Users/adityamudgil/Documents/GitHub/News-Room/ngApp/dist/ngApp/assets/img/no-image.png"
+    },
+    {
       "author": "The ID Staff",
       "content": "Indias Chandrayaan-2 spacecraft has settled into lunar orbit, just before an emotional and nerve-wracking Moon landing attempted on September 7. Had it succeeded India would have joined a very select club, now comprising the former Soviet Union, the United St… [+5799 chars]",
       "date": "October 13, 2019 10:46 AM",
@@ -226,43 +260,26 @@
       "title": "Samson's record double ton powers Kerala to massive win - Cricbuzz - Cricbuzz",
       "url": "https://www.cricbuzz.com/cricket-news/110329/samsons-record-double-ton-powers-kerala-to-massive-win",
       "urlToImage": "http://www.cricbuzz.com/a/img/v1/600x400/i1/c181540/samson-composed-a-brilliant-do.jpg"
-    },
-    {
-      "author": null,
-      "content": "A gritty fight and a record 9th wicket p'ship between Keshav Maharaj and Vernon Philander frustrated India but late strikes from Ashwin have put India in command. Watch Tanay Tiwari revise the day's play in our Match Story \r\n#INDvSA#Ashwin#KeshavMaharaj\r\nWatc… [+291 chars]",
-      "date": "October 12, 2019 5:49 PM",
-      "description": "A gritty fight and a record 9th wicket p'ship between Keshav Maharaj and Vernon Philander frustrated India but late strikes from Ashwin have put India in com...",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://i.ytimg.com/vi/-5bxBhYDK7o/maxresdefault.jpg)"
-      },
-      "publishedAt": "2019-10-12T12:19:54Z",
-      "source": {
-        "id": null,
-        "name": "Youtube.com"
-      },
-      "title": "IND v SA, 2nd Test Day 3, Match Story: Maharaj-Philander's grit | Advantage India - Cricbuzz",
-      "url": "https://www.youtube.com/watch?v=-5bxBhYDK7o",
-      "urlToImage": "https://i.ytimg.com/vi/-5bxBhYDK7o/maxresdefault.jpg"
-    },
-    {
-      "author": "https://www.facebook.com/KIRIOO7",
-      "content": "IPL Cheerleaders. (Photo Source: Twitter)\r\nThe Indian Premier League is the most celebrated T20 event around the globe. With each passing year, its popularity is increasing exponentially. Here everything is top-notch from world-class players to renowned comme… [+1613 chars]",
-      "date": "October 12, 2019 7:58 PM",
-      "description": "Even the IPL cheerleaders who entertain the audience with their special acts should be given their share of the credit. Their combined efforts have.........",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://www.crictracker.com/wp-content/uploads/2019/10/IPL-Cheerleaders-2.jpg)"
-      },
-      "publishedAt": "2019-10-12T14:28:19Z",
-      "source": {
-        "id": null,
-        "name": "Crictracker.com"
-      },
-      "title": "5 Dark secrets leaked by IPL cheerleaders - CricTracker",
-      "url": "https://m.crictracker.com/5-dark-secrets-leaked-by-ipl-cheerleaders/",
-      "urlToImage": "https://www.crictracker.com/wp-content/uploads/2019/10/IPL-Cheerleaders-2.jpg"
     }
   ],
   "bookmark": [
+    {
+      "author": "RT",
+      "content": "First spotted by astronomers only earlier this week, the asteroid dubbed 2019 TA7 is set to fly by Earth at a speed of over 22,500 miles per hour at 6:53pm ET on Monday, data from NASA’s Jet Propulsion Laboratory (JPL) reveals. \r\nAlso on rt.comMusk warns Eart… [+1090 chars]",
+      "date": "October 13, 2019 6:09 PM",
+      "description": "Earth is soon set for another close shave with a hurtling space rock as an 111-foot asteroid is poised to skim past our planet on its closest approach for 115 years.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://cdni.rt.com/files/2019.10/article/5da319372030270d2a24e1bc.jpg)"
+      },
+      "publishedAt": "2019-10-13T12:39:00Z",
+      "source": {
+        "id": "rt",
+        "name": "RT"
+      },
+      "title": "111-foot asteroid screeching towards Earth at over 22,000 miles per hour - RT",
+      "url": "https://www.rt.com/news/470840-asteroid-close-approach-earth/",
+      "urlToImage": "https://cdni.rt.com/files/2019.10/article/5da319372030270d2a24e1bc.jpg"
+    },
     {
       "author": "Chetna Kapoor",
       "content": "Top-order Indian batsman KL Rahul and Bollywood actress Athiya Shetty's rumoured relationship has taken a step further. The social media PDA has attracted a lot of eyeballs. As Rahul posted a trippy picture of himself on his Instagram handle wearing yellow-ti… [+2175 chars]",

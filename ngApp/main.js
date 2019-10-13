@@ -4,12 +4,13 @@ const fs = require('fs');
 const electron = require('electron');
 const {app, BrowserWindow, Menu, Tray, ipcMain, shell, clipboard}=electron;
 
-var fileName = '/userConfig.json';
-var file = fs.readFileSync(__dirname + fileName, "utf8");
+var fileName = __dirname + '/userConfig.json';
+var file = fs.readFileSync(fileName);
 
 // const iconPath = path.join(__dirname, 'logo.png');
 let win;
 function createWindow(){
+  console.log(fileName);
   win = new BrowserWindow({show:false, height:650, width:1100, titleBarStyle: 'hiddenInset', resizable:false, webPreferences: {
     nodeIntegration: true
     }});
