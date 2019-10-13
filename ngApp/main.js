@@ -10,7 +10,6 @@ var file = fs.readFileSync(fileName);
 // const iconPath = path.join(__dirname, 'logo.png');
 let win;
 function createWindow(){
-  console.log(fileName);
   win = new BrowserWindow({show:false, height:650, width:1100, titleBarStyle: 'hiddenInset', resizable:false, webPreferences: {
     nodeIntegration: true
     }});

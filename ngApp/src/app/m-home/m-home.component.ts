@@ -13,6 +13,11 @@ export class MHomeComponent implements OnInit {
   constructor(private apiService: ApiKeyTestingService, private _sanitizer: DomSanitizer, private router: Router, private route: ActivatedRoute){ }
   public news:any=[];
   public address:any;
+  public noInternet:Boolean;
+
+  refresh(){
+    this.fetchData();
+  }
 
   viewNews($event, newValue){
     newValue.image=this._sanitizer.bypassSecurityTrustStyle(`url(${newValue.urlToImage})`);
@@ -22,7 +27,7 @@ export class MHomeComponent implements OnInit {
     this.apiService.addNewsToRecent(newValue);
     this.router.navigate(["view"], {relativeTo: this.route.parent});
   }
-  ngOnInit() {
+  fetchData(){
     this.route.paramMap.subscribe((params:ParamMap)=>{
       console.log(params);
       let country=params.get('country');
@@ -37,16 +42,21 @@ export class MHomeComponent implements OnInit {
                         if(this.news[i].urlToImage==null){
                           this.news[i].urlToImage=__dirname+"/assets/img/no-image.png";
                         }
-                        this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);                        
-                        console.log(this.news[i].image);
+                        this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);
                       }
+                      this.noInternet=false;
                     },
                     error=>{
                       console.log("error occur :)");
                       console.log(error.error.message);
+                      this.noInternet=true;
+                      // this.router.navigate(["noInternet"], {relativeTo: this.route.parent});
                     }
                   )
       }
     )
+  }
+  ngOnInit() {    
+    this.fetchData();
   }
 }

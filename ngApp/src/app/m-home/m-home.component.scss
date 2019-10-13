@@ -9,6 +9,34 @@ $outline-box: #242424;
 $font1: Lato, sans-serif;
 $font2: Tinos, serif;
 
+.errorWindow{
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  width: 900px;
+  height: 600px;
+  margin-top: 50px;
+  background-color: black;
+  .container{
+    color: $white;
+    margin: 100px 50px;
+    h2{
+      font-size: 3.00rem;
+    }
+    p{
+      opacity: 0.9;
+    }
+    .btn{
+      margin-top: 29px;
+      background-color: $blue-color;
+      filter: grayscale(1);
+      &:hover{
+        filter: grayscale(0) !important;
+      }
+    }
+  }
+}
+
 .top-level{
   width: 900px;
   height: 600px;

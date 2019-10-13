@@ -1,0 +1,34 @@
+$light-grey: #b3b3b3;
+$white: #ffffff;
+$transparent-white: rgba(255, 255, 255, 0.6);
+$outline-grey: #adabab;
+$bg-side-bar: #121212;
+$bg-main: #181818;
+$blue-color: #00c9f3;
+$outline-box: #242424;
+$font1: Lato, sans-serif;
+$font2: Tinos, serif;
+
+.top-level2{
+  width: 900px;
+  height: 600px;
+  margin-top: 50px;
+  .container{
+    color: $white;
+    margin: 100px 50px;
+    h2{
+      font-size: 3.00rem;
+    }
+    p{
+      opacity: 0.9;
+    }
+    .btn{
+      margin-top: 29px;
+      background-color: $blue-color;
+      filter: grayscale(1);
+      &:hover{
+        filter: grayscale(0) !important;
+      }
+    }
+  }
+}
