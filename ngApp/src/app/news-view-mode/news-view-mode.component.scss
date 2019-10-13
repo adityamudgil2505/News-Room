@@ -95,6 +95,22 @@ $font2: Tinos, serif;
       text-align: justify;
       margin: auto;
       width: 90%;
+    }
+    .view-more{
+      position: absolute;
+      color: $light-grey;
+      right: 10px;
+      bottom: 10px;
+      padding: 5px 10px;
+      border: 1px solid $light-grey;
+      border-radius: 5px;
+      font-size: 14px;
+      animation: color 500ms ease-in-out;
+      &:hover{
+        border-color: $white;
+        color: $white;
+        cursor: pointer;
+      }
     }  
   }  
 }
