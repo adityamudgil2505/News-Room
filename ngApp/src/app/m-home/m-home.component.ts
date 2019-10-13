@@ -47,10 +47,7 @@ export class MHomeComponent implements OnInit {
                       this.noInternet=false;
                     },
                     error=>{
-                      console.log("error occur :)");
-                      console.log(error.error.message);
                       this.noInternet=true;
-                      // this.router.navigate(["noInternet"], {relativeTo: this.route.parent});
                     }
                   )
       }

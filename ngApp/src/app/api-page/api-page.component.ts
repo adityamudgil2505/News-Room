@@ -41,8 +41,14 @@ export class ApiPageComponent implements OnInit {
                      this.apiService.saveAPI();
                      this.router.navigate(['/main/home']);
                   },
-                    error=>{
-                      this.errorMsg = error.error.message;
+                    err=>{
+                      console.log(err);
+                      if(err.status==0){
+                        this.errorMsg="No internet. Try again";
+                      }
+                      else{
+                        this.errorMsg = err.error.message;
+                      }                      
                     });    
   }
 }

@@ -9,13 +9,20 @@ $outline-box: #242424;
 $font1: Lato, sans-serif;
 $font2: Tinos, serif;
 
-.top-level2{
-  width: 900px;
-  height: 600px;
-  margin-top: 50px;
+.top-level{
+  width: 100%;
+  height: 500px;
   .container{
     color: $white;
-    margin: 100px 50px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    img{
+      width: 75px;
+      border-radius: 50px;
+      padding: 8px;
+    }
     h2{
       font-size: 3.00rem;
     }

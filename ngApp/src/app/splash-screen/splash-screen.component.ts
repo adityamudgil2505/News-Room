@@ -19,8 +19,14 @@ export class SplashScreenComponent implements OnInit {
           this.apiService.saveAPI();
           this.router.navigate(['/main/home']);
         },
-        error=>{
-          this.router.navigate(['/apikey']);
+        err=>{
+          console.log(err);
+          if(err.status==401){
+            this.router.navigate(['/apikey']);
+          }
+          else if(err.status==0){
+            this.router.navigate(['/noInternet']);
+          }          
         });   
   }
 

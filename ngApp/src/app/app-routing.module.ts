@@ -15,6 +15,7 @@ import {NoInternetComponent} from './no-internet/no-internet.component';
 const routes: Routes = [
   {path: '', component:SplashScreenComponent},
   {path: 'apikey', component:ApiPageComponent},
+  {path: 'noInternet', component:NoInternetComponent},
   {path: 'main', component:MainWindowComponent,
           children: [{path: 'languages', component:MLanguagesComponent},
                      {path: 'home', component:MHomeComponent},
@@ -24,8 +25,7 @@ const routes: Routes = [
                      {path: 'view', component:NewsViewModeComponent},
                      {path: 'recently', component:RecentlyViewedComponent},
                      {path: 'country', component:MCountryComponent},
-                     {path: 'bookmark', component:BookmarkWindowComponent},
-                     {path: 'noInternet', component:NoInternetComponent},
+                     {path: 'bookmark', component:BookmarkWindowComponent}                     
           ]
   },
   {path: 'splash', redirectTo: '/', pathMatch:'full'},    
