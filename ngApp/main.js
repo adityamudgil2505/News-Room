@@ -4,8 +4,8 @@ const fs = require('fs');
 const electron = require('electron');
 const {app, BrowserWindow, Menu, Tray, ipcMain, shell, clipboard}=electron;
 
-var fileName = './userConfig.json';
-var file = fs.readFileSync(fileName);
+var fileName = '/userConfig.json';
+var file = fs.readFileSync(__dirname + fileName, "utf8");
 
 // const iconPath = path.join(__dirname, 'logo.png');
 let win;
