@@ -24,6 +24,11 @@ export class ApiPageComponent implements OnInit {
     this.errorMsg="";
   }
 
+  openbrowser(){
+    let link = "https://newsapi.org/";
+    this.apiService.openBrowser(link);
+  }
+
   // This function will handle our api key 
   // If invalid then will show error message
   // If valid then will save api key to configuration file and proceed to next page

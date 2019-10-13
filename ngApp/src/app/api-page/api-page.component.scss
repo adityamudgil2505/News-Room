@@ -4,6 +4,7 @@
   color: white;
   width: 1100px;
   margin-left: 0px;
+  -webkit-app-region: drag;
   .centered{
     position: relative;
     left: 50%;
@@ -15,8 +16,9 @@
       text-align: center;
       width: 39%;
       margin: auto;      
-      a{
+      span{
         color: gray;
+        cursor: pointer;
       }      
     }
     form{
