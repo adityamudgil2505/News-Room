@@ -19,6 +19,7 @@ import { RecentlyViewedComponent } from './recently-viewed/recently-viewed.compo
 import { MCountryComponent } from './m-country/m-country.component';
 import { BookmarkWindowComponent } from './bookmark-window/bookmark-window.component';
 import { NoInternetComponent } from './no-internet/no-internet.component';
+import { AccountComponent } from './account/account.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NoInternetComponent } from './no-internet/no-internet.component';
     RecentlyViewedComponent,
     MCountryComponent,
     BookmarkWindowComponent,
-    NoInternetComponent
+    NoInternetComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,

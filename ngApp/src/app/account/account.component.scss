@@ -1,0 +1,134 @@
+$light-grey: #b3b3b3;
+$white: #ffffff;
+$outline-grey: #adabab;
+$bg-side-bar: #121212;
+$bg-main: #181818;
+$blue-color: #00c9f3;
+$outline-box: #242424;
+$font1: Lato, sans-serif;
+$font2: Tinos, serif;
+
+.top-level{
+  width: 900px;
+  height: 635px;
+  overflow: hidden;
+  position: fixed;
+  .window-title{
+    margin: 20px 0px 20px 30px;
+    color: $white;
+    h1{
+      font-size: 48px;
+    }
+  }
+  .container{
+    width: 100%;
+    height: 520px;
+    padding-bottom: 20px;
+    overflow-y: scroll;
+    color: $white;
+    form{
+      margin: 0px auto;
+      width: 90%;
+      .sub-title{
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+      .sub-form{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 56px;
+        .label{
+          padding: 10px 0px 0px;
+        }
+        #date, #month, #year{
+          display: inline-block;
+        }
+        #date{
+          width: 45px;
+        }
+        #month{
+          width: 100px;
+        }
+        #year{
+          width: 50px;
+        }
+        select{
+          color: $light-grey;
+          margin-bottom: 10px;
+          display: inline-block;
+          background-color: transparent;
+          height: 46px;
+          border: none;
+          -webkit-appearance: none;
+          &:focus{
+            outline: none !important;
+          }
+        }
+        input{
+          color: $light-grey;
+          margin-bottom: 10px;
+          &:focus{
+            border-bottom: 1px solid $blue-color;
+          }
+          &::placeholder{
+            color: $light-grey;
+            font-weight: lighter;
+            font-size: 15px;
+          }
+        }        
+        .toggler-wrapper {
+          display: block;
+          width: 40px;
+          height: 20px;
+          cursor: pointer;
+          position: relative;
+          top: 12px;
+        }
+
+        .toggler-wrapper input[type="checkbox"] {
+          display: none;
+        }
+
+        .toggler-wrapper input[type="checkbox"]:checked+.toggler-slider {
+          background-color: $blue-color;
+        }
+
+        .toggler-wrapper .toggler-slider {
+          background-color: #ccc;
+          position: absolute;
+          border-radius: 100px;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          -webkit-transition: all 300ms ease;
+          transition: all 300ms ease;
+        }
+
+        .toggler-wrapper .toggler-knob {
+          position: absolute;
+          -webkit-transition: all 300ms ease;
+          transition: all 300ms ease;
+        }
+        .toggler-wrapper.style-12 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
+          left: calc(100% - 19px);
+        }
+        
+        .toggler-wrapper.style-12 .toggler-knob {
+          width: calc(20px - 6px);
+          height: calc(20px - 6px);
+          border-radius: 50%;
+          left: 5px;
+          top: 3px;
+          background-color: #fff;
+          background-repeat: no-repeat;
+          background-size: 80%;
+          background-position: center;
+        }
+      }  
+      #notif{
+        grid-template-columns: 50% 35% 15%;
+      }          
+    }
+  }
+}

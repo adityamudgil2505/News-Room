@@ -43,7 +43,7 @@ export class MainWindowComponent implements OnInit {
   public subNavUserItem = [
     {title: 'Recently Viewed', link: 'recently'},
     {title: 'Bookmark', link: 'bookmark'},
-    {title: 'Account'}
+    {title: 'Account', link: 'account'}
   ]
 
   public selectedItem:String="Home";

@@ -11,7 +11,8 @@ import { NewsViewModeComponent} from './news-view-mode/news-view-mode.component'
 import { RecentlyViewedComponent} from './recently-viewed/recently-viewed.component';
 import { MCountryComponent} from './m-country/m-country.component';
 import { BookmarkWindowComponent} from './bookmark-window/bookmark-window.component';
-import {NoInternetComponent} from './no-internet/no-internet.component';
+import { NoInternetComponent} from './no-internet/no-internet.component';
+import { AccountComponent} from './account/account.component';
 const routes: Routes = [
   {path: '', component:SplashScreenComponent},
   {path: 'apikey', component:ApiPageComponent},
@@ -25,7 +26,8 @@ const routes: Routes = [
                      {path: 'view', component:NewsViewModeComponent},
                      {path: 'recently', component:RecentlyViewedComponent},
                      {path: 'country', component:MCountryComponent},
-                     {path: 'bookmark', component:BookmarkWindowComponent}                     
+                     {path: 'bookmark', component:BookmarkWindowComponent},
+                     {path: 'account', component:AccountComponent}
           ]
   },
   {path: 'splash', redirectTo: '/', pathMatch:'full'},    
