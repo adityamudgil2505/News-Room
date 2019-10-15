@@ -28,6 +28,11 @@ export class NewsViewModeComponent implements OnInit {
     if(this.bookmarked==true){
       this.bookmarked=false;
       this.apiService.removeNewsFromBookmark(this.newsRecent.publishedAt);
+      let obj={
+        source: this.newsRecent.source.name,
+        body: this.newsRecent.description
+      }
+      this.apiService.notify(obj);
     }
     else{
       this.bookmarked=true;

@@ -2,7 +2,8 @@ const url = require('url');
 const path = require('path');
 const fs = require('fs');
 const electron = require('electron');
-const {app, BrowserWindow, Menu, Tray, ipcMain, shell, clipboard}=electron;
+const { app, BrowserWindow, Menu, Tray, ipcMain, shell, clipboard, Notification }=electron;
+// const Notification = require('electron-native-notification');
 
 var fileName = __dirname + '/userConfig.json';
 var file = fs.readFileSync(fileName);
@@ -122,4 +123,14 @@ ipcMain.on("addToRecent", (event, arg)=>{
   
   ipcMain.on("copyContentToClipboard", (event, arg)=>{
     clipboard.writeText(arg);
+  })
+
+  ipcMain.on("notify", (event, arg)=>{
+    let iconAddress = path.join(__dirname, 'src/assets/img/Icon.png');
+    const notif={
+      title: arg.source,
+      body: arg.title,
+      icon: iconAddress
+    };
+    new Notification(notif).show();
   })

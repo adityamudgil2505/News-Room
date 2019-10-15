@@ -29,6 +29,7 @@
     "@angular/router": "~8.2.4",
     "@capacitor/electron": "^1.0.0-beta.11",
     "dotenv": "^8.1.0",
+    "electron-native-notification": "^1.2.1",
     "moment": "^2.24.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",

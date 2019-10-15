@@ -96,4 +96,8 @@ export class ApiKeyTestingService {
     this.ipc.send("copyContentToClipboard",content);
   }
 
+  notify(obj:any){
+    this.ipc.send("notify", obj);
+  }
+
 }
