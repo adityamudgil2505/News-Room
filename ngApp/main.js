@@ -7,6 +7,7 @@ const { app, BrowserWindow, Menu, Tray, ipcMain, shell, clipboard, Notification 
 
 var fileName = __dirname + '/userConfig.json';
 var file = fs.readFileSync(fileName);
+var notifTitle="";
 
 // const iconPath = path.join(__dirname, 'logo.png');
 let win;
@@ -129,8 +130,13 @@ ipcMain.on("addToRecent", (event, arg)=>{
     let iconAddress = path.join(__dirname, 'src/assets/img/Icon.png');
     const notif={
       title: arg.source,
-      body: arg.title,
+      body: arg.body,
       icon: iconAddress
     };
-    new Notification(notif).show();
+    const [yourBrowserWindow] = BrowserWindow.getAllWindows();
+    console.log(yourBrowserWindow.isFocused());
+    if(yourBrowserWindow.isFocused()==false && notifTitle!=notif.title){
+      notifTitle=notif.title;
+      new Notification(notif).show();
+    }
   })
