@@ -11,7 +11,7 @@ import { ApiKeyTestingService} from '../api-key-testing.service';
 export class MainWindowComponent implements OnInit {
 
   public previousUrl:String;
-  public currentUrl:String;
+  public currentUrl:String;  
 
   constructor(private router: Router, private route: ActivatedRoute, private _location: Location, private apiService: ApiKeyTestingService) { 
     router.events.subscribe(event => {
@@ -50,6 +50,8 @@ export class MainWindowComponent implements OnInit {
   public selectedItem:String="Home";
   public selectedItemDetail:any;
   public userDetails:any;
+  public accountDetails:any;
+  public notificationFunc:any;
 
   callNotification(lang:String, country: String, category:String):void{
     let news:any;
@@ -64,13 +66,27 @@ export class MainWindowComponent implements OnInit {
                    })    
   }
   
-  ngOnInit() {
-    this.userDetails = this.apiService.getDetails();
+  updateAccountDetails(){
+    this.accountDetails = this.apiService.getAccountDetails();
+    if(this.accountDetails.enableNotif==false){
+      clearInterval(this.notificationFunc);
+    }
+    else{
+      clearInterval(this.notificationFunc);
+      this.notificationStart();
+    }
+  }
+
+  notificationStart(){
     let lang = this.userDetails.lang;
     let country = this.userDetails.country;
-    let category = this.userDetails.category;
-    console.log(this.userDetails);
-    setInterval(()=>this.callNotification(lang, country, category), 12000);
+    let category = this.userDetails.category;  
+    this.notificationFunc = setInterval(()=>this.callNotification(lang, country, category), this.accountDetails.notifGap * 60);
+  }
+
+  ngOnInit() {
+    this.userDetails = this.apiService.getDetails();
+    this.updateAccountDetails();      
   }
   listClick(event, newValue) {
       console.log(newValue);

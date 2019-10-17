@@ -138,7 +138,6 @@ ipcMain.on("addToRecent", (event, arg)=>{
       icon: iconAddress
     };
     const [yourBrowserWindow] = BrowserWindow.getAllWindows();
-    console.log(yourBrowserWindow.isFocused());
     if(yourBrowserWindow.isFocused()==false && notifTitle!=notif.title){
       notifTitle=notif.title;
       new Notification(notif).show();

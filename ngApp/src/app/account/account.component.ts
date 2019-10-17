@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, Injector } from '@angular/core';
 import { ApiKeyTestingService } from '../api-key-testing.service';
 import { FormsModule} from '@angular/forms';
-
+import { MainWindowComponent } from '../main-window/main-window.component';
 @Component({
   selector: 'app-account',
   templateUrl: './account.component.html',
@@ -9,7 +9,10 @@ import { FormsModule} from '@angular/forms';
 })
 export class AccountComponent implements OnInit {
 
-  constructor( private apiService: ApiKeyTestingService) { }
+  public parentComponent:any;
+  constructor( private injector:Injector, private apiService: ApiKeyTestingService) { 
+    this.parentComponent = this.injector.get(MainWindowComponent);
+  }
 
   public windTitle:String="Account";
   public yearArr=[];
@@ -28,5 +31,6 @@ export class AccountComponent implements OnInit {
     this.apiService.saveAccountDetail(this.model);
     this.model=this.apiService.getAccountDetails();
     console.log(this.model);
+    this.parentComponent.updateAccountDetails();
   }
 }
