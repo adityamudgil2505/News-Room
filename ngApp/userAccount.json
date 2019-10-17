@@ -3,7 +3,7 @@
   "data": [],
   "date": "1",
   "email": "",
-  "enableNotif": "",
+  "enableNotif": false,
   "gender": "Male",
   "mobile": "",
   "month": "January",

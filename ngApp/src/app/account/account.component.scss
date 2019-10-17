@@ -33,6 +33,15 @@ $font2: Tinos, serif;
         font-size: 25px;
         margin-bottom: 20px;
       }
+      .btn{
+        margin-top: 29px;
+        background-color: $blue-color;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        &:hover{
+          filter: grayscale(0) !important;
+        }
+      }
       .sub-form{
         display: grid;
         grid-template-columns: 50% 50%;

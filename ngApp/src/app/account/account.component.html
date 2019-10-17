@@ -3,7 +3,7 @@
     <h1>{{windTitle}}</h1>
   </div>
   <div class="container">
-    <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <form #form="ngForm">
       <div class="sub-title">Edit Profile</div>
       <div class="sub-form"><span class="label">Username</span><input type="text" name="username" [(ngModel)]="model.username"></div>
       <div class="sub-form"><span class="label">Full Name</span><input type="text" name="name" [(ngModel)]="model.name"></div>
@@ -37,10 +37,8 @@
         </div>
         </label>
       </div>
-      <div class="sub-form" id="notif"><span class="label">Notify Every</span><input type="text" name="notifGap" [(ngModel)]="model.notifGap"><span class="label">minutes</span></div>
-      <div class="sub-form">
-        <input type="submit" value="Submit">
-      </div>
+      <div class="sub-form" id="notif" *ngIf="model.enableNotif"><span class="label">Notify Every</span><input type="text" name="notifGap" [(ngModel)]="model.notifGap" ><span class="label">minutes</span></div>
+      <div class="btn" (click)="onSubmit()">Submit</div>
     </form>
   </div>
 </div>

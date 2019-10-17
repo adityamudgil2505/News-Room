@@ -8,6 +8,7 @@ const { app, BrowserWindow, Menu, Tray, ipcMain, shell, clipboard, Notification 
 var fileName = __dirname + '/userConfig.json';
 var accountFileName = __dirname + '/userAccount.json';
 var file = fs.readFileSync(fileName);
+var accountFile = fs.readFileSync(accountFileName);
 
 var notifTitle="";
 
@@ -29,7 +30,8 @@ function createWindow(){
   })  
 }
 app.on('ready', createWindow);
-  file = JSON.parse(file); 
+  file = JSON.parse(file);
+  accountFile = JSON.parse(accountFile);
 // app.on('ready', ()=>{
 //   new Tray(iconPath);
 // });
@@ -143,8 +145,6 @@ ipcMain.on("addToRecent", (event, arg)=>{
     }
   })
   ipcMain.on("getUserAccount", (event)=>{
-    var accountFile = fs.readFileSync(accountFileName);
-    accountFile = JSON.parse(accountFile);
     var obj=[];
     obj=accountFile;
     console.log(obj.date);
@@ -152,8 +152,7 @@ ipcMain.on("addToRecent", (event, arg)=>{
   })
 
   ipcMain.on("saveAccountDetails", (event, arg)=>{
-    var accountFile = fs.readFileSync(accountFileName);
-    accountFile = JSON.parse(accountFile);
+    accountFile=arg;
     fs.writeFile(accountFileName, JSON.stringify(arg, null, 2), function (err) {
     });
   })
