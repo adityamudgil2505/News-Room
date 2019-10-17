@@ -76,6 +76,16 @@ export class ApiKeyTestingService {
     obj = this.ipc.sendSync("fetchDetails");
     return obj;
   }
+
+  getAccountDetails(){
+    let obj:any;
+    obj = this.ipc.sendSync("getUserAccount");
+    return obj;
+  }
+
+  saveAccountDetail(obj:any){
+    this.ipc.send("saveAccountDetails", obj);
+  }
   
   addNewsToBookmark(news:any){
     this.ipc.send("addToBookmark", news);

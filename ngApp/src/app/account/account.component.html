@@ -3,56 +3,44 @@
     <h1>{{windTitle}}</h1>
   </div>
   <div class="container">
-    <form>
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
       <div class="sub-title">Edit Profile</div>
-      <div class="sub-form"><span class="label">Username</span><input type="text"></div>
-      <div class="sub-form"><span class="label">Full Name</span><input type="text"></div>
-      <div class="sub-form"><span class="label">Email</span><input type="email"></div>
+      <div class="sub-form"><span class="label">Username</span><input type="text" name="username" [(ngModel)]="model.username"></div>
+      <div class="sub-form"><span class="label">Full Name</span><input type="text" name="name" [(ngModel)]="model.name"></div>
+      <div class="sub-form"><span class="label">Email</span><input type="email" name="email" [(ngModel)]="model.email"></div>
       <div class="sub-form"><span class="label">Date of Birth</span>
         <div class="date-section">
-          <select id="date">
-            <option value="hide">Date</option>
-            <option *ngFor="let i of dateArr" value="i">{{i}}</option>
+          <select id="date" name="date" [(ngModel)]="model.date">
+            <option *ngFor="let date of dateArr" [value]="date">{{date}}</option>
           </select>
-          <select id="month">
-            <option value="hide">Month</option>
-            <option value="january" rel="icon-temperature">January</option>
-            <option value="february">February</option>
-            <option value="march">March</option>
-            <option value="april">April</option>
-            <option value="may">May</option>
-            <option value="june">June</option>
-            <option value="july">July</option>
-            <option value="august">August</option>
-            <option value="september">September</option>
-            <option value="october">October</option>
-            <option value="november">November</option>
-            <option value="december">December</option>
+          <select id="month" name="month" [(ngModel)]="model.month">
+            <option *ngFor="let month of monthArr" [value]="month">{{month}}</option>
           </select>
-          <select id="year">
-            <option value="hide">Year</option>
-            <option *ngFor="let i of yearArr" value="i">{{i}}</option>
+          <select id="year" name="year" [(ngModel)]="model.year">
+            <option *ngFor="let year of yearArr" [value]="year">{{year}}</option>
           </select>
         </div>
       </div>
       <div class="sub-form"><span class="label">Gender</span>
-        <select>
-          <option value="male" selected>Male</option>
-          <option value="male">Female</option>
+        <select name="gender" [(ngModel)]="model.gender">
+          <option *ngFor="let gen of genderArr" [value]="gen">{{gen}}</option>
         </select>
       </div>
-      <div class="sub-form"><span class="label">Country</span><input type="text"></div>
-      <div class="sub-form"><span class="label">Mobile Number</span><input type="text"></div>
+      <div class="sub-form"><span class="label">Country</span><input type="text" name="country" [(ngModel)]="model.country"></div>
+      <div class="sub-form"><span class="label">Mobile Number</span><input type="text" name="mobile" [(ngModel)]="model.mobile"></div>
 
       <div class="sub-title">Notification Setting</div>
       <div class="sub-form"><span class="label">Enable Notification</span><label class="toggler-wrapper style-12">
-        <input type="checkbox" >
+        <input type="checkbox" name="enableNotif" [(ngModel)]="model.enableNotif">
         <div class="toggler-slider">
           <div class="toggler-knob"></div>
         </div>
         </label>
       </div>
-      <div class="sub-form" id="notif"><span class="label">Notify Every</span><input type="text"><span class="label">minutes</span></div>
+      <div class="sub-form" id="notif"><span class="label">Notify Every</span><input type="text" name="notifGap" [(ngModel)]="model.notifGap"><span class="label">minutes</span></div>
+      <div class="sub-form">
+        <input type="submit" value="Submit">
+      </div>
     </form>
   </div>
 </div>

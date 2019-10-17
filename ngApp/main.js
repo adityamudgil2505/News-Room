@@ -6,7 +6,9 @@ const { app, BrowserWindow, Menu, Tray, ipcMain, shell, clipboard, Notification 
 // const Notification = require('electron-native-notification');
 
 var fileName = __dirname + '/userConfig.json';
+var accountFileName = __dirname + '/userAccount.json';
 var file = fs.readFileSync(fileName);
+
 var notifTitle="";
 
 // const iconPath = path.join(__dirname, 'logo.png');
@@ -27,7 +29,7 @@ function createWindow(){
   })  
 }
 app.on('ready', createWindow);
-  file = JSON.parse(file);
+  file = JSON.parse(file); 
 // app.on('ready', ()=>{
 //   new Tray(iconPath);
 // });
@@ -139,4 +141,19 @@ ipcMain.on("addToRecent", (event, arg)=>{
       notifTitle=notif.title;
       new Notification(notif).show();
     }
+  })
+  ipcMain.on("getUserAccount", (event)=>{
+    var accountFile = fs.readFileSync(accountFileName);
+    accountFile = JSON.parse(accountFile);
+    var obj=[];
+    obj=accountFile;
+    console.log(obj.date);
+    event.returnValue=obj;
+  })
+
+  ipcMain.on("saveAccountDetails", (event, arg)=>{
+    var accountFile = fs.readFileSync(accountFileName);
+    accountFile = JSON.parse(accountFile);
+    fs.writeFile(accountFileName, JSON.stringify(arg, null, 2), function (err) {
+    });
   })
