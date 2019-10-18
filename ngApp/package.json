@@ -1,7 +1,8 @@
 {
-  "name": "ng-app",
-  "version": "0.0.0",
+  "name": "NewsRoom",
+  "version": "1.0.1",
   "main": "./main.js",
+  "description": "For instant News",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,8 +15,21 @@
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/assets/img/Icon.icns --prune=true --out=release-builds",
     "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=src/assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=\"Aditya Company\" --version-string.FileDescription=\"Allow user to set countdown\"",
     "package-linux": "electron-packager . --overwrite --asar=true --platform=linux --arch=x64 --icon=src/assets/icons/png/1024x1024.png --prune=true --out=release-builds",
-    "pack": "build --dir",
-    "dist": "build"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist-all": "electron-builder -mw"
+  },
+  "build":{
+    "appId": "com.newsRoom.app",
+    "mac": {
+      "category": "News",
+      "icon": "src/assets/img/Icon.icns",
+      "prune": "true"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "src/assets/img/Icon.png"
+    }
   },
   "private": true,
   "dependencies": {
