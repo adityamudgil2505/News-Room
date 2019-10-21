@@ -7,6 +7,40 @@
   "category": "sports",
   "recent": [
     {
+      "author": "Reuters",
+      "content": "Business software group SAP said on Monday it had reached a three-year deal with Microsoft to help its large enterprise customers move their business processes into the cloud.\r\nThe partnership, called \"Embrace\", will help clients to run operations hosted at r… [+1695 chars]",
+      "date": "October 21, 2019 12:24 PM",
+      "description": "The deal addresses a complaint from many customers that it is too hard to shift from SAP's traditional on-premise model to remotely hosted services.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://image.cnbcfm.com/api/v1/image/106192376-1571639765203gettyimages-1090745214.jpeg?v=1571639868)"
+      },
+      "publishedAt": "2019-10-21T06:54:23Z",
+      "source": {
+        "id": "cnbc",
+        "name": "CNBC"
+      },
+      "title": "SAP in three-year cloud partnership with Microsoft - CNBC",
+      "url": "https://www.cnbc.com/2019/10/21/sap-in-three-year-cloud-partnership-with-microsoft.html",
+      "urlToImage": "https://image.cnbcfm.com/api/v1/image/106192376-1571639765203gettyimages-1090745214.jpeg?v=1571639868"
+    },
+    {
+      "author": "News18.com",
+      "content": "Reliance Jio has fired another shot in the telecom battles with rival operators including Airtel and VodafoneIdea. The company has announced new All-In-One plans for the Jio mobile users in India. The prices for these start at Rs 222 per month and included as… [+2614 chars]",
+      "date": "October 21, 2019 2:22 PM",
+      "description": "This bundles 2GB data per day as well as unlimited calls within the Jio network anywhere across India.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://images.news18.com/ibnlive/uploads/2019/10/JIO-ONE-PLANS.jpg)"
+      },
+      "publishedAt": "2019-10-21T08:52:00Z",
+      "source": {
+        "id": null,
+        "name": "News18.com"
+      },
+      "title": "Reliance Jio All-In-One Plans Start at Rs 222 Which Includes Bundled Non-Jio Calls - News18",
+      "url": "https://www.news18.com/news/tech/reliance-jio-all-in-one-plans-start-rs-222-which-includes-bundled-non-jio-calls-2354807.html",
+      "urlToImage": "https://images.news18.com/ibnlive/uploads/2019/10/JIO-ONE-PLANS.jpg"
+    },
+    {
       "author": null,
       "content": "KOLKATA: Board of Control for Cricket in India (BCCI) president-elect and former India captain Sourav Ganguly on Wednesday said he will speak to the selectors about MS Dhoni's future and seek their opinion before giving his views during the meeting on October… [+2047 chars]",
       "date": "October 16, 2019 9:18 PM",
@@ -223,43 +257,26 @@
       "title": "Priyanka Chopra Was 'Scared' Of Farhan Akhtar During Don Shoot. Here's Why - NDTV News",
       "url": "https://www.ndtv.com/entertainment/priyanka-chopra-was-scared-of-farhan-akhtar-during-don-shoot-heres-why-2117269",
       "urlToImage": "https://c.ndtvimg.com/2019-10/b5glu51g_priyanak-chopra-farhan-akshtar_625x300_15_October_19.jpg"
-    },
-    {
-      "author": "Pinkvilla Desk",
-      "content": "Taiki Waititi returns to the Thor universe to helm the fourth Thor movie. The filmmaker, who joined Marvel Cinematic Universe with Thor: Ragnarok, will be directing Thor: Love and Thunder. The filmmaker will direct Chris Hemsworth and Tesse Thompson for the s… [+1808 chars]",
-      "date": "October 15, 2019 2:43 PM",
-      "description": "Taiki Waititi returns to the Thor universe to helm the fourth Thor movie. The filmmaker, who joined Marvel Cinematic Universe with Thor: Ragnarok, will be directing Thor: Love and Thunder. The filmmaker will direct Chris Hemsworth and Tesse Thompson for the s…",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://www.pinkvilla.com/files/styles/fbimagesection/public/jane-foster-thor-love-thunder-plot.jpg?itok=2nBl-t5G)"
-      },
-      "publishedAt": "2019-10-15T09:13:00Z",
-      "source": {
-        "id": null,
-        "name": "Pinkvilla.com"
-      },
-      "title": "Thor: Love and Thunder to explore Jane Foster’s breast cancer storyline? Taika Waititi spills the beans - PINKVILLA",
-      "url": "https://www.pinkvilla.com/entertainment/hollywood/thor-love-and-thunder-explore-jane-foster-s-breast-cancer-storyline-taika-waititi-spills-beans-479859",
-      "urlToImage": "https://www.pinkvilla.com/files/styles/fbimagesection/public/jane-foster-thor-love-thunder-plot.jpg?itok=2nBl-t5G"
-    },
-    {
-      "author": "NDTVSports.com",
-      "content": "Sourav Ganguly is set to become the first India cricketer after the Maharaja of Vizianagaram to become the president of Board of Control For Cricket in India (BCCI). While the news of Sourav Ganguly becoming BCCI president left his fans ecstatic, Pakistan fas… [+1169 chars]",
-      "date": "October 15, 2019 5:41 PM",
-      "description": "Shoaib Akhtar feels Sourav Ganguly has brilliant cricketing knowledge and he has transformed Indian cricket.",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://c.ndtvimg.com/2019-10/oi476j8o_sourav-ganguly-shoaib-akhtar-_625x300_15_October_19.jpg)"
-      },
-      "publishedAt": "2019-10-15T12:11:58Z",
-      "source": {
-        "id": null,
-        "name": "Ndtv.com"
-      },
-      "title": "Sourav Ganguly Transformed Indian Cricket, Good Decision To Make Him BCCI President, Says Shoaib Akhtar - ndtv.com",
-      "url": "https://sports.ndtv.com/cricket/sourav-ganguly-great-leader-says-shoaib-akhtar-2117273",
-      "urlToImage": "https://c.ndtvimg.com/2019-10/oi476j8o_sourav-ganguly-shoaib-akhtar-_625x300_15_October_19.jpg"
     }
   ],
   "bookmark": [
+    {
+      "author": "Reuters",
+      "content": "Business software group SAP said on Monday it had reached a three-year deal with Microsoft to help its large enterprise customers move their business processes into the cloud.\r\nThe partnership, called \"Embrace\", will help clients to run operations hosted at r… [+1695 chars]",
+      "date": "October 21, 2019 12:24 PM",
+      "description": "The deal addresses a complaint from many customers that it is too hard to shift from SAP's traditional on-premise model to remotely hosted services.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://image.cnbcfm.com/api/v1/image/106192376-1571639765203gettyimages-1090745214.jpeg?v=1571639868)"
+      },
+      "publishedAt": "2019-10-21T06:54:23Z",
+      "source": {
+        "id": "cnbc",
+        "name": "CNBC"
+      },
+      "title": "SAP in three-year cloud partnership with Microsoft - CNBC",
+      "url": "https://www.cnbc.com/2019/10/21/sap-in-three-year-cloud-partnership-with-microsoft.html",
+      "urlToImage": "https://image.cnbcfm.com/api/v1/image/106192376-1571639765203gettyimages-1090745214.jpeg?v=1571639868"
+    },
     {
       "author": "Chetna Kapoor",
       "content": "Top-order Indian batsman KL Rahul and Bollywood actress Athiya Shetty's rumoured relationship has taken a step further. The social media PDA has attracted a lot of eyeballs. As Rahul posted a trippy picture of himself on his Instagram handle wearing yellow-ti… [+2175 chars]",

@@ -37,7 +37,7 @@
         </div>
         </label>
       </div>
-      <div class="sub-form" id="notif" *ngIf="model.enableNotif"><span class="label">Notify Every</span><input type="text" name="notifGap" [(ngModel)]="model.notifGap" ><span class="label">minutes</span></div>
+      <div class="sub-form" id="notif" *ngIf="model.enableNotif"><span class="label">Notify Every</span><input type="text" name="notifGap" [(ngModel)]="model.notifGap" ><span class="label">sec</span></div>
       <div class="btn" (click)="onSubmit()">Submit</div>
     </form>
   </div>

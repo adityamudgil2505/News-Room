@@ -140,9 +140,12 @@ ipcMain.on("addToRecent", (event, arg)=>{
       icon: iconAddress
     };
     const [yourBrowserWindow] = BrowserWindow.getAllWindows();
-    if(yourBrowserWindow.isFocused()==false && notifTitle!=notif.title){
-      notifTitle=notif.title;
+    if(yourBrowserWindow.isFocused()==false && accountFile.prevNotif!=notif.body){
+      let obj = accountFile;
+      obj.prevNotif=notif.body;
       new Notification(notif).show();
+      fs.writeFile(accountFileName, JSON.stringify(obj, null, 2), function (err) {
+      });
     }
   })
   ipcMain.on("getUserAccount", (event)=>{

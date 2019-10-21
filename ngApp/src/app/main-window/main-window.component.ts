@@ -81,7 +81,7 @@ export class MainWindowComponent implements OnInit {
     let lang = this.userDetails.lang;
     let country = this.userDetails.country;
     let category = this.userDetails.category;  
-    this.notificationFunc = setInterval(()=>this.callNotification(lang, country, category), this.accountDetails.notifGap * 60);
+    this.notificationFunc = setInterval(()=>this.callNotification(lang, country, category), this.accountDetails.notifGap * 1000);
   }
 
   ngOnInit() {
