@@ -52,6 +52,7 @@ export class MainWindowComponent implements OnInit {
   public userDetails:any;
   public accountDetails:any;
   public notificationFunc:any;
+  public displayNotification=true;
 
   callNotification(lang:String, country: String, category:String):void{
     let news:any;
@@ -86,7 +87,8 @@ export class MainWindowComponent implements OnInit {
 
   ngOnInit() {
     this.userDetails = this.apiService.getDetails();
-    this.updateAccountDetails();      
+    this.updateAccountDetails();   
+    this.displayNotification=true;
   }
   listClick(event, newValue) {
       console.log(newValue);

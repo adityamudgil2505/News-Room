@@ -99,8 +99,21 @@ $font2: Tinos, serif;
   }
   .notification{
     display: inline-block;
+    position: relative;
     float: right;
     margin-top: 7px;
+    .notification-display{
+      width: 300px;
+      background-color: #222222;
+      max-height: 300px;
+      overflow-y: scroll;
+      position: absolute;
+      left: -260px;
+      p{
+        padding: 15px 10px 15px 10px;
+        border-bottom: 1px solid rgba(173, 171, 171, 0.28);
+      }      
+    }
   }
   .account{
     display: inline-block;
