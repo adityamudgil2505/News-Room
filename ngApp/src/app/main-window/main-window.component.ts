@@ -52,7 +52,8 @@ export class MainWindowComponent implements OnInit {
   public userDetails:any;
   public accountDetails:any;
   public notificationFunc:any;
-  public displayNotification=true;
+  public displayNotificationBool:Boolean;
+  public notificationArr:any;
 
   callNotification(lang:String, country: String, category:String):void{
     let news:any;
@@ -65,6 +66,18 @@ export class MainWindowComponent implements OnInit {
                         }
                         this.apiService.notify(obj);
                    })    
+  }
+
+  displayNotification(){
+    console.log("You click on notification button");
+    if(this.displayNotificationBool==true){
+      this.displayNotificationBool=false;
+    }
+    else{
+      this.displayNotificationBool=true;
+      this.notificationArr = this.apiService.getAccountDetails().prevNotif;
+      console.log(this.notificationArr);
+    }
   }
   
   updateAccountDetails(){
@@ -88,7 +101,7 @@ export class MainWindowComponent implements OnInit {
   ngOnInit() {
     this.userDetails = this.apiService.getDetails();
     this.updateAccountDetails();   
-    this.displayNotification=true;
+    this.displayNotificationBool=false;
   }
   listClick(event, newValue) {
       console.log(newValue);

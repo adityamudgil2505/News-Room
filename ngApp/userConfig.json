@@ -4,8 +4,25 @@
   "apiKey": "c89accef77b945d0b6f430dab6bfc6ee",
   "lang": "en",
   "country": "in",
-  "category": "sports",
+  "category": "general",
   "recent": [
+    {
+      "author": "Martin Domin",
+      "content": "Conor McGregor has backed bitter rival Khabib Nurmagomedov to beat Tony Ferguson.\r\nFerguson is next in line to challenge the UFC lightweight champion with the fight expected to take place in March or April.\r\nNurmagomedov has already made two successful defenc… [+1595 chars]",
+      "date": "October 23, 2019 1:07 PM",
+      "description": "Ferguson is next in line to take on UFC lightweight champion Nurmagomedov next year",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://i2-prod.mirror.co.uk/incoming/article9960453.ece/ALTERNATES/s1200/UFC-209-Ultimate-Media-Day.jpg)"
+      },
+      "publishedAt": "2019-10-23T07:37:00Z",
+      "source": {
+        "id": null,
+        "name": "Mirror.co.uk"
+      },
+      "title": "Conor McGregor makes Khabib Nurmagomedov vs Tony Ferguson prediction - Mirror Online",
+      "url": "https://www.mirror.co.uk/sport/other-sports/mma/conor-mcgregor-makes-khabib-nurmagomedov-20703586",
+      "urlToImage": "https://i2-prod.mirror.co.uk/incoming/article9960453.ece/ALTERNATES/s1200/UFC-209-Ultimate-Media-Day.jpg"
+    },
     {
       "author": "Reuters",
       "content": "Business software group SAP said on Monday it had reached a three-year deal with Microsoft to help its large enterprise customers move their business processes into the cloud.\r\nThe partnership, called \"Embrace\", will help clients to run operations hosted at r… [+1695 chars]",
@@ -240,26 +257,26 @@
       "title": "War Box Office: The Hrithik Roshan - Tiger Shroff starrer War becomes the highest worldwide grosser of 2019 - Bollywood Hungama",
       "url": "https://www.bollywoodhungama.com/news/box-office-special-features/war-box-office-hrithik-roshan-tiger-shroff-starrer-war-becomes-highest-worldwide-grosser-2019/",
       "urlToImage": "https://stat1.bollywoodhungama.in/wp-content/uploads/2019/10/War-Box-Office-The-Hrithik-Roshan-Tiger-Shroff-starrer-War-becomes-the-highest-worldwide-grosser-of-2019.jpg"
-    },
-    {
-      "author": null,
-      "content": "New Delhi: Priyanka Chopra, who reunited with Farhan Akhtar for The Sky Is Pink, revealed that she was \"scared\" of him when they first collaborated for the 2006 film Don. Farhan Akhtar's Don featured Shah Rukh Khan, Priyanka Chopra, Lara Dutta and Boman Irani… [+2456 chars]",
-      "date": "October 15, 2019 5:39 PM",
-      "description": "\"Farhan gave me one of my biggest films, when I was two years in the business,\" said Priyanka Chopra",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://c.ndtvimg.com/2019-10/b5glu51g_priyanak-chopra-farhan-akshtar_625x300_15_October_19.jpg)"
-      },
-      "publishedAt": "2019-10-15T12:09:00Z",
-      "source": {
-        "id": null,
-        "name": "Ndtv.com"
-      },
-      "title": "Priyanka Chopra Was 'Scared' Of Farhan Akhtar During Don Shoot. Here's Why - NDTV News",
-      "url": "https://www.ndtv.com/entertainment/priyanka-chopra-was-scared-of-farhan-akhtar-during-don-shoot-heres-why-2117269",
-      "urlToImage": "https://c.ndtvimg.com/2019-10/b5glu51g_priyanak-chopra-farhan-akshtar_625x300_15_October_19.jpg"
     }
   ],
   "bookmark": [
+    {
+      "author": "Martin Domin",
+      "content": "Conor McGregor has backed bitter rival Khabib Nurmagomedov to beat Tony Ferguson.\r\nFerguson is next in line to challenge the UFC lightweight champion with the fight expected to take place in March or April.\r\nNurmagomedov has already made two successful defenc… [+1595 chars]",
+      "date": "October 23, 2019 1:07 PM",
+      "description": "Ferguson is next in line to take on UFC lightweight champion Nurmagomedov next year",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://i2-prod.mirror.co.uk/incoming/article9960453.ece/ALTERNATES/s1200/UFC-209-Ultimate-Media-Day.jpg)"
+      },
+      "publishedAt": "2019-10-23T07:37:00Z",
+      "source": {
+        "id": null,
+        "name": "Mirror.co.uk"
+      },
+      "title": "Conor McGregor makes Khabib Nurmagomedov vs Tony Ferguson prediction - Mirror Online",
+      "url": "https://www.mirror.co.uk/sport/other-sports/mma/conor-mcgregor-makes-khabib-nurmagomedov-20703586",
+      "urlToImage": "https://i2-prod.mirror.co.uk/incoming/article9960453.ece/ALTERNATES/s1200/UFC-209-Ultimate-Media-Day.jpg"
+    },
     {
       "author": "Reuters",
       "content": "Business software group SAP said on Monday it had reached a three-year deal with Microsoft to help its large enterprise customers move their business processes into the cloud.\r\nThe partnership, called \"Embrace\", will help clients to run operations hosted at r… [+1695 chars]",

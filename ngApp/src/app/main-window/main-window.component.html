@@ -12,13 +12,11 @@
     <i class="material-icons">keyboard_arrow_down</i>
   </div>
   <div class="notification">
-    <i class="material-icons">notifications_none</i>
-    <div class="notification-display" >
-      <p>Andrew McDonald roped in as Rajasthan Royals head coach - Cricbuzz - Cricbuzz</p>
-      <p>Andrew McDonald roped in as Rajasthan Royals head coach - Cricbuzz - Cricbuzz</p>
-      <p>Andrew McDonald roped in as Rajasthan Royals head coach - Cricbuzz - Cricbuzz</p>
-      <p>Andrew McDonald roped in as Rajasthan Royals head coach - Cricbuzz - Cricbuzz</p>
-      <p>Andrew McDonald roped in as Rajasthan Royals head coach - Cricbuzz - Cricbuzz</p>
+    <i class="material-icons" (click)="displayNotification()">notifications_none</i>
+    <div class="notification-display" *ngIf="displayNotificationBool">
+      <p *ngFor="let item of notificationArr">
+        {{item}}
+      </p>
     </div>
   </div>
 </div>

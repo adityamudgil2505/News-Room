@@ -140,9 +140,12 @@ ipcMain.on("addToRecent", (event, arg)=>{
       icon: iconAddress
     };
     const [yourBrowserWindow] = BrowserWindow.getAllWindows();
-    if(yourBrowserWindow.isFocused()==false && accountFile.prevNotif!=notif.body){
+    if(yourBrowserWindow.isFocused()==false && accountFile.prevNotif[0]!=notif.body){
       let obj = accountFile;
-      obj.prevNotif=notif.body;
+      obj.prevNotif.unshift(notif.body);
+      if(obj.prevNotif.length>10){
+        obj.prevNotif.pop();
+      }
       new Notification(notif).show();
       fs.writeFile(accountFileName, JSON.stringify(obj, null, 2), function (err) {
       });
@@ -151,7 +154,6 @@ ipcMain.on("addToRecent", (event, arg)=>{
   ipcMain.on("getUserAccount", (event)=>{
     var obj=[];
     obj=accountFile;
-    console.log(obj.date);
     event.returnValue=obj;
   })
 
