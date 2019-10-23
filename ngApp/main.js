@@ -45,6 +45,11 @@ app.on('window-all-closed', ()=>{
   }
 });
 
+app.setLoginItemSettings({
+  openAtLogin: true,
+  openAsHidden: true
+})
+
 app.on('activate', ()=>{
   if(win===null){
     createWindow();

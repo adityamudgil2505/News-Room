@@ -19,7 +19,7 @@
     "dist": "electron-builder",
     "dist-all": "electron-builder -mw"
   },
-  "build":{
+  "build": {
     "appId": "com.newsRoom.app",
     "mac": {
       "category": "News",
