@@ -101,6 +101,31 @@ $bg-black: #000000;
         color: white;
       }
     }
+    .search-bar{
+      display: inline-block;
+      margin: 0px 5px;
+      height: 20px;
+      background-color: $white;
+      width: 150px;
+      border-radius: 20px;
+      i{
+        &:hover{
+          color: inherit;
+        }
+      }
+      input{
+        display: inline;
+        font-size: 10px;
+        position: absolute;
+        height: 20px;
+        width: 110px;
+        border: none;
+        &:focus{
+          border-bottom: none !important;
+          box-shadow: none;
+        }
+      }
+    }
   }
   .notification{
     display: inline-block;
