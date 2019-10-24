@@ -23,8 +23,7 @@
     "appId": "com.newsRoom.app",
     "mac": {
       "category": "News",
-      "icon": "src/assets/img/Icon.icns",
-      "prune": "true"
+      "icon": "src/assets/img/Icon.icns"
     },
     "win": {
       "target": "nsis",

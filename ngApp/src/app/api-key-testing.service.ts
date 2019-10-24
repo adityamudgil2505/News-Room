@@ -53,6 +53,13 @@ export class ApiKeyTestingService {
                     .pipe( catchError(e=>throwError(e)));
   }
 
+  getSearchedNews(str: String){ 
+    let add = `https://newsapi.org/v2/everything?q=${str}&apiKey=${this._apiKey}&pageSize=100`;
+    console.log(add);
+    return this.http.get<INews[]>(add)
+                    .pipe( catchError(e=>throwError(e)));
+  }
+
   // This will save api key in user Configuration file by calling function in main process
   saveAPI(){
     this.ipc.send("setAPIKey", this._apiKey);

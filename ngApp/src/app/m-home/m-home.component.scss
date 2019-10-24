@@ -39,12 +39,44 @@ $font2: Tinos, serif;
 
 .top-level{
   width: 900px;
-  height: 600px;
+  overflow: hidden;
+  height: 640px;
+  .search-bar{
+    display: inline-block;
+    margin: 50px 10px 10px;
+    height: 30px;
+    background-color: $white;
+    width: 250px;
+    border-radius: 20px;
+    i{
+      padding: 4px 5px;
+      &:hover{
+        color: inherit;
+      }
+    }   
+    form{
+      display: inline;      
+      color: white;
+      input{
+        display: inline;
+        color: $outline-box;
+        font-size: 14px;
+        position: absolute;
+        height: 30px;
+        width: 200px;
+        border: none;
+        &:focus{
+          border-bottom: none !important;
+          box-shadow: none;
+        }
+      }
+    }
+  }     
+
   .container{
     width: 900px;
-    margin-top: 50px;
-    padding: 50px 10px 0px;
-    height: 600px;
+    padding: 35px 10px 0px;
+    height: 550px;
     overflow-y: scroll;
     display: grid;
     grid-template-columns: auto auto;

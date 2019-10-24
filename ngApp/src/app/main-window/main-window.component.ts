@@ -36,7 +36,7 @@ export class MainWindowComponent implements OnInit {
 
   public subNavItem = [
     {icon: 'home', title: 'Home', link: 'home'},
-    {icon: 'explore', title: 'Browse', link: 'explore'},
+    {icon: 'explore', title: 'Explore', link: 'explore'},
     {icon: 'language', title: 'Language', link: 'languages'},
     {icon: 'rss_feed', title: 'News Channel', link: 'newsChannel'},
     {icon: 'flag', title: 'Country', link: 'country'},

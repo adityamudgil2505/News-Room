@@ -27,6 +27,42 @@ export class MHomeComponent implements OnInit {
     this.apiService.addNewsToRecent(newValue);
     this.router.navigate(["view"], {relativeTo: this.route.parent});
   }
+  keyDownFunction(event) {
+    if(event.keyCode == 13) {
+      this.searchData();
+    }
+  }
+  searchData(){
+    const str: string = (document.getElementById("search") as HTMLInputElement).value;
+    console.log(str);
+    var link:string ="";
+    for(let i=0; i<str.length; i++){
+      if(str[i]==' '){
+        link = link + " AND ";
+      }
+      else{
+        link = link + str[i];
+      }
+    }
+    link=encodeURIComponent(link);
+    this.apiService.getSearchedNews(link)
+                    .subscribe((data:any)=>{                     
+                      this.news=data.articles;
+                      for(let i=0; i<this.news.length; i++){
+                        if(this.news[i].urlToImage==null){
+                          this.news[i].urlToImage=__dirname+"/assets/img/no-image.png";
+                        }
+                        this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);
+                      }
+                      this.noInternet=false;
+                    },
+                    error=>{
+                      this.noInternet=true;
+                    }
+                  )
+
+  }
+
   fetchData(){
     this.route.paramMap.subscribe((params:ParamMap)=>{
       console.log(params);

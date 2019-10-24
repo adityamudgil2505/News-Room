@@ -9,6 +9,12 @@
   </div>
 </div>
 <div class="top-level">
+  <div class="search-bar">
+    <i class="Small material-icons">search</i>
+    <form (keydown)="keyDownFunction($event)">
+      <input id="search" name="txt" type="text" placeholder="Search">
+    </form>      
+  </div>
   <div class="container">
     <div class="sub-box" *ngFor="let item of news" [style.background-image]="item.image">
         <div class="filter"></div>
