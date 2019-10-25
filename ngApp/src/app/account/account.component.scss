@@ -13,6 +13,7 @@ $font2: Tinos, serif;
   height: 635px;
   overflow: hidden;
   position: fixed;
+  -webkit-app-region: drag;
   .window-title{
     margin: 20px 0px 20px 30px;
     color: $white;
