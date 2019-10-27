@@ -69,3 +69,11 @@ $font2: Tinos, serif;
     color: red !important;
   }  
 }
+@media only screen and (min-height: 700px) {
+  .top-level{
+    height: 100%;
+    .container{
+      height: 100%;
+    }
+  }
+}

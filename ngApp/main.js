@@ -19,7 +19,7 @@ function createWindow(){
     nodeIntegration: true,
     webSecurity: false
     }});
-  win.setFullScreenable(false);
+  // win.setFullScreenable(false);
   win.loadURL(url.format({
     pathname:path.join(__dirname, '/dist/ngApp/index.html'),
     protocol: 'file',

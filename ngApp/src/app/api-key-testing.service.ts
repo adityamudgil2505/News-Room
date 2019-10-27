@@ -12,7 +12,7 @@ import {INews} from './news'
 export class ApiKeyTestingService {
 
   private ipc: IpcRenderer;
-  private _url: String="https://newsapi.org/v2/everything?q=bitcoin&from=2019-09-25&sortBy=publishedAt&apiKey=";
+  private _url: String="https://newsapi.org/v2/everything?q=bitcoin&apiKey=";
   private _apiKey: String="";
   // c89accef77b945d0b6f430dab6bfc6ee
   constructor(private http:HttpClient){

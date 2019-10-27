@@ -88,3 +88,28 @@ $font2: Tinos, serif;
     }
   }
 }
+@media only screen and (min-height: 700px) {
+  .top-level{
+    height: 100%;
+    .container{
+      height: 550px;
+    }
+  }
+}
+@media only screen and (min-height: 800px) {
+  .top-level{
+    height: 100%;
+    .container{
+      height: 650px;
+    }
+  }
+}
+
+@media only screen and (min-height: 1000px) {
+  .top-level{
+    height: 100%;
+    .container{
+      height: 850px;
+    }
+  }
+}
