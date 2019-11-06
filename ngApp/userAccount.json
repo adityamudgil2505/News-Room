@@ -7,8 +7,8 @@
   "gender": "Male",
   "mobile": "",
   "month": "January",
-  "name": "Aditya Mudgil",
-  "notifGap": "1000",
+  "name": "Your name",
+  "notifGap": "30",
   "prevNotif": [
     "Raw Banana And Boiled Peanuts: Try This Humble Meal Which Can Give You Good Hair, Skin And Balance Your Hormones - NDTV",
     "Gopal Kanda supports BJP, triggers row over his past - Times of India",
@@ -20,6 +20,6 @@
     "Karnataka, Tamil Nadu set up Southern derby for Vijay Hazare final - Cricbuzz - Cricbuzz"
   ],
   "type": "Buffer",
-  "username": "am2505",
+  "username": "username",
   "year": "2019"
 }
