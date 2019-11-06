@@ -22,7 +22,7 @@ Other features are
 - CSS Grid
 
 ## Setup for mac
-- Click here to download the application and move it to application folder.
+- [Click here](https://drive.google.com/open?id=1i85p2Ggd9Cggrayq6MSY_zk2BVMEYXgu) to download the application and move it to application folder.
 
 ### How to use this application [for production purpose]
 - For mac, windows and linux, need to deploy the app first.
@@ -48,12 +48,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ### Screenshots
-![alt Splash Screen](https://github.com/adityamudgil2505/News-Room/ScreenShots/Splash-screen.png)
-![alt Home](https://github.com/adityamudgil2505/News-Room/ScreenShots/Home.png)
-![alt Explore](https://github.com/adityamudgil2505/News-Room/ScreenShots/Explore.png)
-![alt Language](https://github.com/adityamudgil2505/News-Room/ScreenShots/Language.png)
-![alt News Channel](https://github.com/adityamudgil2505/News-Room/ScreenShots/News-channel.png)
-![alt Country](https://github.com/adityamudgil2505/News-Room/ScreenShots/Country.png)
-![alt Recently viewed](https://github.com/adityamudgil2505/News-Room/ScreenShots/Recently-viewed.png)
-![alt Bookmark](https://github.com/adityamudgil2505/News-Room/ScreenShots/Bookmark.png)
-![alt Account](https://github.com/adityamudgil2505/News-Room/ScreenShots/Account.png)
+![alt Splash Screen](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Splash-screen.png)
+![alt Home](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Home.png)
+![alt Explore](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Explore.png)
+![alt Language](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Language.png)
+![alt News Channel](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/News-channel.png)
+![alt Country](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Country.png)
+![alt Recently viewed](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Recently-viewed.png)
+![alt Bookmark](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Bookmark.png)
+![alt Account](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Account.png)
