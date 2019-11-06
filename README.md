@@ -48,7 +48,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ### Screenshots
-![alt Screenshot1](https://github.com/adityamudgil2505/Countdown-Desktop-Application/blob/master/assets/SS0.png)
-![alt Screenshot2](https://github.com/adityamudgil2505/Countdown-Desktop-Application/blob/master/assets/SS1.png)
-![alt Screenshot3](https://github.com/adityamudgil2505/Countdown-Desktop-Application/blob/master/assets/SS2.png)
-![alt Screenshot4](https://github.com/adityamudgil2505/Countdown-Desktop-Application/blob/master/assets/SS3.png)
+![alt Splash Screen](https://github.com/adityamudgil2505/News-Room/ScreenShots/Splash-screen.png)
+![alt Home](https://github.com/adityamudgil2505/News-Room/ScreenShots/Home.png)
+![alt Explore](https://github.com/adityamudgil2505/News-Room/ScreenShots/Explore.png)
+![alt Language](https://github.com/adityamudgil2505/News-Room/ScreenShots/Language.png)
+![alt News Channel](https://github.com/adityamudgil2505/News-Room/ScreenShots/News-channel.png)
+![alt Country](https://github.com/adityamudgil2505/News-Room/ScreenShots/Country.png)
+![alt Recently viewed](https://github.com/adityamudgil2505/News-Room/ScreenShots/Recently-viewed.png)
+![alt Bookmark](https://github.com/adityamudgil2505/News-Room/ScreenShots/Bookmark.png)
+![alt Account](https://github.com/adityamudgil2505/News-Room/ScreenShots/Account.png)
