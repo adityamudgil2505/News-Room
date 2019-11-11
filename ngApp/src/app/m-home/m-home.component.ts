@@ -91,5 +91,6 @@ export class MHomeComponent implements OnInit {
   }
   ngOnInit() {    
     this.fetchData();
+    setInterval(this.fetchData, 300*1000);
   }
 }

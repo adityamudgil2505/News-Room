@@ -1,11 +1,130 @@
 {
   "type": "Buffer",
   "data": [],
-  "apiKey": "",
+  "apiKey": "c89accef77b945d0b6f430dab6bfc6ee",
   "lang": "en",
   "country": "in",
   "category": "general",
   "recent": [
+    {
+      "author": "News18.com",
+      "content": "Hyderabad: More than 10 people suffered injuries after two trains collided at the Kacheguda Railway Station in Hyderabad on Monday morning.\r\nAccording to South Central Railway officials, MMTS train rammed into Kongu express which was waiting at the platform, … [+603 chars]",
+      "date": "November 11, 2019 12:21 PM",
+      "description": "According to South Central Railway officials, MMTS train rammed into Kongu express which was waiting at the platform, leading to chaos among the passengers and railway station officials.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://images.news18.com/ibnlive/uploads/2019/11/train-accident.jpg)"
+      },
+      "publishedAt": "2019-11-11T06:51:00Z",
+      "source": {
+        "id": null,
+        "name": "News18.com"
+      },
+      "title": "At least 10 Injured as Two Trains on Same Track Collide at Kacheguda Railway Station in Hyderabad - News18",
+      "url": "https://www.news18.com/news/india/several-injured-as-two-trains-on-same-track-collide-at-kacheguda-railway-station-in-hyderabad-2381813.html",
+      "urlToImage": "https://images.news18.com/ibnlive/uploads/2019/11/train-accident.jpg"
+    },
+    {
+      "author": "Jashodhara Mukherjee",
+      "content": "England snatched the Twenty20 series against New Zealand in dramatic fashion in Auckland on Sunday, with a super over required to break the deadlock in scenes reminiscent of the World Cup final four months ago. This was strangely reminiscent of the World Cup … [+2314 chars]",
+      "date": "November 11, 2019 8:00 AM",
+      "description": "Is this World Cup all over again?",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://images.news18.com/ibnlive/uploads/2019/11/Untitled-design-401.jpg)"
+      },
+      "publishedAt": "2019-11-11T02:30:21Z",
+      "source": {
+        "id": null,
+        "name": "News18.com"
+      },
+      "title": "How NZ Vs Eng T20 Super Over Reminded Everyone of World Cup Final - News18",
+      "url": "https://www.news18.com/news/buzz/how-nz-vs-eng-t20-super-over-reminded-everyone-of-world-cup-final-2380923.html",
+      "urlToImage": "https://images.news18.com/ibnlive/uploads/2019/11/Untitled-design-401.jpg"
+    },
+    {
+      "author": "Asian News International",
+      "content": "Well, no doubt that the 'Housefull 4' stars' response will make the film all the more exciting for fans as it joined his list of films which are based on true incidents, including 'Rustom' and 'Mission Mangal'.\r\nSet in the 80s, Akshay is most likely to essay … [+834 chars]",
+      "date": "November 11, 2019 10:07 AM",
+      "description": "Akshay put out the very first look of Bell Bottom revealing the release date",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://qt-01.gumlet.com/freepressjournal%2F2019-11%2F914d19a8-acad-4431-8afa-d32802c953e7%2F73015927_1792027311104701_7150867999486129579_n.jpg?rect=0%2C0%2C760%2C399&w=1200&auto=format%2Ccompress&ogImage=true)"
+      },
+      "publishedAt": "2019-11-11T04:37:00Z",
+      "source": {
+        "id": null,
+        "name": "Freepressjournal.in"
+      },
+      "title": "'Bell Bottom' is not a remake, it is inspired by true events: Akshay Kumar - Free Press Journal",
+      "url": "https://www.freepressjournal.in/entertainment/bell-bottom-is-not-a-remake-it-is-inspired-by-true-events-akshay-kumar",
+      "urlToImage": "https://qt-01.gumlet.com/freepressjournal%2F2019-11%2F914d19a8-acad-4431-8afa-d32802c953e7%2F73015927_1792027311104701_7150867999486129579_n.jpg?rect=0%2C0%2C760%2C399&w=1200&auto=format%2Ccompress&ogImage=true"
+    },
+    {
+      "author": "Mudit Dube",
+      "content": "",
+      "date": "November 9, 2019 5:44 PM",
+      "description": "If you are a part of a group that has an illegal and suspicious name, WhatsApp may ban you from using the app, permanently. As per WABetaInfo, they have been receiving a lot of reports from users that have been banned from using the app because they were in a…",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://i.cdn.newsbytesapp.com/images/l142_5871573276740.jpg)"
+      },
+      "publishedAt": "2019-11-09T12:14:14Z",
+      "source": {
+        "id": null,
+        "name": "Newsbytesapp.com"
+      },
+      "title": "WhatsApp may ban you permanently if... - NewsBytes",
+      "url": "https://www.newsbytesapp.com/timeline/Science/53802/248553/whatsapp-is-banning-groups-with-illegal-malicious-names",
+      "urlToImage": "https://i.cdn.newsbytesapp.com/images/l142_5871573276740.jpg"
+    },
+    {
+      "author": null,
+      "content": "On November 9, the first group of pilgrims will make a historic journey across the Indian border to Gurudwara Kartarpur Sahib. The journey marks the end of a long negotiation between both India and Pakistan paving way for unite pilgrims from India to visit on… [+44 chars]",
+      "date": "November 9, 2019 3:44 PM",
+      "description": "On November 9, the first group of pilgrims will make a historic journey across the Indian border to Gurudwara Kartarpur Sahib.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://images.news18.com/ibnlive/uploads/2019/11/Kartarpur-TN.jpg)"
+      },
+      "publishedAt": "2019-11-09T10:14:18Z",
+      "source": {
+        "id": null,
+        "name": "News18.com"
+      },
+      "title": "Launch of Kartarpur Corridor Amidst Indo-Pak Strife | Crux+ - News18",
+      "url": "https://www.news18.com/news/india/launch-of-kartarpur-corridor-amidst-indo-pak-strife-crux-2380089.html",
+      "urlToImage": "https://images.news18.com/ibnlive/uploads/2019/11/Kartarpur-TN.jpg"
+    },
+    {
+      "author": "IANS",
+      "content": "England all-rounder Liam Livingstone has signed with the Perth Scorchers for the upcoming season of Big Bash League that starts on December 17.\r\nLivingstone, who plays for Lancashire in the Vitality T20 Blast, becomes the first international signing for Scorc… [+1140 chars]",
+      "date": "November 9, 2019 12:21 PM",
+      "description": null,
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://qt-01.gumlet.com/freepressjournal%2F2019-11%2F14e361a5-0f20-43e5-8678-d4ec95393bbb%2FPerth_Scorchers.jpg?w=1200&auto=format%2Ccompress&ogImage=true)"
+      },
+      "publishedAt": "2019-11-09T06:51:00Z",
+      "source": {
+        "id": null,
+        "name": "Freepressjournal.in"
+      },
+      "title": "Perth Scorchers signs this England all-rounder for the upcoming BBL season - Free Press Journal",
+      "url": "https://www.freepressjournal.in/cricket/perth-scorchers-signs-this-england-all-rounder-for-the-upcoming-bbl-season",
+      "urlToImage": "https://qt-01.gumlet.com/freepressjournal%2F2019-11%2F14e361a5-0f20-43e5-8678-d4ec95393bbb%2FPerth_Scorchers.jpg?w=1200&auto=format%2Ccompress&ogImage=true"
+    },
+    {
+      "author": null,
+      "content": "Ayodhya Verdict Today, Ram Mandir-Babri Masjid Case Supreme Court Verdict Today LATEST News and Updates: A five-judge Constitution bench of the Supreme Court today (Saturday) allotted the disputed Ayodhya land to the Ram Janmabhoomi Nyas. The apex court order… [+16264 chars]",
+      "date": "November 9, 2019 11:25 AM",
+      "description": "Ayodhya Verdict Today, Ram Mandir-Babri Masjid Case Supreme Court Verdict Today LATEST News and Updates: A five-judge Constitution bench of the Supreme Court today (Saturday) allotted the disputed Ayodhya land to the Ram Janmabhoomi Nyas. The apex court order…",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://images.firstpost.com/wp-content/uploads/2019/03/Ayodhya-AFP.jpg)"
+      },
+      "publishedAt": "2019-11-09T05:55:06Z",
+      "source": {
+        "id": null,
+        "name": "Firstpost.com"
+      },
+      "title": "Ayodhya Verdict LIVE Updates: Supreme Court gives disputed land to Ram Janmabhoomi Nyas; Muslims get alternate land for mosque - Firstpost",
+      "url": "https://www.firstpost.com/india/ayodhya-case-verdict-live-updates-ram-janmabhoomi-babri-masjid-ayodhya-mandir-news-samachar-supreme-court-uttar-pradesh-hindu-muslim-7620591.html",
+      "urlToImage": "https://images.firstpost.com/wp-content/uploads/2019/03/Ayodhya-AFP.jpg"
+    },
     {
       "author": "Times Of India",
       "content": "Copyright © 2019 Bennett, Coleman &amp; Co. Ltd. All rights reserved. For reprint rights: Times Syndication Service",
@@ -141,125 +260,60 @@
       "title": "After India, TikTok bans paid political ads in US and EU",
       "url": "https://thenextweb.com/?p=1246698",
       "urlToImage": "https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F04%2FTikTok-Court.jpg&signature=b94a4db6dfe17e4e6a5779d69838a5ba"
-    },
-    {
-      "author": "News18.com",
-      "content": "Wishes have been pouring in on Malaika Arora's birthday and the most romantic post had to come from boyfriend Arjun Kapoor. The actor shared a picture of him fondly kissing Malaika, with a simple heart emoji as the caption. The picture has a location tag of M… [+2381 chars]",
-      "date": "October 23, 2019 7:57 PM",
-      "description": "Arjun Kapoor's adorable picture with Malaika Arora is winning hearts, Salman Khan is back with a bang with Dabangg 3. Find out more in today's entertainment wrap.",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://images.news18.com/ibnlive/uploads/2019/10/wrap-69.jpg)"
-      },
-      "publishedAt": "2019-10-23T14:27:59Z",
-      "source": {
-        "id": null,
-        "name": "News18.com"
-      },
-      "title": "Arjun Kapoor Posts Kissing Pic on Malaika Arora's Birthday, Salman Khan Launches Dabangg 3 Trailer - News18",
-      "url": "https://www.news18.com/news/movies/arjun-kapoor-posts-kissing-pic-on-malaika-aroras-birthday-salman-khan-launches-dabangg-3-trailer-2359821.html",
-      "urlToImage": "https://images.news18.com/ibnlive/uploads/2019/10/wrap-69.jpg"
-    },
-    {
-      "author": "Martin Domin",
-      "content": "Conor McGregor has backed bitter rival Khabib Nurmagomedov to beat Tony Ferguson.\r\nFerguson is next in line to challenge the UFC lightweight champion with the fight expected to take place in March or April.\r\nNurmagomedov has already made two successful defenc… [+1595 chars]",
-      "date": "October 23, 2019 1:07 PM",
-      "description": "Ferguson is next in line to take on UFC lightweight champion Nurmagomedov next year",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://i2-prod.mirror.co.uk/incoming/article9960453.ece/ALTERNATES/s1200/UFC-209-Ultimate-Media-Day.jpg)"
-      },
-      "publishedAt": "2019-10-23T07:37:00Z",
-      "source": {
-        "id": null,
-        "name": "Mirror.co.uk"
-      },
-      "title": "Conor McGregor makes Khabib Nurmagomedov vs Tony Ferguson prediction - Mirror Online",
-      "url": "https://www.mirror.co.uk/sport/other-sports/mma/conor-mcgregor-makes-khabib-nurmagomedov-20703586",
-      "urlToImage": "https://i2-prod.mirror.co.uk/incoming/article9960453.ece/ALTERNATES/s1200/UFC-209-Ultimate-Media-Day.jpg"
-    },
-    {
-      "author": "Reuters",
-      "content": "Business software group SAP said on Monday it had reached a three-year deal with Microsoft to help its large enterprise customers move their business processes into the cloud.\r\nThe partnership, called \"Embrace\", will help clients to run operations hosted at r… [+1695 chars]",
-      "date": "October 21, 2019 12:24 PM",
-      "description": "The deal addresses a complaint from many customers that it is too hard to shift from SAP's traditional on-premise model to remotely hosted services.",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://image.cnbcfm.com/api/v1/image/106192376-1571639765203gettyimages-1090745214.jpeg?v=1571639868)"
-      },
-      "publishedAt": "2019-10-21T06:54:23Z",
-      "source": {
-        "id": "cnbc",
-        "name": "CNBC"
-      },
-      "title": "SAP in three-year cloud partnership with Microsoft - CNBC",
-      "url": "https://www.cnbc.com/2019/10/21/sap-in-three-year-cloud-partnership-with-microsoft.html",
-      "urlToImage": "https://image.cnbcfm.com/api/v1/image/106192376-1571639765203gettyimages-1090745214.jpeg?v=1571639868"
-    },
-    {
-      "author": "News18.com",
-      "content": "Reliance Jio has fired another shot in the telecom battles with rival operators including Airtel and VodafoneIdea. The company has announced new All-In-One plans for the Jio mobile users in India. The prices for these start at Rs 222 per month and included as… [+2614 chars]",
-      "date": "October 21, 2019 2:22 PM",
-      "description": "This bundles 2GB data per day as well as unlimited calls within the Jio network anywhere across India.",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://images.news18.com/ibnlive/uploads/2019/10/JIO-ONE-PLANS.jpg)"
-      },
-      "publishedAt": "2019-10-21T08:52:00Z",
-      "source": {
-        "id": null,
-        "name": "News18.com"
-      },
-      "title": "Reliance Jio All-In-One Plans Start at Rs 222 Which Includes Bundled Non-Jio Calls - News18",
-      "url": "https://www.news18.com/news/tech/reliance-jio-all-in-one-plans-start-rs-222-which-includes-bundled-non-jio-calls-2354807.html",
-      "urlToImage": "https://images.news18.com/ibnlive/uploads/2019/10/JIO-ONE-PLANS.jpg"
-    },
-    {
-      "author": null,
-      "content": "KOLKATA: Board of Control for Cricket in India (BCCI) president-elect and former India captain Sourav Ganguly on Wednesday said he will speak to the selectors about MS Dhoni's future and seek their opinion before giving his views during the meeting on October… [+2047 chars]",
-      "date": "October 16, 2019 9:18 PM",
-      "description": "Cricket News: BCCI president-elect and former India captain Sourav Ganguly said he will speak to the selectors about MS Dhoni's future and seek their opinion before",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://static.toiimg.com/thumb/msid-71619214,width-1070,height-580,imgsize-1743085,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg)"
-      },
-      "publishedAt": "2019-10-16T15:48:58Z",
-      "source": {
-        "id": "the-times-of-india",
-        "name": "The Times of India"
-      },
-      "title": "Will speak to selectors about Dhoni on October 24: Ganguly - Times of India",
-      "url": "https://timesofindia.indiatimes.com/sports/cricket/news/will-speak-to-selectors-about-dhoni-on-october-24-ganguly/articleshow/71619215.cms",
-      "urlToImage": "https://static.toiimg.com/thumb/msid-71619214,width-1070,height-580,imgsize-1743085,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
-    },
-    {
-      "author": null,
-      "content": "Here is an example of what Ray Tracing can do with a simple game such as Minecraft. Imagine all the endless possibilities with Call of Duty!\r\nREAD MORE: FIFA 21 PS5: What Sonys next gen console will mean for EAs football game\r\nImproved Audio\r\n<ul><li>Increase… [+1872 chars]",
-      "date": "October 10, 2019 3:30 PM",
-      "description": "We have a date & information about Sony's next console. What can CoD fans expect?",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://realsport101.com/wp-content/uploads/2019/10/mw1-4.jpg)"
-      },
-      "publishedAt": "2019-10-10T10:00:00Z",
-      "source": "Realsport101.com",
-      "title": "Call of Duty: What does the PS5 mean for the future of Modern Warfare & the CoD franchise? - RealSport",
-      "url": "https://realsport101.com/news/other-esports/call-of-duty/call-of-duty-modern-warfare-ps5-mean-for-the-future-of-cod-haptic-mobile-guns-beta/",
-      "urlToImage": "https://realsport101.com/wp-content/uploads/2019/10/mw1-4.jpg"
-    },
-    {
-      "author": null,
-      "content": "KOLKATA: Board of Control for Cricket in India (BCCI) president-elect and former India captain Sourav Ganguly on Wednesday said he will speak to the selectors about MS Dhoni's future and seek their opinion before giving his views during the meeting on October… [+2047 chars]",
-      "date": "October 16, 2019 3:55 PM",
-      "description": "Cricket News: BCCI president-elect and former India captain Sourav Ganguly said he will speak to the selectors about MS Dhoni's future and seek their opinion before",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://static.toiimg.com/thumb/msid-71619214,width-1070,height-580,imgsize-1743085,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg)"
-      },
-      "publishedAt": "2019-10-16T10:25:30Z",
-      "source": {
-        "id": "the-times-of-india",
-        "name": "The Times of India"
-      },
-      "title": "Will speak to selectors about Dhoni on October 24: Ganguly - Times of India",
-      "url": "http://timesofindia.indiatimes.com/sports/cricket/news/will-speak-to-selectors-about-dhoni-on-october-24-ganguly/articleshow/71619215.cms",
-      "urlToImage": "https://static.toiimg.com/thumb/msid-71619214,width-1070,height-580,imgsize-1743085,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
     }
   ],
   "bookmark": [
+    {
+      "author": "Jashodhara Mukherjee",
+      "content": "England snatched the Twenty20 series against New Zealand in dramatic fashion in Auckland on Sunday, with a super over required to break the deadlock in scenes reminiscent of the World Cup final four months ago. This was strangely reminiscent of the World Cup … [+2314 chars]",
+      "date": "November 11, 2019 8:00 AM",
+      "description": "Is this World Cup all over again?",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://images.news18.com/ibnlive/uploads/2019/11/Untitled-design-401.jpg)"
+      },
+      "publishedAt": "2019-11-11T02:30:21Z",
+      "source": {
+        "id": null,
+        "name": "News18.com"
+      },
+      "title": "How NZ Vs Eng T20 Super Over Reminded Everyone of World Cup Final - News18",
+      "url": "https://www.news18.com/news/buzz/how-nz-vs-eng-t20-super-over-reminded-everyone-of-world-cup-final-2380923.html",
+      "urlToImage": "https://images.news18.com/ibnlive/uploads/2019/11/Untitled-design-401.jpg"
+    },
+    {
+      "author": null,
+      "content": "On November 9, the first group of pilgrims will make a historic journey across the Indian border to Gurudwara Kartarpur Sahib. The journey marks the end of a long negotiation between both India and Pakistan paving way for unite pilgrims from India to visit on… [+44 chars]",
+      "date": "November 9, 2019 3:44 PM",
+      "description": "On November 9, the first group of pilgrims will make a historic journey across the Indian border to Gurudwara Kartarpur Sahib.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://images.news18.com/ibnlive/uploads/2019/11/Kartarpur-TN.jpg)"
+      },
+      "publishedAt": "2019-11-09T10:14:18Z",
+      "source": {
+        "id": null,
+        "name": "News18.com"
+      },
+      "title": "Launch of Kartarpur Corridor Amidst Indo-Pak Strife | Crux+ - News18",
+      "url": "https://www.news18.com/news/india/launch-of-kartarpur-corridor-amidst-indo-pak-strife-crux-2380089.html",
+      "urlToImage": "https://images.news18.com/ibnlive/uploads/2019/11/Kartarpur-TN.jpg"
+    },
+    {
+      "author": null,
+      "content": "Ayodhya Verdict Today, Ram Mandir-Babri Masjid Case Supreme Court Verdict Today LATEST News and Updates: A five-judge Constitution bench of the Supreme Court today (Saturday) allotted the disputed Ayodhya land to the Ram Janmabhoomi Nyas. The apex court order… [+16264 chars]",
+      "date": "November 9, 2019 11:25 AM",
+      "description": "Ayodhya Verdict Today, Ram Mandir-Babri Masjid Case Supreme Court Verdict Today LATEST News and Updates: A five-judge Constitution bench of the Supreme Court today (Saturday) allotted the disputed Ayodhya land to the Ram Janmabhoomi Nyas. The apex court order…",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://images.firstpost.com/wp-content/uploads/2019/03/Ayodhya-AFP.jpg)"
+      },
+      "publishedAt": "2019-11-09T05:55:06Z",
+      "source": {
+        "id": null,
+        "name": "Firstpost.com"
+      },
+      "title": "Ayodhya Verdict LIVE Updates: Supreme Court gives disputed land to Ram Janmabhoomi Nyas; Muslims get alternate land for mosque - Firstpost",
+      "url": "https://www.firstpost.com/india/ayodhya-case-verdict-live-updates-ram-janmabhoomi-babri-masjid-ayodhya-mandir-news-samachar-supreme-court-uttar-pradesh-hindu-muslim-7620591.html",
+      "urlToImage": "https://images.firstpost.com/wp-content/uploads/2019/03/Ayodhya-AFP.jpg"
+    },
     {
       "author": "Mimansa Shekhar",
       "content": "Hrithik Roshan is returning to his action avatar in YRF’s latest release War.\r\nWhat is it that sets Hrithik Roshan apart from the herd? Is it his acting chops or unbelievable dancing or his heavy-duty punches or all of them? While many would vouch that they h… [+3264 chars]",
