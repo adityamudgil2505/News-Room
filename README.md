@@ -48,12 +48,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ### Screenshots
-![alt Splash Screen](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Splash-screen.jpg)
-![alt Home](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Home.jpg)
-![alt Explore](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Explore.jpg)
-![alt Language](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Language.jpg)
-![alt News Channel](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/News-channel.jpg)
-![alt Country](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Country.jpg)
-![alt Recently viewed](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Recently-viewed.jpg)
-![alt Bookmark](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Bookmark.jpg)
-![alt Account](https://github.com/adityamudgil2505/News-Room/tree/master/ScreenShots/Account.jpg)
+![alt Splash Screen](/ScreenShots/Splash-screen.jpg)
+![alt Home](/ScreenShots/Home.jpg)
+![alt Explore](/ScreenShots/Explore.jpg)
+![alt Language](/ScreenShots/Language.jpg)
+![alt News Channel](/ScreenShots/News-channel.jpg)
+![alt Country](/ScreenShots/Country.jpg)
+![alt Recently viewed](/ScreenShots/Recently-viewed.jpg)
+![alt Bookmark](/ScreenShots/Bookmark.jpg)
+![alt Account](/ScreenShots/Account.jpg)
