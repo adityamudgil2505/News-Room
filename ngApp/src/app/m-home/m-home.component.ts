@@ -66,6 +66,7 @@ export class MHomeComponent implements OnInit {
   fetchData(){
     this.route.paramMap.subscribe((params:ParamMap)=>{
       console.log(params);
+      console.log("you called");
       let country=params.get('country');
       let category=params.get('category');
       let lang=params.get('lang');
@@ -91,6 +92,6 @@ export class MHomeComponent implements OnInit {
   }
   ngOnInit() {    
     this.fetchData();
-    setInterval(this.fetchData, 300*1000);
+    setInterval(this.fetchData, 60000);
   }
 }

@@ -48,6 +48,11 @@ $font2: Tinos, serif;
         font-family: $font2;
         line-height: 30px;
         padding-left: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
       }
       .cross{
         position: absolute;
