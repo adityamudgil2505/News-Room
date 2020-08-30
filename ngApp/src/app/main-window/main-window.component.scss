@@ -74,7 +74,7 @@ $bg-black: #000000;
   }
 }
 .active{
-  color: $white !Important;
+  color: $white !important;
   &:before {
     content: "";
     display: inline-block;

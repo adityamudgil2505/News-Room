@@ -44,15 +44,14 @@ $font2: Tinos, serif;
         position: absolute;
         left: 200px;
         top: 10px;
-        width: 500px;
+        width: 600px;
         font-family: $font2;
         line-height: 30px;
         padding-left: 10px;
-        overflow: hidden;
-        text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
+        overflow: hidden;
       }
       .cross{
         position: absolute;

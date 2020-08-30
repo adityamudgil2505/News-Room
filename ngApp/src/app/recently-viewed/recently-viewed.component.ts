@@ -6,7 +6,7 @@ import { from } from 'rxjs';
 @Component({
   selector: 'app-recently-viewed',
   templateUrl: './recently-viewed.component.html',
-  styleUrls: ['./recently-viewed.component.scss']
+  styleUrls: ['../bookmark-window/bookmark-window.component.scss']
 })
 export class RecentlyViewedComponent implements OnInit {
   constructor(private apiService:ApiKeyTestingService, private _sanitizer:DomSanitizer, private router: Router, private route: ActivatedRoute) { }
