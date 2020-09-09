@@ -35,6 +35,10 @@ Other features are
 4. Now for installer application `npm run dist`
 5. For particular OS application `npm run package-mac` or `npm run package-win` or `npm run package-linux`
 
+## Tips to start contributing
+1. Make changes to angular project then `ng build --aot`
+2. Then run `npm run electron`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
