@@ -1,24 +1,28 @@
 {
-  "name": "NewsRoom",
+  "name":"NewsRoom",
   "version": "1.0.1",
-  "main": "./main.js",
+  "main": "./index.js",
   "description": "For instant News",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --aot",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "electron": "electron .",
     "start:electron": "ng build --prod && electron .",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/assets/img/Icon.icns --prune=true --out=release-builds",
     "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=src/assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=\"Aditya Company\" --version-string.FileDescription=\"Allow user to set countdown\"",
     "package-linux": "electron-packager . --overwrite --asar=true --platform=linux --arch=x64 --icon=src/assets/icons/png/1024x1024.png --prune=true --out=release-builds",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "dist-all": "electron-builder -mw"
+    "dist-all": "electron-builder -mw",
+    
+    "clean": "rimraf dist",
+    "electron": "wait-on http://localhost:4200/index.html && electron .",
+    "prestart": "npm run clean",
+    "start": "concurrently -k \"ng serve --aot\" \"npm run electron\""
   },
+  "repository": {},
   "build": {
     "appId": "com.newsRoom.app",
     "mac": {
@@ -28,7 +32,11 @@
     "win": {
       "target": "nsis",
       "icon": "src/assets/img/Icon.png"
-    }
+    },
+    "files": [
+      "main.js",
+      "dist/ngApp"
+    ]
   },
   "private": true,
   "dependencies": {
@@ -56,7 +64,9 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "concurrently": "^5.3.0",
     "electron": "^5.0.13",
+    "electron-packager": "^15.1.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
@@ -68,6 +78,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.5.3"
+    "typescript": "~3.5.3",
+    "wait-on": "^5.2.0"
   }
 }

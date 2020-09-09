@@ -3,8 +3,8 @@ const path = require('path');
 const fs = require('fs');
 const electron = require('electron');
 const { app, BrowserWindow, Menu, Tray, ipcMain, shell, clipboard, Notification }=electron;
-// const Notification = require('electron-native-notification');
 
+const env = process.env.NODE_ENV || 'development';
 var fileName = __dirname + '/userConfig.json';
 var accountFileName = __dirname + '/userAccount.json';
 var file = fs.readFileSync(fileName);
@@ -19,13 +19,21 @@ function createWindow(){
     nodeIntegration: true,
     webSecurity: false
     }});
-  // win.setFullScreenable(false);
-  win.loadURL(url.format({
-    pathname:path.join(__dirname, '/dist/ngApp/index.html'),
-    protocol: 'file',
-    slashes: true
-  }));  
-  // win.webContents.openDevTools();
+  win.setFullScreenable(false);
+
+// ------------- IN Production/Publishing/Deployment stage ----------------
+  // win.loadURL(url.format({
+  //   pathname:path.join(__dirname, '/dist/ngApp/index.html'),
+  //   protocol: 'file',
+  //   slashes: true
+  // }));  
+
+// -------------------------- IN Development stage ------------------------
+  win.loadURL('http://localhost:4200')
+
+
+
+  win.webContents.openDevTools();
   win.on('closed', ()=> win=null);
   win.once('ready-to-show', ()=>{
     win.show();
@@ -55,10 +63,6 @@ app.on('activate', ()=>{
     createWindow();
   }
 })
-// ipcMain.on('getFiles', (event, arg) => {
-//   const files = fs.readdirSync(`${__dirname}/${userConfig.json}`);
-//   win.webContents.send('getFilesResponse', files)
-// })
 
 // This function will open the file and save the api key
 ipcMain.on('setAPIKey', (event, arg) => {  

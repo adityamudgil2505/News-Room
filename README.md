@@ -31,13 +31,14 @@ Other features are
 ### How to deploy this application
 1. install angular 7.2.1 using `npm install @angular/cli@7.2.1`;
 2. `npm install`
-3. Now for web application `ng build --prod` (optional)
-4. Now for installer application `npm run dist`
+3. Now for build angular application `ng build --aot`
+4. Now for installer application `npm run dist` (Optional)
 5. For particular OS application `npm run package-mac` or `npm run package-win` or `npm run package-linux`
 
-## Tips to start contributing
-1. Make changes to angular project then `ng build --aot`
-2. Then run `npm run electron`
+## Tips to start contributing seamlessly
+1. Make sure in `ng/index.html` file, we have `win.loadURL('http://localhost:4200')`
+2. Run following command that will `npm start`. This will build and watch angular application and then run electron application. Now whatever we gonna change in angular file, it will directly going to reflect in electron application.
+3. Now For publishing, we first comment line which is focused in point 1 and uncomment `win.loadURL` paragragh.
 
 ## Development server
 
