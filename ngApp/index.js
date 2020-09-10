@@ -22,14 +22,14 @@ function createWindow(){
   win.setFullScreenable(false);
 
 // ------------- IN Production/Publishing/Deployment stage ----------------
-  // win.loadURL(url.format({
-  //   pathname:path.join(__dirname, '/dist/ngApp/index.html'),
-  //   protocol: 'file',
-  //   slashes: true
-  // }));  
+  win.loadURL(url.format({
+    pathname:path.join(__dirname, '/dist/ngApp/index.html'),
+    protocol: 'file',
+    slashes: true
+  }));  
 
 // -------------------------- IN Development stage ------------------------
-  win.loadURL('http://localhost:4200')
+  // win.loadURL('http://localhost:4200')
 
 
 

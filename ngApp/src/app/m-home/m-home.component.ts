@@ -50,7 +50,7 @@ export class MHomeComponent implements OnInit {
                       this.news=data.articles;
                       for(let i=0; i<this.news.length; i++){
                         if(this.news[i].urlToImage==null){
-                          this.news[i].urlToImage=__dirname+"/assets/img/no-image.png";
+                          this.news[i].urlToImage="./assets/img/no-image.png";
                         }
                         this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);
                       }
@@ -77,7 +77,7 @@ export class MHomeComponent implements OnInit {
                       this.news=data.articles;
                       for(let i=0; i<this.news.length; i++){
                         if(this.news[i].urlToImage==null){
-                          this.news[i].urlToImage=__dirname+"/assets/img/no-image.png";
+                          this.news[i].urlToImage="./assets/img/no-image.png";
                         }
                         this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);
                       }
