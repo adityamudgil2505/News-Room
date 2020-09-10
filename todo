@@ -1,6 +1,6 @@
 Frontend
 1. Fix 3line problem in recent, bookmark [Done]
-2. No image update
+2. No image update [Done]
 3. Add filter
 4. Add Generalization notification inside application (with Backend)
 5. Login using email
@@ -17,6 +17,6 @@ Backend
 4. More news category using category
 
 Performance Enhancements
-1. Refactor code (Includes CSS)
+1. Refactor code (Includes CSS) [Done]
 2. Show when css loads completely
 3. Check connection API rather than fetching news.

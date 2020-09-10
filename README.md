@@ -39,6 +39,8 @@ Other features are
 1. Make sure in `ng/index.html` file, we have `win.loadURL('http://localhost:4200')`
 2. Run following command that will `npm start`. This will build and watch angular application and then run electron application. Now whatever we gonna change in angular file, it will directly going to reflect in electron application.
 3. Now For publishing, we first comment line which is focused in point 1 and uncomment `win.loadURL` paragragh.
+4. Now for build angular application `ng build --aot`
+5. For particular OS application `npm run package-mac`
 
 ## Development server
 

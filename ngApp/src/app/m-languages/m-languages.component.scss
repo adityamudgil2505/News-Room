@@ -1,20 +1,7 @@
-$light-grey: #b3b3b3;
-$white: #ffffff;
-$bg-side-bar: #121212;
-$gray-hover: #373737;
-$bg-main: #181818;
-$blue-color: #00c9f3;
-$font1: Lato, sans-serif;
-$font2: Tinos, serif;
+@import "../../color-font.scss";
 
 .top-level{
-  width: 900px;
-  height: 600px;
   overflow: hidden;
-  .window-title{
-    margin: 20px 0px 20px 30px;
-    color: $white;
-  }
   .container{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -62,11 +49,6 @@ $font2: Tinos, serif;
         }
       }
     }
-  }  
-}
-.active{
-  i{
-    color: red !important;
   }  
 }
 @media only screen and (min-height: 700px) {

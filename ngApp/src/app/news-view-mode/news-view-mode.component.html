@@ -5,7 +5,7 @@
   <div class="container">
     <div class="heading-container">
       <div class="newsImg" *ngIf="newsRecent.urlToImage" [style.background-image]="newsRecent.image">
-        <div class="bookmark"><img [ngClass]="{'active': bookmarked == true}" (click)="toggleBookmark($event)" src="./assets/img/icons/bookmark.png"></div>
+        <div class="bookmark"><img [ngClass]="{'bookmark-active': bookmarked == true}" (click)="toggleBookmark($event)" src="./assets/img/icons/bookmark.png"></div>
         <div class="share">
           <img src="./assets/img/icons/Facebook.png" (click)="facebookShare('https://www.facebook.com/sharer/sharer.php?u=')">
           <img src="./assets/img/icons/WhatsApp.png" (click)="whatsAppShare()">

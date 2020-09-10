@@ -1,15 +1,11 @@
-<!-- <div class="top-bar">
-</div> -->
 <div class="title-bar">
   <div class="move-btns">
     <i class="Small material-icons" (click)="goBack($event)">chevron_left</i>
-    <!-- <i class="Small material-icons">rotate_right</i> -->
     <i class="Small material-icons" (click)="goForward($event)">chevron_right</i>
   </div>
   <div class="account">
     <i class="material-icons">person_outline</i>
     <span class="username">{{accountDetails.username}}</span>
-    <!-- <i class="material-icons">keyboard_arrow_down</i> -->
   </div>
   <div class="notification">
     <i class="material-icons" (click)="displayNotification()">notifications_none</i>
@@ -20,7 +16,7 @@
     </div>
   </div>
 </div>
-<div class="container">
+<div class="big-container">
   <nav class="vertical-menu">
     <img src="./assets/img/Logo.png">
     <div class="item" [ngClass]="{'active': selectedItem == item.title}" (click)="listClick($event, item)" *ngFor="let item of subNavItem"><i class="material-icons">{{item.icon}}</i><div class ="list-title" >{{item.title}}</div></div>

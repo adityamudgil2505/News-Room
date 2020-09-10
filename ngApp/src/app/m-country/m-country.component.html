@@ -4,7 +4,7 @@
   </div>
   <div class="container">
     <div class="container-item" *ngFor="let item of country">
-      <div class="fav-icon" [ngClass]="{'active': favCountry == item.code}" ><i class="material-icons" (click)="countryFavClick($event, item)">favorite</i></div>
+      <div class="fav-icon" [ngClass]="{'fav-active': favCountry == item.code}" ><i class="material-icons" (click)="countryFavClick($event, item)">favorite</i></div>
       <div class="image" (click)="countryClick($event, item)">          
           <img src="{{item.flagLink}}">          
           <div class="title">{{item.title}}</div>
