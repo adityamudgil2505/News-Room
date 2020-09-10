@@ -1,6 +1,7 @@
 @import "../../color-font.scss";
 
 .top-level{
+  height: 600px;
   .container{
     display: grid;
     grid-template-columns: auto auto auto auto;
