@@ -57,7 +57,7 @@ export class MainWindowComponent implements OnInit {
 
   callNotification(lang:String, country: String, category:String):void{
     let news:any;
-    this.apiService.getNews(lang, country, category, '')
+    this.apiService.getNews(lang, country, category, '', '20')
                    .subscribe((data:any)=>{
                       news=data.articles[0];
                         let obj={
