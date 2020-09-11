@@ -9,11 +9,21 @@
   </div>
 </div>
 <div class="top-level">
-  <div class="search-bar">
-    <i class="Small material-icons">search</i>
-    <form (keydown)="keyDownFunction($event)">
-      <input id="search" name="txt" type="text" placeholder="Search">
-    </form>      
+  <div class="top-bar">
+    <div class="search-bar">
+      <i class="Small material-icons">search</i>
+      <form (keydown)="keyDownFunction($event)">
+        <input id="search" name="txt" type="text" placeholder="Search">
+      </form> 
+    </div>
+    <div class="filter">
+      <!-- Sort by -->
+      <select name="filter-sort">
+        <option value="publishedAt">Latest</option>
+        <option value="relevancy">Relevant</option>
+        <option value="popularity">Popular</option>
+      </select>
+    </div>
   </div>
   <div class="container">
     <div class="sub-box" *ngFor="let item of news" [style.background-image]="item.image">

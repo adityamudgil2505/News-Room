@@ -30,42 +30,61 @@
 
 .top-level{
   overflow: hidden;
-  .search-bar{
-    display: inline-block;
-    margin: 50px 10px 10px;
-    height: 30px;
-    background-color: $white;
-    width: 250px;
-    border-radius: 20px;
-    i{
-      padding: 4px 5px;
-      &:hover{
-        color: inherit;
-      }
-    }   
-    form{
-      display: inline;      
-      color: white;
-      input{
-        display: inline;
-        color: $outline-box;
-        font-size: 14px;
-        position: absolute;
-        height: 30px;
-        width: 200px;
-        border: none;
-        &:focus{
-          border-bottom: none !important;
-          box-shadow: none;
+  .top-bar{
+    .search-bar{
+      display: inline-block;
+      margin: 55px 10px 10px;
+      height: 30px;
+      background-color: $white;
+      width: 250px;
+      border-radius: 20px;
+      i{
+        padding: 4px 5px;
+        &:hover{
+          color: inherit;
+        }
+      }   
+      form{
+        display: inline;      
+        color: white;
+        input{
+          display: inline;
+          color: $outline-box;
+          font-size: 14px;
+          position: absolute;
+          height: 30px;
+          width: 200px;
+          border: none;
+          &:focus{
+            border-bottom: none !important;
+            box-shadow: none;
+          }
         }
       }
-    }
-  }     
-
+    } 
+    .filter{
+      position: absolute;
+      top: 65px;
+      right: 10px;
+      color: $light-grey;
+      select{
+        display: inline-block;
+        height: inherit;
+        width: 100px;
+        margin-left: 10px;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-bottom: 1px solid $blue-color;
+      }
+    }      
+  }
+  
   .container{
     width: 900px;
     padding: 35px 10px 0px;
-    height: 550px;
+    height: 555px;
     overflow-y: scroll;
     display: grid;
     grid-template-columns: auto auto;
