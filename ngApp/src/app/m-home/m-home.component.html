@@ -9,16 +9,29 @@
   </div>
 </div>
 <div class="top-level">
-  <div class="search-bar">
-    <i class="Small material-icons">search</i>
-    <form (keydown)="keyDownFunction($event)">
-      <input id="search" name="txt" type="text" placeholder="Search">
-    </form>      
-  </div>
-  <div class="container">
-    <div class="sub-box" *ngFor="let item of news" [defaultImage]="loadingImage" [lazyLoad]="item.image">
-        <div class="filter"></div>
-          <div class="title" (click)="viewNews($event, item)">{{item.title}}</div>
+  <div class="top-bar">
+    <div class="search-bar">
+      <i class="Small material-icons">search</i>
+      <form (keydown)="keyDownFunction($event)">
+        <input id="search" name="txt" type="text" placeholder="Search">
+      </form> 
+    </div>
+    <div class="filter">
+      <!-- Sort by -->
+      <select *ngIf="filterOption" id="filter-sort" (change)="searchData($event.target.value)">
+        <option value="publishedAt">Latest</option>
+        <option value="relevancy">Relevant</option>
+        <option value="popularity">Popular</option>
+      </select>
     </div>
   </div>
+  <div class="wrapper">
+    <div class="container">
+      <div class="sub-box" *ngFor="let item of news" [defaultImage]="loadingImage" [lazyLoad]="item.image">
+          <div class="filter"></div>
+            <div class="title" (click)="viewNews($event, item)">{{item.title}}</div>
+      </div>
+    </div>
+    <div *ngIf="moreNewsOption" class="more-news" (click)="moreNewsFunction()">Load More</div>
+  </div>  
 </div>
