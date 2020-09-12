@@ -30,78 +30,120 @@
 
 .top-level{
   overflow: hidden;
-  .search-bar{
-    display: inline-block;
-    margin: 50px 10px 10px;
-    height: 30px;
-    background-color: $white;
-    width: 250px;
-    border-radius: 20px;
-    i{
-      padding: 4px 5px;
-      &:hover{
-        color: inherit;
-      }
-    }   
-    form{
-      display: inline;      
-      color: white;
-      input{
-        display: inline;
-        color: $outline-box;
-        font-size: 14px;
-        position: absolute;
-        height: 30px;
-        width: 200px;
-        border: none;
-        &:focus{
-          border-bottom: none !important;
-          box-shadow: none;
-        }
-      }
-    }
-  }     
-
-  .container{
-    width: 900px;
-    padding: 35px 10px 0px;
-    height: 550px;
-    overflow-y: scroll;
-    display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 10px;
-    column-gap: 10px;
-    .h-carousel{
-      background-color: #b3b3b3;
-    }
-    .sub-box{
-      height: 220px;
-      width: 100%;
-      background-size: cover;
-      background-position: center;  
-      position: relative;     
-      .filter{
-        height: 100%;
-        width: 100%; 
-        background-image: linear-gradient( rgba(0, 0, 0, 0),#000);
-      }
-      .title{
-        position: absolute;
-        color: $transparent-white;
-        bottom: 7px;
-        padding: 0px 10px;
-        cursor: pointer;
-        height: 32px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        line-height: 16px;
-        max-height: 32px;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
+  .top-bar{
+    .search-bar{
+      display: inline-block;
+      margin: 55px 10px 10px;
+      height: 30px;
+      background-color: $white;
+      width: 250px;
+      border-radius: 20px;
+      i{
+        padding: 4px 5px;
         &:hover{
-          color: $white;
+          color: inherit;
         }
+      }   
+      form{
+        display: inline;      
+        color: white;
+        input{
+          display: inline;
+          color: $outline-box;
+          font-size: 14px;
+          position: absolute;
+          height: 30px;
+          width: 200px;
+          border: none;
+          &:focus{
+            border-bottom: none !important;
+            box-shadow: none;
+          }
+        }
+      }
+    } 
+    .filter{
+      position: absolute;
+      top: 65px;
+      right: 10px;
+      color: $light-grey;
+      select{
+        display: inline-block;
+        height: inherit;
+        width: 100px;
+        margin-left: 10px;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-bottom: 1px solid $blue-color;
+      }
+    }      
+  }
+  .wrapper{
+    // width: 900px;    
+    height: 555px;
+    overflow-y: scroll;
+    .container{
+      width: 900px;
+      padding: 35px 10px 0px;
+      display: grid;
+      grid-template-columns: auto auto;
+      row-gap: 10px;
+      column-gap: 10px;
+      .h-carousel{
+        background-color: #b3b3b3;
+      }
+      .sub-box{
+        height: 220px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;  
+        position: relative;     
+        .filter{
+          height: 100%;
+          width: 100%; 
+          background-image: linear-gradient( rgba(0, 0, 0, 0),#000);
+        }
+        .title{
+          position: absolute;
+          color: $transparent-white;
+          bottom: 7px;
+          padding: 0px 10px;
+          cursor: pointer;
+          height: 32px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          line-height: 16px;
+          max-height: 32px;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          &:hover{
+            color: $white;
+          }
+        }
+      }
+    }
+    .more-news{
+      cursor: pointer;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      height: 40px;
+      margin: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      &::after{
+        content: '';
+        width: 100%;
+        border-bottom: solid 1px $blue-color;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        width: 50%;
+        transform: translateX(-50%);
       }
     }
   }

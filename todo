@@ -1,7 +1,7 @@
 Frontend
 1. Fix 3line problem in recent, bookmark [Done]
 2. No image update [Done]
-3. Add filter
+3. Add filter and page size
 4. Add Generalization notification inside application (with Backend)
 5. Login using email
 6. API key visible inside account

@@ -38,7 +38,7 @@ export  class ApiKeyTestingService {
                     .pipe( catchError(e=> throwError(e)));
   }
   
-  getNews(lang:String, country:String, category:String, source:String):Observable<INews[]>{
+  getNews(lang:String, country:String, category:String, source:String, pageSize:String):Observable<INews[]>{
     if(lang===null){
       let userDetails =this.getDetails();
       lang=userDetails.lang;
@@ -47,14 +47,15 @@ export  class ApiKeyTestingService {
       source='';   
     }
     console.log(source);
-    let add = `https://newsapi.org/v2/top-headlines?sources=${source}&country=${country}&category=${category}&language=${lang}&apiKey=${this._apiKey}`;
+    let add = `https://newsapi.org/v2/top-headlines?sources=${source}&country=${country}&category=${category}&language=${lang}&apiKey=${this._apiKey}&pageSize=${pageSize}`;
     console.log(add);
     return this.http.get<INews[]>(add)
                     .pipe( catchError(e=>throwError(e)));
   }
 
-  getSearchedNews(str: String){ 
-    let add = `https://newsapi.org/v2/everything?q=${str}&apiKey=${this._apiKey}&pageSize=100`;
+  getSearchedNews(str: String, filter: String, pageSize: String){ 
+    let add = `https://newsapi.org/v2/everything?q=${str}&apiKey=${this._apiKey}&pageSize=${pageSize}`;
+    if(filter!="")  add = `${add}&sortBy=${filter}`;
     console.log(add);
     return this.http.get<INews[]>(add)
                     .pipe( catchError(e=>throwError(e)));

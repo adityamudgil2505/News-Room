@@ -14,6 +14,10 @@ export class MHomeComponent implements OnInit {
   public news:any=[];
   public address:any;
   public noInternet:Boolean;
+  public filterOption:Boolean=false;
+  public filterSort:string="";
+  public moreNewsOption:Boolean=true;
+  public previousLink:string='headline';
 
   refresh(){
     this.fetchData();
@@ -32,8 +36,21 @@ export class MHomeComponent implements OnInit {
       this.searchData();
     }
   }
-  searchData(){
+
+  moreNewsFunction(){
+    this.moreNewsOption=false;
+    if(this.previousLink == 'headline'){  
+      this.fetchData("50");
+    }
+    else{       
+      this.searchData(this.filterSort, "50");
+    }
+  }
+
+  searchData(filter="", pageSize="20"){
     const str: string = (document.getElementById("search") as HTMLInputElement).value;
+    this.filterSort = filter;
+    this.previousLink = 'everything';
     console.log(str);
     var link:string ="";
     for(let i=0; i<str.length; i++){
@@ -43,9 +60,9 @@ export class MHomeComponent implements OnInit {
       else{
         link = link + str[i];
       }
-    }
+    } 
     link=encodeURIComponent(link);
-    this.apiService.getSearchedNews(link)
+    this.apiService.getSearchedNews(link, filter, pageSize)
                     .subscribe((data:any)=>{                     
                       this.news=data.articles;
                       for(let i=0; i<this.news.length; i++){
@@ -55,6 +72,7 @@ export class MHomeComponent implements OnInit {
                         this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);
                       }
                       this.noInternet=false;
+                      this.filterOption=true;
                     },
                     error=>{
                       this.noInternet=true;
@@ -63,7 +81,7 @@ export class MHomeComponent implements OnInit {
 
   }
 
-  fetchData(){
+  fetchData(pageSize="20"){
     this.route.paramMap.subscribe((params:ParamMap)=>{
       console.log(params);
       console.log("you called");
@@ -72,7 +90,7 @@ export class MHomeComponent implements OnInit {
       let lang=params.get('lang');
       let source=params.get('source');
       if(source==null){source='';}
-      this.apiService.getNews(lang, country, category, source)
+      this.apiService.getNews(lang, country, category, source, pageSize)
                     .subscribe((data:any)=>{                     
                       this.news=data.articles;
                       for(let i=0; i<this.news.length; i++){

@@ -7,6 +7,23 @@
   "category": "sports",
   "recent": [
     {
+      "author": null,
+      "content": null,
+      "date": "September 11, 2020 11:01 PM",
+      "description": "Education News: NEW DELHI: The National Testing Agency (NTA) on Friday, September 11, 2020, declared the results of the Joint Entrance Exam (JEE) Main 2020.",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://static.toiimg.com/thumb/msid-78065211,width-1070,height-580,imgsize-1119643,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg)"
+      },
+      "publishedAt": "2020-09-11T17:31:56Z",
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "title": "NTA JEE Mains result 2020 announced",
+      "url": "https://timesofindia.indiatimes.com/home/education/news/nta-jee-mains-result-2020-announced-24-students-score-100-percentile/articleshow/78064892.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-78065211,width-1070,height-580,imgsize-1119643,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+    },
+    {
       "author": "Sporting News",
       "content": null,
       "date": "September 10, 2020 12:30 PM",
@@ -243,23 +260,6 @@
       "title": "Perth Scorchers signs this England all-rounder for the upcoming BBL season - Free Press Journal",
       "url": "https://www.freepressjournal.in/cricket/perth-scorchers-signs-this-england-all-rounder-for-the-upcoming-bbl-season",
       "urlToImage": "https://qt-01.gumlet.com/freepressjournal%2F2019-11%2F14e361a5-0f20-43e5-8678-d4ec95393bbb%2FPerth_Scorchers.jpg?w=1200&auto=format%2Ccompress&ogImage=true"
-    },
-    {
-      "author": null,
-      "content": "Ayodhya Verdict Today, Ram Mandir-Babri Masjid Case Supreme Court Verdict Today LATEST News and Updates: A five-judge Constitution bench of the Supreme Court today (Saturday) allotted the disputed Ayodhya land to the Ram Janmabhoomi Nyas. The apex court order… [+16264 chars]",
-      "date": "November 9, 2019 11:25 AM",
-      "description": "Ayodhya Verdict Today, Ram Mandir-Babri Masjid Case Supreme Court Verdict Today LATEST News and Updates: A five-judge Constitution bench of the Supreme Court today (Saturday) allotted the disputed Ayodhya land to the Ram Janmabhoomi Nyas. The apex court order…",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://images.firstpost.com/wp-content/uploads/2019/03/Ayodhya-AFP.jpg)"
-      },
-      "publishedAt": "2019-11-09T05:55:06Z",
-      "source": {
-        "id": null,
-        "name": "Firstpost.com"
-      },
-      "title": "Ayodhya Verdict LIVE Updates: Supreme Court gives disputed land to Ram Janmabhoomi Nyas; Muslims get alternate land for mosque - Firstpost",
-      "url": "https://www.firstpost.com/india/ayodhya-case-verdict-live-updates-ram-janmabhoomi-babri-masjid-ayodhya-mandir-news-samachar-supreme-court-uttar-pradesh-hindu-muslim-7620591.html",
-      "urlToImage": "https://images.firstpost.com/wp-content/uploads/2019/03/Ayodhya-AFP.jpg"
     }
   ],
   "bookmark": [
