@@ -12,19 +12,16 @@ export class RecentlyViewedComponent implements OnInit {
   constructor(private apiService:ApiKeyTestingService, private _sanitizer:DomSanitizer, private router: Router, private route: ActivatedRoute) { }
   
   public windTitle:String="Recently Viewed";
+  public loadingImage:string = '../../assets/img/loading.gif';
   recentArticle:any=[];
 
   viewNews($event, newValue){
-    newValue.image=this._sanitizer.bypassSecurityTrustStyle(`url(${newValue.urlToImage})`);
     this.apiService.addNewsToRecent(newValue);
     this.router.navigate(["view"], {relativeTo: this.route.parent});
   }
 
   ngOnInit() {
     this.recentArticle=this.apiService.getDetails().recent;
-    for(let i=0; i<this.recentArticle.length; i++){
-      this.recentArticle[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.recentArticle[i].urlToImage})`);
-    }
   }
 
 }

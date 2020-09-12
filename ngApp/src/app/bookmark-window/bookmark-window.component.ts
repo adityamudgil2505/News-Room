@@ -13,6 +13,7 @@ export class BookmarkWindowComponent implements OnInit {
   constructor(private apiService:ApiKeyTestingService, private _sanitizer:DomSanitizer, private router: Router, private route: ActivatedRoute) { }
 
   windTitle:String="Bookmark";
+  public loadingImage:string = '../../assets/img/loading.gif';
   bookmarkedArticle:any=[];
 
   removeBookmark($event, item){
@@ -21,16 +22,11 @@ export class BookmarkWindowComponent implements OnInit {
   }
 
   viewNews($event, newValue){
-    newValue.image=this._sanitizer.bypassSecurityTrustStyle(`url(${newValue.urlToImage})`);
     this.apiService.addNewsToRecent(newValue);
     this.router.navigate(["view"], {relativeTo: this.route.parent});
   }
 
   ngOnInit() {
     this.bookmarkedArticle=this.apiService.getDetails().bookmark;
-    for(let i=0; i<this.bookmarkedArticle.length; i++){
-      this.bookmarkedArticle[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.bookmarkedArticle[i].urlToImage})`);
-    }
-
   }
 }

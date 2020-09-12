@@ -11,6 +11,7 @@ export class MCountryComponent implements OnInit {
   constructor(private apiService:ApiKeyTestingService, private router:Router, private route:ActivatedRoute) { }
   
   public windTitle:String="Country";
+  public loadingImage:string = '../../assets/img/loading.gif';
   public country=[
       {code: "ar", title: "Argentina", flagLink: "./assets/img/flags/ar.svg"},
       {code: "au", title: "Australia", flagLink: "./assets/img/flags/au.svg"},
