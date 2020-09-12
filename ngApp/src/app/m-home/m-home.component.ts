@@ -14,6 +14,7 @@ export class MHomeComponent implements OnInit {
   public news:any=[];
   public address:any;
   public noInternet:Boolean;
+  public loadingImage:string = '../../assets/img/loading.gif';
   public filterOption:Boolean=false;
   public filterSort:string="";
   public moreNewsOption:Boolean=true;
@@ -69,7 +70,8 @@ export class MHomeComponent implements OnInit {
                         if(this.news[i].urlToImage==null){
                           this.news[i].urlToImage="./assets/img/no-image.png";
                         }
-                        this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);
+                        // this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);
+                        this.news[i].image = this.news[i].urlToImage; // for lazy loading
                       }
                       this.noInternet=false;
                       this.filterOption=true;
@@ -97,7 +99,7 @@ export class MHomeComponent implements OnInit {
                         if(this.news[i].urlToImage==null){
                           this.news[i].urlToImage="./assets/img/no-image.png";
                         }
-                        this.news[i].image = this._sanitizer.bypassSecurityTrustStyle(`url(${this.news[i].urlToImage})`);
+                        this.news[i].image = this.news[i].urlToImage;
                       }
                       this.noInternet=false;
                     },

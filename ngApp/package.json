@@ -1,5 +1,5 @@
 {
-  "name":"NewsRoom",
+  "name": "NewsRoom",
   "version": "1.0.1",
   "main": "./index.js",
   "description": "For instant News",
@@ -16,7 +16,6 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "dist-all": "electron-builder -mw",
-    
     "clean": "rimraf dist",
     "electron": "wait-on http://localhost:4200/index.html && electron .",
     "prestart": "npm run clean",
@@ -52,6 +51,7 @@
     "dotenv": "^8.1.0",
     "electron-native-notification": "^1.2.1",
     "moment": "^2.24.0",
+    "ng-lazyload-image": "^9.0.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

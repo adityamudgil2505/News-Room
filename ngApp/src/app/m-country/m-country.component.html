@@ -6,7 +6,7 @@
     <div class="container-item" *ngFor="let item of country">
       <div class="fav-icon" [ngClass]="{'fav-active': favCountry == item.code}" ><i class="material-icons" (click)="countryFavClick($event, item)">favorite</i></div>
       <div class="image" (click)="countryClick($event, item)">          
-          <img src="{{item.flagLink}}">          
+          <img [defaultImage]="loadingImage" [lazyLoad]="item.flagLink">          
           <div class="title">{{item.title}}</div>
       </div>      
     </div>

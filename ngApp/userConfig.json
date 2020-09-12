@@ -7,6 +7,23 @@
   "category": "sports",
   "recent": [
     {
+      "author": "Peter Doggers",
+      "content": "GM Magnus Carlsen failed to take revenge for his loss in 2004 vs. GM Garry Kasparov. 16 years after they played for the first time, Carlsen spoiled a winning endgame and let his legendary opponent of… [+8323 chars]",
+      "date": "September 12, 2020 1:54 PM",
+      "description": "GM Magnus Carlsen failed to take revenge for a loss vs. GM Garry Kasparov, 16 years after they played for the first time. Spoiling a winning endgame, he let his legendary opponent off the hook in the second round of the online Chess9LX tournament. Carlsen lea…",
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(https://images.chesscomfiles.com/uploads/v1/news/768840.d92b1a42.5000x5000o.4e1ad9a9f9bf.png)"
+      },
+      "publishedAt": "2020-09-12T08:24:00Z",
+      "source": {
+        "id": null,
+        "name": "Chess.com"
+      },
+      "title": "Kasparov Escapes Vs Carlsen In 1st Clash In 16 Years - Chess.com",
+      "url": "https://www.chess.com/news/view/kasparov-carlsen-chess9lx",
+      "urlToImage": "https://images.chesscomfiles.com/uploads/v1/news/768840.d92b1a42.5000x5000o.4e1ad9a9f9bf.png"
+    },
+    {
       "author": null,
       "content": null,
       "date": "September 11, 2020 11:01 PM",
@@ -39,6 +56,23 @@
       "title": "'Arsenal must aim to win the Premier League' - Gunners legend Lauren talks Aubameyang, Partey & Ozil's future - Goal.com",
       "url": "https://www.sportingnews.com/ca/soccer",
       "urlToImage": "https://images.daznservices.com/di/library/sporting_news/a4/8/sportingnews_blid1xj976d41uqjx0jd6x52p.png"
+    },
+    {
+      "author": null,
+      "content": null,
+      "date": "September 12, 2020 11:30 AM",
+      "description": null,
+      "image": {
+        "changingThisBreaksApplicationSecurity": "url(./assets/img/no-image.png)"
+      },
+      "publishedAt": "2020-09-12T06:00:06Z",
+      "source": {
+        "id": "google-news",
+        "name": "Google News"
+      },
+      "title": "Timo Werner & Kai Havertz On In Shooting Drill + Malang Sarr Sneak Peak | Unseen - Chelsea Football Club",
+      "url": "https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9bDBJZFEyT3V0Z1HSAQA?oc=5",
+      "urlToImage": "./assets/img/no-image.png"
     },
     {
       "author": "ESPNcricinfo staff",
@@ -109,23 +143,6 @@
       "urlToImage": "https://english.cdn.zeenews.com/sites/default/files/2020/09/10/884710-lead.jpg"
     },
     {
-      "author": "TN Sports Desk",
-      "content": "<ul><li>Harbhajan Singh has been cheated of Rs 4 crore by a Chennai-based businessman</li></ul>\r\n<ul><li>The cricketer had loaned the money to the businessman back in 2015</li></ul>\r\n<ul><li>Recently… [+1959 chars]",
-      "date": "September 10, 2020 8:32 AM",
-      "description": "Chennai Super Kings spinner Harbhajan Singh has filed a complaint in Chennai after being duped of Rs. 4 crore by a businessman.",
-      "image": {
-        "changingThisBreaksApplicationSecurity": "url(https://imgk.timesnownews.com/story/Harbhajan-CSK-IANS_0.jpg?tr=w-560,h-292,fo-top)"
-      },
-      "publishedAt": "2020-09-10T03:02:21Z",
-      "source": {
-        "id": null,
-        "name": "Zoom"
-      },
-      "title": "CSK spinner Harbhajan Singh duped of Rs 4 crore by Chennai businessman, files complaint - Times Now",
-      "url": "https://www.timesnownews.com/sports/cricket/article/csk-spinner-harbhajan-singh-duped-of-rs-4-crore-by-chennai-businessman-files-complaint/650274",
-      "urlToImage": "https://imgk.timesnownews.com/story/Harbhajan-CSK-IANS_0.jpg?tr=w-560,h-292,fo-top"
-    },
-    {
       "author": null,
       "content": null,
       "date": "September 10, 2020 9:00 AM",
@@ -140,7 +157,7 @@
       },
       "title": "RCB Practice Match | Bold Diaries | IPL 2020 - Royal Challengers Bangalore",
       "url": "https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9Yk9XcDBLR0FyNVHSAQA?oc=5",
-      "urlToImage": "/Users/adityamudgil/GitHub/News-Room/ngApp/node_modules/electron/dist/Electron.app/Contents/Resources/electron.asar/renderer/assets/img/no-image.png"
+      "urlToImage": "../assets/img/no-image.png"
     },
     {
       "author": null,
@@ -157,7 +174,7 @@
       },
       "title": "Cristiano Ronaldo will break international goals record and no one will beat him - Laurens | ESPN FC - ESPN UK",
       "url": "https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9dmY2ZGd4M05oVE3SAQA?oc=5",
-      "urlToImage": "/Users/adityamudgil/GitHub/News-Room/ngApp/node_modules/electron/dist/Electron.app/Contents/Resources/electron.asar/renderer/assets/img/no-image.png"
+      "urlToImage": "../assets/img/no-image.png"
     },
     {
       "author": "News18.com",
