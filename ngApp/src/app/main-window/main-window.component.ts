@@ -55,6 +55,10 @@ export class MainWindowComponent implements OnInit {
   public displayNotificationBool:Boolean;
   public notificationArr:any;
 
+  onClickedOutside(e: Event) {
+    this.displayNotificationBool = false;
+  }
+
   callNotification(lang:String, country: String, category:String):void{
     let news:any;
     this.apiService.getNews(lang, country, category, '', '20')

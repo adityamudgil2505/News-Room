@@ -7,7 +7,7 @@
     <i class="material-icons">person_outline</i>
     <span class="username">{{accountDetails.username}}</span>
   </div>
-  <div class="notification">
+  <div class="notification" (clickOutside)="onClickedOutside($event)">
     <i class="material-icons" (click)="displayNotification()">notifications_none</i>
     <div class="notification-display" *ngIf="displayNotificationBool">
       <p *ngFor="let item of notificationArr">

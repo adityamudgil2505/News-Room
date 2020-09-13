@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Tinos:400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Verdana:400&display=swap');
 @import "./color-font.scss";
 
 *{
@@ -143,6 +143,9 @@ html, body{
       position: absolute;
       left: -260px;
       box-shadow:  0px 2px 8px 2px $notif-black;
+      border: 1px solid $deep-blue;
+      font-family: $font2;
+      font-size: 12px;
       p{
         padding: 15px 10px 15px 10px;
         border-bottom: 1px solid rgba(173, 171, 171, 0.28);
