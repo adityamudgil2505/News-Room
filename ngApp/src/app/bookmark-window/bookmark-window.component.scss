@@ -96,11 +96,17 @@
   }
 }
 
-@media only screen and (min-height: 1000px) {
+@media only screen and (min-height: 700px) {
   .top-level{
     height: 100%;
     .container{
-      height: 850px;
+      height: calc(90% - 55px);
+      .container-item{
+        width: 95%;
+        .title{
+          width: 80%;
+        }
+      }
     }
   }
 }

@@ -30,6 +30,7 @@
 
 .top-level{
   overflow: hidden;
+  position: absolute;
   .top-bar{
     .search-bar{
       display: inline-block;
@@ -84,8 +85,26 @@
     // width: 900px;    
     height: 555px;
     overflow-y: scroll;
+    position: relative;
+    .server-side-notification{
+      background-color: $transparent-black;
+      height: calc(100% - 85px);
+      width: calc(100% - 200px);
+      position: fixed;
+      z-index: 1;
+      .notification-window{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
     .container{
-      width: 900px;
+      // width: 900px;
+      width: 100%;
       padding: 35px 10px 0px;
       display: grid;
       grid-template-columns: auto auto;
@@ -151,8 +170,13 @@
 @media only screen and (min-height: 700px) {
   .top-level{
     height: 100%;
-    .container{
+    .wrapper{
       height: 100%;
-    }
+      .container{
+        height: calc(90% - 35px);
+        overflow: scroll;
+        padding: 0px 10px 10px;
+      }
+    }    
   }
 }
