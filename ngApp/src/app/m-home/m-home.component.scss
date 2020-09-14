@@ -93,13 +93,61 @@
       position: fixed;
       z-index: 1;
       .notification-window{
-        width: 300px;
+        width: 500px;
         height: 300px;
         position: relative;
-        background-color: white;
+        background-color: $bg-black;
+        border: 1px solid $outline-grey;
+        box-shadow: 0px 0pxx 50px $bg-main;
+        color: $white;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        .cross{
+          right: 0px;
+          position: absolute;
+          padding: 10px 10px 0px 0px;  
+          z-index: 3;        
+          i{
+            color: $light-grey;     
+            &:hover{
+              color: $white;
+              cursor: pointer;
+            }
+          }               
+        }
+        .notification-title{
+          text-align: center;
+          font-size: 25px;
+          margin-top: 10px;
+          position: relative;
+          &::after{
+            content: "";
+            width: 90%;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 0.5em;
+            border-top: 1px solid $deep-blue;
+          }
+        }
+        .notification-img-full{
+          height: calc(100% - 70px);
+          width: auto;
+          margin: 10px;
+          object-fit: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        .notification-content{
+          margin: 30px 30px 10px 40px;
+          ul{            
+            li{
+              list-style: square;
+            }
+          }
+        }
       }
     }
     .container{
