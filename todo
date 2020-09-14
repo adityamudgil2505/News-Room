@@ -1,14 +1,15 @@
 Frontend
 1. Fix 3line problem in recent, bookmark [Done]
 2. No image update [Done]
-3. Add filter and page size
-4. Add Generalization notification inside application (with Backend)
+3. Add filter and page size [Done]
+4. Add Generalization notification inside application (with Backend) [Done]
 5. Login using email
 6. API key visible inside account
-7. Add more detail about particular news
-8. Customizable more news category
-9. Notification better UI
-10. Responsive
+7. Add more detail about particular news [Backend]
+8. Customizable more news category [Backend]
+9. Notification better UI [Done]
+10. Responsive [Done]
+11. When no news after search then show no news [Done]
 
 Backend
 1. Backend to send general notification about app 
@@ -18,5 +19,10 @@ Backend
 
 Performance Enhancements
 1. Refactor code (Includes CSS) [Done]
-2. Show when css loads completely
-3. Check connection API rather than fetching news.
+2. Show when css loads completely [Low priority]
+3. Lazy loading of images [Done]
+
+
+Currenlt Working
+- Working on beautifying Notification window.
+  - Clicking outside notification will close it

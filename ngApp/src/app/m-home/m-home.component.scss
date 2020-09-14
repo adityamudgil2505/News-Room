@@ -213,6 +213,16 @@
         transform: translateX(-50%);
       }
     }
+    .no-news-found{
+      padding: 0px 30px;
+      color: white;
+      ul{
+        padding-left: 20px;
+        li{
+          list-style-type: square;
+        }
+      }
+    }
   }
 }
 @media only screen and (min-height: 700px) {

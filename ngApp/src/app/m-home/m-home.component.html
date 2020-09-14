@@ -47,6 +47,14 @@
             <div class="title" (click)="viewNews($event, item)">{{item.title}}</div>
       </div>
     </div>
+    <div *ngIf="noNewsFound" class="no-news-found">
+      No news found. Following might be the cases:
+      <ul>
+        <li>You might search irrelevant words.</li>
+        <li>Please check the spelling of the words which you used to search.</li>
+        <li>Server might not working properly. </li>
+      </ul>
+    </div>
     <div *ngIf="moreNewsOption" class="more-news" (click)="moreNewsFunction()">Load More</div>
   </div>  
 </div>

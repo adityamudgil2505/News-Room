@@ -19,6 +19,7 @@ export class MHomeComponent implements OnInit {
   public filterSort:string="";
   public moreNewsOption:Boolean=true;
   public previousLink:string='headline';
+  public noNewsFound:Boolean=false;
   public notificationImg: string = 'https://ps.w.org/dummy-images/assets/banner-772x250.png?rev=2024916';
 
   refresh(){
@@ -72,6 +73,15 @@ export class MHomeComponent implements OnInit {
     this.apiService.getSearchedNews(link, filter, pageSize)
                     .subscribe((data:any)=>{                     
                       this.news=data.articles;
+                      console.log(this.news.length);
+                      if(pageSize=="20"){ this.moreNewsOption = true;}
+                      if(this.news.length==0){
+                        this.moreNewsOption=false;
+                        this.noNewsFound = true;
+                      }
+                      else{
+                        this.noNewsFound = false;
+                      }
                       for(let i=0; i<this.news.length; i++){
                         if(this.news[i].urlToImage==null){
                           this.news[i].urlToImage="./assets/img/no-image.png";
@@ -93,6 +103,7 @@ export class MHomeComponent implements OnInit {
     this.route.paramMap.subscribe((params:ParamMap)=>{
       console.log(params);
       console.log("you called");
+      if(pageSize=="20"){ this.moreNewsOption = true;}
       let country=params.get('country');
       let category=params.get('category');
       let lang=params.get('lang');
@@ -101,6 +112,12 @@ export class MHomeComponent implements OnInit {
       this.apiService.getNews(lang, country, category, source, pageSize)
                     .subscribe((data:any)=>{                     
                       this.news=data.articles;
+                      if(this.news.length==0){
+                        this.noNewsFound = true;
+                      }
+                      else{
+                        this.noNewsFound = false;
+                      }
                       for(let i=0; i<this.news.length; i++){
                         if(this.news[i].urlToImage==null){
                           this.news[i].urlToImage="./assets/img/no-image.png";
