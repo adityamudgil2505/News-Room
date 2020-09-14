@@ -101,8 +101,6 @@ export class MHomeComponent implements OnInit {
 
   fetchData(pageSize="20"){
     this.route.paramMap.subscribe((params:ParamMap)=>{
-      console.log(params);
-      console.log("you called");
       if(pageSize=="20"){ this.moreNewsOption = true;}
       let country=params.get('country');
       let category=params.get('category');
@@ -135,6 +133,5 @@ export class MHomeComponent implements OnInit {
   }
   ngOnInit() {    
     this.fetchData();
-    setInterval(this.fetchData, 60000);
   }
 }

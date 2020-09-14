@@ -10,6 +10,7 @@ Frontend
 9. Notification better UI [Done]
 10. Responsive [Done]
 11. When no news after search then show no news [Done]
+12. Fix bug of undefined paramap [Done]
 
 Backend
 1. Backend to send general notification about app 
@@ -24,5 +25,3 @@ Performance Enhancements
 
 
 Currenlt Working
-- Working on beautifying Notification window.
-  - Clicking outside notification will close it
