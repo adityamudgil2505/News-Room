@@ -26,6 +26,21 @@
     </div>
   </div>
   <div class="wrapper">
+    <div class="server-side-notification">
+      <div class="notification-window">
+        <div class="cross" (click)="closeNotification($event)"><i class="material-icons">clear</i></div>
+        <div class="notification-title">New Updates</div> 
+        <div class="notification-img-full" [defaultImage]="loadingImage" [lazyLoad]="notificationImg"></div> 
+        <!-- <div class="notification-content">
+          <ul>
+            <li>List 1</li>
+            <li>List 1</li>
+            <li>List 1</li>
+            <li>List 1</li>
+          </ul>
+        </div>  -->
+      </div>
+    </div>
     <div class="container">
       <div class="sub-box" *ngFor="let item of news" [defaultImage]="loadingImage" [lazyLoad]="item.image">
           <div class="filter"></div>

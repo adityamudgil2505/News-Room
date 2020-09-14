@@ -30,6 +30,7 @@
 
 .top-level{
   overflow: hidden;
+  position: absolute;
   .top-bar{
     .search-bar{
       display: inline-block;
@@ -84,8 +85,74 @@
     // width: 900px;    
     height: 555px;
     overflow-y: scroll;
+    position: relative;
+    .server-side-notification{
+      background-color: $transparent-black;
+      height: calc(100% - 85px);
+      width: calc(100% - 200px);
+      position: fixed;
+      z-index: 1;
+      .notification-window{
+        width: 500px;
+        height: 300px;
+        position: relative;
+        background-color: $bg-black;
+        border: 1px solid $outline-grey;
+        box-shadow: 0px 0pxx 50px $bg-main;
+        color: $white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .cross{
+          right: 0px;
+          position: absolute;
+          padding: 10px 10px 0px 0px;  
+          z-index: 3;        
+          i{
+            color: $light-grey;     
+            &:hover{
+              color: $white;
+              cursor: pointer;
+            }
+          }               
+        }
+        .notification-title{
+          text-align: center;
+          font-size: 25px;
+          margin-top: 10px;
+          position: relative;
+          &::after{
+            content: "";
+            width: 90%;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 0.5em;
+            border-top: 1px solid $deep-blue;
+          }
+        }
+        .notification-img-full{
+          height: calc(100% - 70px);
+          width: auto;
+          margin: 10px;
+          object-fit: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+        .notification-content{
+          margin: 30px 30px 10px 40px;
+          ul{            
+            li{
+              list-style: square;
+            }
+          }
+        }
+      }
+    }
     .container{
-      width: 900px;
+      // width: 900px;
+      width: 100%;
       padding: 35px 10px 0px;
       display: grid;
       grid-template-columns: auto auto;
@@ -151,8 +218,13 @@
 @media only screen and (min-height: 700px) {
   .top-level{
     height: 100%;
-    .container{
+    .wrapper{
       height: 100%;
-    }
+      .container{
+        height: calc(90% - 35px);
+        overflow: scroll;
+        padding: 0px 10px 10px;
+      }
+    }    
   }
 }

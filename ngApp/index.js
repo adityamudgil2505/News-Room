@@ -19,7 +19,7 @@ function createWindow(){
     nodeIntegration: true,
     webSecurity: false
     }});
-  win.setFullScreenable(false);
+  win.setFullScreenable(true);
 
 // ------------- IN Production/Publishing/Deployment stage ----------------
   // win.loadURL(url.format({

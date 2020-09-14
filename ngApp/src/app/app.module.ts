@@ -5,6 +5,7 @@ import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ClickOutsideModule } from 'ng-click-outside';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { ApiPageComponent } from './api-page/api-page.component';
 import { ApiKeyTestingService} from './api-key-testing.service';
@@ -45,7 +46,8 @@ import { AccountComponent } from './account/account.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    ClickOutsideModule
   ],
   providers: [ApiKeyTestingService, {provide : LocationStrategy , useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

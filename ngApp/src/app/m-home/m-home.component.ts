@@ -19,6 +19,7 @@ export class MHomeComponent implements OnInit {
   public filterSort:string="";
   public moreNewsOption:Boolean=true;
   public previousLink:string='headline';
+  public notificationImg: string = 'https://ps.w.org/dummy-images/assets/banner-772x250.png?rev=2024916';
 
   refresh(){
     this.fetchData();
@@ -36,6 +37,11 @@ export class MHomeComponent implements OnInit {
     if(event.keyCode == 13) {
       this.searchData();
     }
+  }
+
+  closeNotification($event){
+    $event.target.parentNode.parentNode.parentNode.remove();
+    // call to the in app file not to repeat.
   }
 
   moreNewsFunction(){
