@@ -50,7 +50,7 @@
     "@capacitor/electron": "^1.0.0-beta.11",
     "dotenv": "^8.1.0",
     "electron-native-notification": "^1.2.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "ng-click-outside": "^7.0.0",
     "ng-lazyload-image": "^9.0.1",
     "rxjs": "~6.4.0",
